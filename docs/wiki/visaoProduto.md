@@ -1,1 +1,156 @@
-Visão do Produto
+# iStudent
+
+<div align="center">
+    <h1> 2022.2 - iStudent </h1>
+</div>
+
+## Histórico de Revisão
+
+| Data       | Versão | Descrição            | Autor                                                                  |
+| ---------- | ------ | -------------------- | ---------------------------------------------------------------------- |
+| 01/11/2022 | 0.1    | Criação do Documento | Pedro Siqueira, Cleber Brant, Wesley Lira, Bruno Cardoso, Lucas Caldas |
+|            |        |                      |                                                                        |
+
+## 1. Visão Geral do Produto
+
+### 1.1 Declaração de Posição do Produto
+
+<p style="text-indent: 20px; text-align: justify">
+    Uma pesquisa do Datafolha indicou que 87% dos alunos que estudam de maneira presencial com acompanhamento de professor se sentiram mais animados em relação ao âmbito remoto. O iStudent pretende preencher uma posição nebulosa no mercado, ocupada apenas por cursos online, os professores autônomos que não tem capacidade técnica para criar tal conteúdo são escanteados no mercado. O iStudent é uma plataforma de agendamento de aulas que visa suprir tal necessidade, ao dispor de professores com diversos conhecimentos, sobre conteúdos diferentes. Seu diferencial se dá por ocupar um espaço que está vazio, visto que tais professores divulgam o seu trabalho por mídias sociais e também por facilitar a comunicação entre as partes necessitadas. Seus usuários-alvo são alunos em busca de conhecimento, seja ele complementar ou fundamental e professores em busca de facilitar o caminho para agendar suas aulas e sua organização. Ele deve ser utilizado pois integra diversas áreas de conhecimento no mesmo âmbito, auxilia a organização tanto dos professores quanto dos alunos e traz aulas presenciais, que tendem a manter o estudante mais engajado.
+
+</p>
+
+| Software      | iStudent                                                               |
+| ------------- | ---------------------------------------------------------------------- |
+| Para          | professores autônomos e alunos que buscam aprimorar o seu conhecimento |
+| Quem          | tem dificuldade de agendar suas aulas                                  |
+| O             | é uma plataforma de agendamento de aulas                               |
+| Que           | contêm diversos tipos de conteúdo e abordagens de professores          |
+| Ao contrário  | das plataformas de cursos online já existentes                         |
+| Nosso produto | permite a condução de aulas síncronas e presenciais                    |
+
+### 1.2 Objetivo do Produto
+
+<p style="text-indent: 20px; text-align: justify">
+    O iStudent tem como objetivo facilitar o caminho para o agendamento de aulas entre alunos e professores, de forma que o professor demonstre, diária ou semanalmente, a sua disponibilidade por meio da plataforma. A partir disso, o aluno terá um ambiente integrador com professores que têm abordagens e conteúdos diferentes, além disso, os seus alunos poderão se matricular, visualizar o conteúdo do curso, ter um chat para haver qualquer comunicação com o professor(a) e agendar as aulas com o mesmo.
+</p>
+
+### 1.3 Tecnologias a Serem Utilizadas
+
+- Typescript
+- NodeJs
+- ReactJs
+- PostgreSQL
+
+## 2 Visão Geral do Projeto
+
+### 2.1 Organização do Projeto
+
+| Papel                 | Atribuições                                                                                                  | Responsável | Participantes |
+| --------------------- | ------------------------------------------------------------------------------------------------------------ | ----------- | ------------- |
+| Desenvolvedor         | Garantir a qualidade do produto, garantir o cumprimento do conceito de pronto, realizar inspeções de código. | ...         | ...           |
+| Dono do Produto       | Codificar o produto, codificar testes unitários, realizar refatoração.                                       | ...         | ...           |
+| Analista de Qualidade | Criar as telas e todo o layout do produto, garantir a fidelidade das telas para com o que o cliente deseja.  | ...         | ...           |
+| Devops                | ...                                                                                                          | ...         | ...           |
+| Product Owner         | ...                                                                                                          | ...         | ...           |
+| Scrum Master          | ...                                                                                                          | ...         | ...           |
+
+### 2.2 Planejamento das Fases e/ou Iterações do Projeto
+
+| Sprint    | Produto                                                  | Data início | Data Fim   |
+| --------- | -------------------------------------------------------- | ----------- | ---------- |
+| Sprint 1  | Definição do Produto                                     | 22/06/2022  | 29/06/2022 |
+| Unidade 1 | Entrega da Unidade 1                                     | 30/06/2022  | 30/06/2022 |
+| Sprint 2  | Levantamento de Requisitos com o cliente                 | 01/07/2022  | 08/07/2022 |
+| Sprint 3  | Canvas MVP e Planejamento do Projeto                     | 09/07/2022  | 15/07/2022 |
+| Sprint 4  | Confecção Backlog e Processo de Engenharia de Requisitos | 16/07/2022  | 20/07/2022 |
+| ...       | ...                                                      | ...         | ...        |
+
+### 2.3 Matriz de Comunicação
+
+| Descrição                                                             | Área/Envolvidos                        | Periodicidade | Produtos Gerados                                  |
+| --------------------------------------------------------------------- | -------------------------------------- | ------------- | ------------------------------------------------- |
+| Acompanhamento das Atividades em Andamento (Sprint Review)            | Equipe do Projeto e Cliente            | Semanal       | Ata de reunião e Relatório de situação do projeto |
+| Comunicar a situação do projeto                                       | Equipe do Projeto, Cliente e Professor | Semanal       | Ata de reunião e Relatório de situação do projeto |
+| Acompanhamento dos Riscos, Compromissos, Ações Pendentes, Indicadores | Equipe do Projeto e Cliente            | Quinzenal     | Ata de reunião e Relatório de situação do projeto |
+| Comunicação sobre a situação das atividades sendo executadas          | Equipe do Projeto                      | Diária        | Ata via Telegram ou Discord                       |
+
+### 2.4 Gerenciamento de Riscos
+
+<p>
+    Para o gerenciamento de risco devem ser realizados tarefas, como:
+</p>
+
+- Identificar todos os riscos possíveis e detectáveis em cada fase do projeto;
+- Executar as ações para mitigar os riscos que tenham um alto grau de exposição ao risco caso este ocorra na Lista de Riscos do Projeto;
+- Fazer uma revisão da lista dos riscos periodicamente, com o propósito de averiguar uma possível incidência de um risco e ver se há outros riscos ainda não relatados;
+- Em caso de confirmação de um risco previsto, agir no sentido de contingenciá-lo conforme programado;
+- Registrar os riscos no Painel de Controle do Projeto e no Plano do Projeto (Riscos iniciais);]
+- Os riscos do projeto devem ser acompanhados e atualizados a cada ciclo.
+
+### 2.5 Critérios de Replanejamento
+
+<p>
+    [Descrever os critérios de replanejamento que serão utilizados, caso seja necessário realizá-lo no projeto.]
+</p>
+
+Os critérios de replanejamento do projeto devem ser acompanhados e atualizados a cada ciclo. E, aplicados, conforme necessidade
+
+## 3 Processo de Desenvolvimento de Software
+
+### 3.1 Atividade 1
+
+| Atividade | Método | Ferramenta | Entrega |
+| --------- | ------ | ---------- | ------- |
+| ...       | ...    | ...        | ...     |
+
+### 3.2 Atividade 2
+
+| Atividade | Método | Ferramenta | Entrega |
+| --------- | ------ | ---------- | ------- |
+| ...       | ...    | ...        | ...     |
+
+### 3.3 Atividade 3
+
+| Atividade | Método | Ferramenta | Entrega |
+| --------- | ------ | ---------- | ------- |
+| ...       | ...    | ...        | ...     |
+
+### 3.4 Atividade 'N'
+
+| Atividade | Método | Ferramenta | Entrega |
+| --------- | ------ | ---------- | ------- |
+| ...       | ...    | ...        | ...     |
+
+## 4 Lições Aprendidas
+
+### 4.1 Unidade 1
+
+<p>
+    [Liste as lições aprendidas na retrospectiva, com ênfase especial nas ações a serem tomadas para melhorar, por exemplo: o ambiente de desenvolvimento, o processo ou a colaboração da equipe.]
+</p>
+
+### 4.2 Unidade 2
+
+<p>
+    [Liste as lições aprendidas na retrospectiva, com ênfase especial nas ações a serem tomadas para melhorar, por exemplo: o ambiente de desenvolvimento, o processo ou a colaboração da equipe.]
+</p>
+
+### 4.3 Unidade 3
+
+<p>
+    [Liste as lições aprendidas na retrospectiva, com ênfase especial nas ações a serem tomadas para melhorar, por exemplo: o ambiente de desenvolvimento, o processo ou a colaboração da equipe.]
+</p>
+
+### 4.4 Unidade 4
+
+<p>
+    [Liste as lições aprendidas na retrospectiva, com ênfase especial nas ações a serem tomadas para melhorar, por exemplo: o ambiente de desenvolvimento, o processo ou a colaboração da equipe.]
+</p>
+
+### 5 Referências Bibliográficas
+
+<p>
+    [Listar as referências utilizadas neste documento]
+    [1. Descrição da referência]
+</p>
