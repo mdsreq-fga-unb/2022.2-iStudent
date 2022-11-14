@@ -1,3 +1,0 @@
-- Documentação do Projeto
-  - [Visão do Produto]()
-  - [Apresentações]()
