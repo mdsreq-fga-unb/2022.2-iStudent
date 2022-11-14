@@ -7,6 +7,7 @@
 # Índice
 
 - [Descrição do Projeto](#descrição-do-produto💡)
+- [Documentação](#documentação)
 - [Equipe](#equipe)
 
 # Descrição do Produto💡
@@ -14,6 +15,11 @@
 <p>
     O iStudent é uma plataforma de cursos para professores autônomos que visa facilitar o trabalho para o agendamento de aulas, disponibilização do material de curso e a comunicação entre Aluno(a) e Professor(a). A plataforma adota como diferencial os seguintes itens: agendamento de aulas particulares (presencial ou EAD) e comunicação direta entre aluno(a) e professor(a).
 </p>
+
+# Documentação
+
+[Clique Aqui](https://mdsreq-fga-unb.github.io/2022.2-iStudent/) para acessar o link da documentação
+do nosso projeto.
 
 # Equipe
 
