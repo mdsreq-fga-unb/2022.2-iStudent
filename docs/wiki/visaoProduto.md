@@ -8,8 +8,8 @@
 
 | Data       | Versão | Descrição            | Autor                                                                  |
 | ---------- | ------ | -------------------- | ---------------------------------------------------------------------- |
-| 01/11/2022 | 0.1    | Criação do Documento | Pedro Siqueira, Cleber Brant, Wesley Lira, Bruno Cardoso, Lucas Caldas |
-|            |        |                      |                                                                        |
+| 01/11/2022 |  0.1   | Criação do Documento. | [Bruno Cardoso](https://github.com/BrunoHenrique00), [Cleber Brant](https://github.com/Cleberbrant), [Lucas Caldas](https://github.com/lucascaldasb), [Pedro Siqueira](https://github.com/PedroSiq), [Wesley Lira](https://github.com/Weslin-0101) |
+| 14/11/2022 |  0.2   | Adição e Edição dos campos 1 e 2 do Documento. |[Bruno Cardoso](https://github.com/BrunoHenrique00), [Cleber Brant](https://github.com/Cleberbrant), [Lucas Caldas](https://github.com/lucascaldasb), [Pedro Siqueira](https://github.com/PedroSiq), [Wesley Lira](https://github.com/Weslin-0101)|
 
 ## 1. Visão Geral do Produto
 
@@ -22,12 +22,12 @@
 
 | Software      | iStudent                                                               |
 | ------------- | ---------------------------------------------------------------------- |
-| Para          | professores autônomos e alunos que buscam aprimorar o seu conhecimento |
-| Quem          | tem dificuldade de agendar suas aulas                                  |
-| O             | é uma plataforma de agendamento de aulas                               |
-| Que           | contêm diversos tipos de conteúdo e abordagens de professores          |
-| Ao contrário  | das plataformas de cursos online já existentes                         |
-| Nosso produto | permite a condução de aulas síncronas e presenciais                    |
+| Para          | Professores autônomos e alunos que buscam aprimorar o seu conhecimento |
+| Quem          | Tem dificuldade de agendar suas aulas, hospedar material para os alunos, se comunicar simultaneamente via chat com os alunos |
+| O iStudent             | É uma plataforma de cursos/aula onlines e presenciais, onde o professor tem a disponibilidade de agendar suas aulas, disponibilizar material e conversar com seus alunos/turma simultâneamente via chat na plataforma, e o aluno tem a facilidade de encontrar o professor ideal para o conteudo que precisa em sua região                            |
+| Que           | Contêm diversos tipos de conteúdo e abordagens de professores          |
+| Ao contrário  | Das plataformas de cursos online já existentes                         |
+| Nosso produto | Permite a condução de aulas síncronas e presenciais, contato simultâneo com seus alunos por meio de um chat na plataforma.                    |
 
 ### 1.2 Objetivo do Produto
 
@@ -48,12 +48,9 @@
 
 | Papel                 | Atribuições                                                                                                  | Responsável | Participantes |
 | --------------------- | ------------------------------------------------------------------------------------------------------------ | ----------- | ------------- |
-| Desenvolvedor         | Garantir a qualidade do produto, garantir o cumprimento do conceito de pronto, realizar inspeções de código. | ...         | ...           |
-| Dono do Produto       | Codificar o produto, codificar testes unitários, realizar refatoração.                                       | ...         | ...           |
-| Analista de Qualidade | Criar as telas e todo o layout do produto, garantir a fidelidade das telas para com o que o cliente deseja.  | ...         | ...           |
-| Devops                | ...                                                                                                          | ...         | ...           |
-| Product Owner         | ...                                                                                                          | ...         | ...           |
-| Scrum Master          | ...                                                                                                          | ...         | ...           |
+| Product Owner         | É a voz do cliente no projeto, é ele quem vai garantir que os esforços da equipe gerem valor ao negócio.      | ...         | ...           |
+| Scrum Master          | Irá auxiliar o time para que estes sigam as melhores práticas do Scrum, tornando o trabalho mais  relevante e ágil. | ...         | ...           |
+| Desenvolvedores       | São os responsáveis pela entrega do produto e pelo trabalho operacional(analisar, projetar, desenvolver, testar, documentar). | ...         | ...           |
 
 ### 2.2 Planejamento das Fases e/ou Iterações do Projeto
 
