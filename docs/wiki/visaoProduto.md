@@ -78,15 +78,12 @@
 ### 2.4 Gerenciamento de Riscos
 
 <p>
-    Para o gerenciamento de risco devem ser realizados tarefas, como:
+    O gerenciamento de riscos levantado pela a equipe do nosso projeto optou avaliar o projeto como um todo os requisitos funcionais e não funcionais, tecnologias a serem utilizadas, método de desenvolvimento adotado, impedimentos levantandos pela equipe e a comunicação com o cliente. Devido a esses pontos chegou a um consenso para que não haja complicações ou impedimentos durante o projeto, que deverá ser realizado as seguintes tarefas:
 </p>
 
-- Identificar todos os riscos possíveis e detectáveis em cada fase do projeto;
-- Executar as ações para mitigar os riscos que tenham um alto grau de exposição ao risco caso este ocorra na Lista de Riscos do Projeto;
-- Fazer uma revisão da lista dos riscos periodicamente, com o propósito de averiguar uma possível incidência de um risco e ver se há outros riscos ainda não relatados;
-- Em caso de confirmação de um risco previsto, agir no sentido de contingenciá-lo conforme programado;
-- Registrar os riscos no Painel de Controle do Projeto e no Plano do Projeto (Riscos iniciais);]
-- Os riscos do projeto devem ser acompanhados e atualizados a cada ciclo.
+- Atividades de redução de risco. Verificar se a equipe tem facilidade com a tecnologia/ferramenta adotada, caso contrário pensar em como ensinar ao membro da equipe a nova tecnologia. Além disso, adotar meios de comunicação fácil e direto para todos, comunicando sempre as dificuldades para a equipe estar por dentro e procurar um meio de contornar a situação.
+- Revisar os riscos a cada sprint
+- Manter registrado os riscos para que toda a equipe tenha conhecimento e pense em formas de resolvê-lo o mais rápido possível.
 
 ### 2.5 Critérios de Replanejamento
 
