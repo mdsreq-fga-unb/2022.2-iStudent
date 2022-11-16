@@ -8,8 +8,8 @@
 
 | Data       | Versão | Descrição            | Autor                                                                  |
 | ---------- | ------ | -------------------- | ---------------------------------------------------------------------- |
-| 01/11/2022 |  0.1   | Criação do Documento. | [Bruno Cardoso](https://github.com/BrunoHenrique00), [Cleber Brant](https://github.com/Cleberbrant), [Lucas Caldas](https://github.com/lucascaldasb), [Pedro Siqueira](https://github.com/PedroSiq), [Wesley Lira](https://github.com/Weslin-0101) |
-| 14/11/2022 |  0.2   | Adição e Edição dos campos 1 e 2 do Documento. |[Bruno Cardoso](https://github.com/BrunoHenrique00), [Cleber Brant](https://github.com/Cleberbrant), [Lucas Caldas](https://github.com/lucascaldasb), [Pedro Siqueira](https://github.com/PedroSiq), [Wesley Lira](https://github.com/Weslin-0101)|
+| 01/11/2022 |  0.1   | Criação do Documento. | Bruno Cardoso, Cleber Brant, Lucas Caldas, Pedro Siqueira, Wesley Lira |
+| 14/11/2022 |  0.2   | Adição e Edição dos campos Visão Geral do Produto e Visão Geral do Projeto |Cleber Brant, Wesley Lira|
 
 ## 1. Visão Geral do Produto
 
@@ -48,9 +48,10 @@
 
 | Papel                 | Atribuições                                                                                                  | Responsável | Participantes |
 | --------------------- | ------------------------------------------------------------------------------------------------------------ | ----------- | ------------- |
-| Product Owner         | É a voz do cliente no projeto, é ele quem vai garantir que os esforços da equipe gerem valor ao negócio.      | ...         | ...           |
-| Scrum Master          | Irá auxiliar o time para que estes sigam as melhores práticas do Scrum, tornando o trabalho mais  relevante e ágil. | ...         | ...           |
-| Desenvolvedores       | São os responsáveis pela entrega do produto e pelo trabalho operacional(analisar, projetar, desenvolver, testar, documentar). | ...         | ...           |
+| Product Owner         | É a voz do cliente no projeto, é ele quem vai garantir que os esforços da equipe gerem valor ao negócio.      | Cleber Brant| Bruno Cardoso, Lucas Caldas, Pedro Siqueira, Wesley Lira|
+| Scrum Master          | Irá auxiliar o time para que estes sigam as melhores práticas do Scrum, tornando o trabalho mais  relevante e ágil. | Wesley Lira| Bruno Cardoso, Cleber Brant, Lucas Caldas, Pedro Siqueira|
+| Desenvolvedores       | São os responsáveis pela entrega do produto e pelo trabalho operacional(analisar, projetar, desenvolver, testar, documentar). | Wesley Lira | Bruno Cardoso, Cleber Brant, Lucas Caldas, Pedro Siqueira, Wesley Lira |
+| Design | Responsável por manter a fidelidade das telas que o cliente deseja.      | Lucas Caldas | Bruno Cardoso, Cleber Brant, Pedro Siqueira, Wesley Lira|
 
 ### 2.2 Planejamento das Fases e/ou Iterações do Projeto
 
