@@ -10,6 +10,11 @@
 | ---------- | ------ | -------------------------------------------------------------------------- | ---------------------------------------------------------------------- |
 | 01/11/2022 | 0.1    | Criação do Documento.                                                      | Bruno Cardoso, Cleber Brant, Lucas Caldas, Pedro Siqueira, Wesley Lira |
 | 14/11/2022 | 0.2    | Adição e Edição dos campos Visão Geral do Produto e Visão Geral do Projeto | Cleber Brant, Wesley Lira                                              |
+| 16/11/2022 | 0.3    | Implementação do campo de planejamento de fases e detalhamento de atividades | Pedro Siqueira | 
+| 16/11/2022 | 0.4    | Adição das lições aprendidas na unidade 1 | Bruno Cardoso | 
+| 16/11/2022 | 0.5    | Atualização da organização do projeto  | Lucas Caldas | 
+
+
 
 ## 1. Visão Geral do Produto
 
@@ -27,7 +32,7 @@
 | O iStudent    | É uma plataforma de cursos/aula onlines e presenciais, onde o professor tem a disponibilidade de agendar suas aulas, disponibilizar material e conversar com seus alunos/turma simultâneamente via chat na plataforma, e o aluno tem a facilidade de encontrar o professor ideal para o conteudo que precisa em sua região |
 | Que           | Contêm diversos tipos de conteúdo e abordagens de professores                                                                                                                                                                                                                                                              |
 | Ao contrário  | Das plataformas de cursos online já existentes                                                                                                                                                                                                                                                                             |
-| Nosso produto | Permite a condução de aulas síncronas e presenciais, contato simultâneo com seus alunos por meio de um chat na plataforma e preço acessível para os usuários.                                                                                                                                                              |
+| Nosso produto | Permite a condução de aulas síncronas e presenciais, contato simultâneo com seus alunos por meio de um chat na plataforma e facilita a organização dos professores                                                                                                                                                              |
 
 ### 1.2 Objetivo do Produto
 
@@ -39,8 +44,8 @@
 
 | Frontend   | Backend    | Banco de Dados |
 | ---------- | ---------- | -------------- |
-| ReactJs    | Nodejs     | PostgreeSql    |
-| Typescript | Typescript |                |
+| ReactJs    | NodeJs     | PostgreSQL     |
+| TypeScript | TypeScript |                |
 
 ## 2 Visão Geral do Projeto
 
