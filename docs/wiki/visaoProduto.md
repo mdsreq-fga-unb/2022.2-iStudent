@@ -122,25 +122,7 @@ Os critérios de replanejamento do projeto devem ser acompanhados e atualizados 
 ### 4.1 Unidade 1
 
 <p>
-    [Liste as lições aprendidas na retrospectiva, com ênfase especial nas ações a serem tomadas para melhorar, por exemplo: o ambiente de desenvolvimento, o processo ou a colaboração da equipe.]
-</p>
-
-### 4.2 Unidade 2
-
-<p>
-    [Liste as lições aprendidas na retrospectiva, com ênfase especial nas ações a serem tomadas para melhorar, por exemplo: o ambiente de desenvolvimento, o processo ou a colaboração da equipe.]
-</p>
-
-### 4.3 Unidade 3
-
-<p>
-    [Liste as lições aprendidas na retrospectiva, com ênfase especial nas ações a serem tomadas para melhorar, por exemplo: o ambiente de desenvolvimento, o processo ou a colaboração da equipe.]
-</p>
-
-### 4.4 Unidade 4
-
-<p>
-    [Liste as lições aprendidas na retrospectiva, com ênfase especial nas ações a serem tomadas para melhorar, por exemplo: o ambiente de desenvolvimento, o processo ou a colaboração da equipe.]
+    Dentra as lições aprendidas, é importante citar a tomada de decisão para metodologias a se seguir durante o desenvolvimento do projeto, bem como o entendimento e organização geral do produto. Juntamente com isso, o aprendizado por parte de cada integrante da equipe e escolhas de tecnologia tendo em vista as funcionalidades do software em desenvolvimento. O entendimento da organização da equipe e distribuição de tarefas individuais foram fundamentais para o andamento do produto durante essa unidade 1.  
 </p>
 
 ### 5 Referências Bibliográficas
