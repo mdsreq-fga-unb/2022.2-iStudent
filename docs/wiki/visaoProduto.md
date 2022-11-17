@@ -55,95 +55,23 @@
 
 ### 2.2 Planejamento das Fases e/ou Iterações do Projeto
 
-| Sprint    | Produto                                                  | Data início | Data Fim   |
+| Semana    | Atividade                                                | Data início | Data Fim   |
 | --------- | -------------------------------------------------------- | ----------- | ---------- |
-| Sprint 1  | Definição do Produto                                     | 22/06/2022  | 29/06/2022 |
-| Unidade 1 | Entrega da Unidade 1                                     | 30/06/2022  | 30/06/2022 |
-| Sprint 2  | Levantamento de Requisitos com o cliente                 | 01/07/2022  | 08/07/2022 |
-| Sprint 3  | Canvas MVP e Planejamento do Projeto                     | 09/07/2022  | 15/07/2022 |
-| Sprint 4  | Confecção Backlog e Processo de Engenharia de Requisitos | 16/07/2022  | 20/07/2022 |
-| ...       | ...                                                      | ...         | ...        |
+| Semana 0  | Definição da Equipe                                      | 25/10/2022  | 28/10/2022 |
+| Semana 1  | Definição do Produto                                     | 01/11/2022  | 08/11/2022 |
+| Semana 2  | Desenvolvimento de atividades da Unidade 1               | 14/11/2022  | 17/11/2022 |
+| Unidade 1 | Entrega de atividades da Unidade 1                       | 17/11/2022  | 17/11/2022 |
+| Unidade 3 | Implementação e entrega do MVP1                          | 08/12/2022  | 10/01/2023 |
+| Unidade 4 | Implementação e entrega do MVP2                          | 12/01/2023  | 24/01/2023 |
+## 3 Lições Aprendidas
 
-### 2.3 Matriz de Comunicação
-
-| Descrição                                                             | Área/Envolvidos                        | Periodicidade | Produtos Gerados                                  |
-| --------------------------------------------------------------------- | -------------------------------------- | ------------- | ------------------------------------------------- |
-| Acompanhamento das Atividades em Andamento (Sprint Review)            | Equipe do Projeto e Cliente            | Semanal       | Ata de reunião e Relatório de situação do projeto |
-| Comunicar a situação do projeto                                       | Equipe do Projeto, Cliente e Professor | Semanal       | Ata de reunião e Relatório de situação do projeto |
-| Acompanhamento dos Riscos, Compromissos, Ações Pendentes, Indicadores | Equipe do Projeto e Cliente            | Quinzenal     | Ata de reunião e Relatório de situação do projeto |
-| Comunicação sobre a situação das atividades sendo executadas          | Equipe do Projeto                      | Diária        | Ata via Telegram ou Discord                       |
-
-### 2.4 Gerenciamento de Riscos
-
-<p>
-    O gerenciamento de riscos levantado pela a equipe do nosso projeto optou avaliar o projeto como um todo os requisitos funcionais e não funcionais, tecnologias a serem utilizadas, método de desenvolvimento adotado, impedimentos levantandos pela equipe e a comunicação com o cliente. Devido a esses pontos chegou a um consenso para que não haja complicações ou impedimentos durante o projeto, que deverá ser realizado as seguintes tarefas:
-</p>
-
-- Atividades de redução de risco. Verificar se a equipe tem facilidade com a tecnologia/ferramenta adotada, caso contrário pensar em como ensinar ao membro da equipe a nova tecnologia. Além disso, adotar meios de comunicação fácil e direto para todos, comunicando sempre as dificuldades para a equipe estar por dentro e procurar um meio de contornar a situação.
-- Revisar os riscos a cada sprint
-- Manter registrado os riscos para que toda a equipe tenha conhecimento e pense em formas de resolvê-lo o mais rápido possível.
-
-### 2.5 Critérios de Replanejamento
-
-<p>
-    [Descrever os critérios de replanejamento que serão utilizados, caso seja necessário realizá-lo no projeto.]
-</p>
-
-Os critérios de replanejamento do projeto devem ser acompanhados e atualizados a cada ciclo. E, aplicados, conforme necessidade
-
-## 3 Processo de Desenvolvimento de Software
-
-### 3.1 Atividade 1
-
-| Atividade | Método | Ferramenta | Entrega |
-| --------- | ------ | ---------- | ------- |
-| ...       | ...    | ...        | ...     |
-
-### 3.2 Atividade 2
-
-| Atividade | Método | Ferramenta | Entrega |
-| --------- | ------ | ---------- | ------- |
-| ...       | ...    | ...        | ...     |
-
-### 3.3 Atividade 3
-
-| Atividade | Método | Ferramenta | Entrega |
-| --------- | ------ | ---------- | ------- |
-| ...       | ...    | ...        | ...     |
-
-### 3.4 Atividade 'N'
-
-| Atividade | Método | Ferramenta | Entrega |
-| --------- | ------ | ---------- | ------- |
-| ...       | ...    | ...        | ...     |
-
-## 4 Lições Aprendidas
-
-### 4.1 Unidade 1
+### 3.1 Unidade 1
 
 <p>
     [Liste as lições aprendidas na retrospectiva, com ênfase especial nas ações a serem tomadas para melhorar, por exemplo: o ambiente de desenvolvimento, o processo ou a colaboração da equipe.]
 </p>
 
-### 4.2 Unidade 2
-
-<p>
-    [Liste as lições aprendidas na retrospectiva, com ênfase especial nas ações a serem tomadas para melhorar, por exemplo: o ambiente de desenvolvimento, o processo ou a colaboração da equipe.]
-</p>
-
-### 4.3 Unidade 3
-
-<p>
-    [Liste as lições aprendidas na retrospectiva, com ênfase especial nas ações a serem tomadas para melhorar, por exemplo: o ambiente de desenvolvimento, o processo ou a colaboração da equipe.]
-</p>
-
-### 4.4 Unidade 4
-
-<p>
-    [Liste as lições aprendidas na retrospectiva, com ênfase especial nas ações a serem tomadas para melhorar, por exemplo: o ambiente de desenvolvimento, o processo ou a colaboração da equipe.]
-</p>
-
-### 5 Referências Bibliográficas
+### 4 Referências Bibliográficas
 
 <p>
     [Listar as referências utilizadas neste documento]
