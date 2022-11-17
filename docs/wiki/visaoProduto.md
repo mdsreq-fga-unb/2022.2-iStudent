@@ -65,6 +65,7 @@
 | Semana 0  | Definição da Equipe                        | 25/10/2022  | 28/10/2022 |
 | Semana 1  | Definição do Produto                       | 01/11/2022  | 08/11/2022 |
 | Semana 2  | Desenvolvimento de atividades da Unidade 1 | 14/11/2022  | 17/11/2022 |
+| Semana 3  | Criação do backlog do produto | 14/11/2022  | 17/11/2022 |
 | Unidade 1 | Entrega de atividades da Unidade 1         | 17/11/2022  | 17/11/2022 |
 | Unidade 3 | Implementação e entrega do MVP1            | 08/12/2022  | 10/01/2023 |
 | Unidade 4 | Implementação e entrega do MVP2            | 12/01/2023  | 24/01/2023 |
@@ -98,15 +99,24 @@ O gerenciamento de riscos levantado pela a equipe do nosso projeto optou avaliar
 - Caso o cliente um método melhor para o desenvolvimento da nossa solução.
 - Mudanças enormes de requisitos.
 
-## 3 Lições Aprendidas
+## 3 Processo de Desenvolvimento de Software
 
-### 3.1 Unidade 1
+Para chegar a uma método de desenvolvimento de software viável para o projeto, foram analisados os seguintes tópicos: 
+- Escopo inicial do projeto e do produto
+- Conhecimento técnico dos membros
+- Presença do usuário no processo de desenvolvimento
+- Entregas de funcionalidades parcialmente
+
+Devido aos pontos levantados, além de outros mais, a equipe decidiu que a metodologia utilizada será o Extreme Programming(XP), com o auxílio de uma metodologia de gerenciamento de projetos e prazos, o Scrum. Além dos ritos do Scrum e do XP, também utilizaremos as User Stories (Histórias de usuário) para a gestão dos requisitos juntamente com o usuário. 
+## 4 Lições Aprendidas
+
+### 4.1 Unidade 1
 
 <p>
     Dentre as lições aprendidas, é importante citar a tomada de decisão para metodologias a se seguir durante o desenvolvimento do projeto, bem como o entendimento e organização geral do produto. Juntamente com isso, o aprendizado por parte de cada integrante da equipe e escolhas de tecnologia tendo em vista as funcionalidades do software em desenvolvimento. O entendimento da organização da equipe e distribuição de tarefas individuais foram fundamentais para o andamento do produto durante essa unidade 1.  
 </p>
 
-### 4 Referências Bibliográficas
+## 5 Referências Bibliográficas
 
 - Engenharia de Software, Marco Tulio Valente.
 - Engenharia de Software, 9° Edição, Ian Sommerville;
