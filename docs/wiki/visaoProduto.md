@@ -16,7 +16,7 @@
 ### 1.1 Declaração de Posição do Produto
 
 <p style="text-indent: 20px; text-align: justify">
-    Uma pesquisa do Datafolha indicou que 87% dos alunos que estudam de maneira presencial com acompanhamento de professor se sentiram mais animados em relação ao âmbito remoto. O iStudent pretende preencher uma posição nebulosa no mercado, ocupada apenas por cursos online, os professores autônomos que não tem capacidade técnica para criar tal conteúdo são escanteados no mercado. O iStudent é uma plataforma de agendamento de aulas que visa suprir tal necessidade, ao dispor de professores com diversos conhecimentos, sobre conteúdos diferentes. Seu diferencial se dá por ocupar um espaço que está vazio, visto que tais professores divulgam o seu trabalho por mídias sociais e também por facilitar a comunicação entre as partes necessitadas. Seus usuários-alvo são alunos em busca de conhecimento, seja ele complementar ou fundamental e professores em busca de facilitar o caminho para agendar suas aulas e sua organização. Ele deve ser utilizado pois integra diversas áreas de conhecimento no mesmo âmbito, auxilia a organização tanto dos professores quanto dos alunos e traz aulas presenciais, que tendem a manter o estudante mais engajado.
+     O iStudent é uma plataforma de cursos para professores autônomos que visa facilitar o trabalho para o agendamento de aulas, disponibilização do material de curso e a comunicação entre Aluno(a) e Professor(a). O diferencial do produto é por conta de ocupar um espaço aonde não há plataformas específicas que possuem essa funcionalidade focada nesses dois polos, por conta disso o iStudent possui a capacidade de facilitar tanto a vida para o professor quanto para o aluno e agregar para ambos para a sua vida acadêmica e profissional.
 
 </p>
 
@@ -27,20 +27,20 @@
 | O iStudent    | É uma plataforma de cursos/aula onlines e presenciais, onde o professor tem a disponibilidade de agendar suas aulas, disponibilizar material e conversar com seus alunos/turma simultâneamente via chat na plataforma, e o aluno tem a facilidade de encontrar o professor ideal para o conteudo que precisa em sua região |
 | Que           | Contêm diversos tipos de conteúdo e abordagens de professores                                                                                                                                                                                                                                                              |
 | Ao contrário  | Das plataformas de cursos online já existentes                                                                                                                                                                                                                                                                             |
-| Nosso produto | Permite a condução de aulas síncronas e presenciais, contato simultâneo com seus alunos por meio de um chat na plataforma.                                                                                                                                                                                                 |
+| Nosso produto | Permite a condução de aulas síncronas e presenciais, contato simultâneo com seus alunos por meio de um chat na plataforma e preço acessível para os usuários.                                                                                                                                                              |
 
 ### 1.2 Objetivo do Produto
 
 <p style="text-indent: 20px; text-align: justify">
-    O iStudent tem como objetivo facilitar o caminho para o agendamento de aulas entre alunos e professores, de forma que o professor demonstre, diária ou semanalmente, a sua disponibilidade por meio da plataforma. A partir disso, o aluno terá um ambiente integrador com professores que têm abordagens e conteúdos diferentes, além disso, os seus alunos poderão se matricular, visualizar o conteúdo do curso, ter um chat para haver qualquer comunicação com o professor(a) e agendar as aulas com o mesmo.
+    O iStudent tem como objetivo facilitar o caminho para o agendamento de aulas entre alunos e professores, de forma que o professor demonstre, diária ou semanalmente, a sua disponibilidade por meio da plataforma. A partir disso, o aluno terá um ambiente integrador com professores que têm abordagens e conteúdos diferentes, além de que os seus alunos poderão se matricular, visualizar o conteúdo do curso, ter um chat para haver qualquer comunicação com o professor(a) e agendar as aulas com o mesmo.
 </p>
 
 ### 1.3 Tecnologias a Serem Utilizadas
 
-- Typescript
-- NodeJs
-- ReactJs
-- PostgreSQL
+| Frontend   | Backend    | Banco de Dados |
+| ---------- | ---------- | -------------- |
+| ReactJs    | Nodejs     | PostgreeSql    |
+| Typescript | Typescript |                |
 
 ## 2 Visão Geral do Projeto
 
