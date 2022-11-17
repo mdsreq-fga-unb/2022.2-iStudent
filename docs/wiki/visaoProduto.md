@@ -51,18 +51,19 @@
 | Product Owner   | É a voz do cliente no projeto, é ele quem vai garantir que os esforços da equipe gerem valor ao negócio.                      | Cleber Brant  | Bruno Cardoso, Lucas Caldas, Pedro Siqueira, Wesley Lira             |
 | Scrum Master    | Irá auxiliar o time para que estes sigam as melhores práticas do Scrum, tornando o trabalho mais relevante e ágil.            | Wesley Lira   | Bruno Cardoso, Cleber Brant, Lucas Caldas, Pedro Siqueira            |
 | Desenvolvedores | São os responsáveis pela entrega do produto e pelo trabalho operacional(analisar, projetar, desenvolver, testar, documentar). | Bruno Cardoso | Wesley Lira, Cleber Brant, Lucas Caldas, Pedro Siqueira, Wesley Lira |
+| Analista de Qualidade | Garantir a qualidade do produto, garantir o cumprimento do conceito de pronto, realizar inspeções no código| Pedro Siqueira | Wesley Lira, Cleber Brant, Lucas Caldas, Bruno Cardoso, Wesley Lira |
 | Design          | Responsável por manter a fidelidade das telas que o cliente deseja.                                                           | Lucas Caldas  | Bruno Cardoso, Cleber Brant, Pedro Siqueira, Wesley Lira             |
 
 ### 2.2 Planejamento das Fases e/ou Iterações do Projeto
 
-| Sprint    | Produto                                                  | Data início | Data Fim   |
+| Semana    | Atividade                                                | Data início | Data Fim   |
 | --------- | -------------------------------------------------------- | ----------- | ---------- |
-| Sprint 1  | Definição do Produto                                     | 22/06/2022  | 29/06/2022 |
-| Unidade 1 | Entrega da Unidade 1                                     | 30/06/2022  | 30/06/2022 |
-| Sprint 2  | Levantamento de Requisitos com o cliente                 | 01/07/2022  | 08/07/2022 |
-| Sprint 3  | Canvas MVP e Planejamento do Projeto                     | 09/07/2022  | 15/07/2022 |
-| Sprint 4  | Confecção Backlog e Processo de Engenharia de Requisitos | 16/07/2022  | 20/07/2022 |
-| ...       | ...                                                      | ...         | ...        |
+| Semana 0  | Definição da Equipe                                      | 25/10/2022  | 28/10/2022 |
+| Semana 1  | Definição do Produto                                     | 01/11/2022  | 08/11/2022 |
+| Semana 2  | Desenvolvimento de atividades da Unidade 1               | 14/11/2022  | 17/11/2022 |
+| Unidade 1 | Entrega de atividades da Unidade 1                       | 17/11/2022  | 17/11/2022 |
+| Unidade 3 | Implementação e entrega do MVP1                          | 08/12/2022  | 10/01/2023 |
+| Unidade 4 | Implementação e entrega do MVP2                          | 12/01/2023  | 24/01/2023 |
 ## 3 Lições Aprendidas
 
 ### 3.1 Unidade 1
