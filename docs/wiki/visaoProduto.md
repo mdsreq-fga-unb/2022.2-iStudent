@@ -80,9 +80,7 @@
 
 ### 2.4 Gerenciamento de Risco
 
-<p>
-    O gerenciamento de riscos levantado pela a equipe do nosso projeto optou avaliar o projeto como um todo os requisitos funcionais e não funcionais, tecnologias a serem utilizadas, método de desenvolvimento adotado, impedimentos levantandos pela equipe e a comunicação com o cliente. Devido a esses pontos chegou a um consenso para que não haja complicações ou impedimentos durante o projeto, que deverá ser realizado as seguintes tarefas:
-</p>
+O gerenciamento de riscos levantado pela a equipe do nosso projeto optou avaliar o projeto como um todo os requisitos funcionais e não funcionais, tecnologias a serem utilizadas, método de desenvolvimento adotado, impedimentos levantandos pela equipe e a comunicação com o cliente. Devido a esses pontos chegou a um consenso para que não haja complicações ou impedimentos durante o projeto, que deverá ser realizado as seguintes tarefas
 
 - Atividades de redução de risco. Verificar se a equipe tem facilidade com a tecnologia/ferramenta adotada, caso contrário pensar em como ensinar ao membro da equipe a nova tecnologia. Além disso, adotar meios de comunicação fácil e direto para todos, comunicando sempre as dificuldades para a equipe estar por dentro e procurar um meio de contornar a situação.
 - Revisar os riscos a cada sprint
