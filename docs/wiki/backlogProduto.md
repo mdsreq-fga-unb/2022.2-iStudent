@@ -1,8 +1,9 @@
 # Histórico de Revisão
 
-| Data       | Versão | Descrição                            | Autor       |
-| ---------- | ------ | ------------------------------------ | ----------- |
-| 04/12/2022 | 1.0    | Adicionar primeira versão do Backlog | Wesley Lira |
+| Data       | Versão | Descrição                                   | Autor       |
+| ---------- | ------ | ------------------------------------------- | ----------- |
+| 04/12/2022 | 1.0    | Adicionar primeira versão do Backlog        | Wesley Lira |
+| 05/12/2022 | 1.1    | Adicionar os User Story das funcionalidades | Wesley Lira |
 
 # Backlog do Produto
 
@@ -11,32 +12,32 @@ O escopo do projeto foi delimitado de acordo com a necessidade de criar uma plat
 
 ## Épico 1: Área Ambiente
 
-| Feature                        | User Story | Prioridade |
-| ------------------------------ | ---------- | ---------- |
-| [F01] - Cadastro de Usuário    |            | Alta       |
-| [F02] - Visualização de Perfil |            | Média      |
-| [FO3] - Edição de Perfil       |            | Alta       |
-| [F04] - Pareamento de Usuários |            | Alta       |
-| [F05] - Autenticação           |            | Média      |
-| [F06] - Comunicação via Chat   |            | Baixa      |
+| Feature                        | User Story                                                                                                                                           | Prioridade |
+| ------------------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------- | ---------- |
+| [F01] - Cadastro de Usuário    | Eu, como usuário, gostaria de poder me cadastrar dentro da plataforma.                                                                               | Alta       |
+| [F02] - Visualização de Perfil | Eu, como usuário, gostaria de poder me cadastrar dentro da plataforma.                                                                               | Média      |
+| [FO3] - Edição de Perfil       | Eu, como usuário, gostaria de poder editar os dados cadastrados do meu perfil dentro da plataforma.                                                  | Alta       |
+| [F04] - Pareamento de Usuários | Eu, como usuário, gostaria de poder encontrar professores e cursos de acordo com as preferências, que escolhi no meu cadastro, dentro da plataforma. | Alta       |
+| [F05] - Autenticação           | Eu, como usuário, gostaria de me autenticar dentro da plataforma.                                                                                    | Média      |
+| [F06] - Comunicação via Chat   | Eu, como usuário, gostaria de poder me comunicar por um chat com outros alunos e/ou professores cadastrados na plataforma.                           | Baixa      |
 
 ## Épico 2: Área do Professor
 
-| Feature                              | User Story | Prioridade |
-| ------------------------------------ | ---------- | ---------- |
-| [F07] - Gerenciamento de Turma       |            | Alta       |
-| [F08] - Cadastro de Curso            |            | Alta       |
-| [F09] - Edição de Dados (Curso)      |            | Médio      |
-| [F10] - Gerenciamento de Agendamento |            | Alta       |
+| Feature                              | User Story                                                                                                                                                                    | Prioridade |
+| ------------------------------------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------- |
+| [F07] - Gerenciamento de Turma       | Eu, como usuário, gostaria de poder me comunicar por um chat com outros alunos e/ou professores cadastrados na plataforma.                                                    | Alta       |
+| [F08] - Cadastro de Curso            | Eu, como usuário, gostaria de poder me comunicar por um chat com outros alunos e/ou professores cadastrados na plataforma.                                                    | Alta       |
+| [F09] - Edição de Dados (Curso)      | Eu, como Professor, gostaria de poder editar os dados cadastrados do meu curso dentro da plataforma.                                                                          | Médio      |
+| [F10] - Gerenciamento de Agendamento | Eu, como Professor, gostaria de poder gerenciar os pedidos, dos alunos matriculados em meus cursos, de agendamento de aulas particulares ou presenciais dentro da plataforma. | Alta       |
 
 ## Épico 3: Área do Aluno
 
-| Feature                                  | User Story | Prioridade |
-| ---------------------------------------- | ---------- | ---------- |
-| [F11] - Matricular no Curso              |            | Alta       |
-| [F12] - Visualização de Curso            |            | Médio      |
-| [F13] - Gerenciamento de Aprendizagem    |            | Baixo      |
-| [F14] - Requisição de Aulas Particulares |            | Alta       |
+| Feature                                  | User Story                                                                                                                                                                                               | Prioridade |
+| ---------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------- |
+| [F11] - Matricular no Curso              | Eu, como Aluno, gostaria de poder me matricular nos cursos dentro da plataforma.                                                                                                                         | Alta       |
+| [F12] - Visualização de Curso            | Eu, como Aluno, gostaria de poder visualizar o que o curso propõe e, após matriculado, visualizar as tarefas e as aulas dentro da plataforma.                                                            | Médio      |
+| [F13] - Gerenciamento de Aprendizagem    | Eu, como Aluno, gostaria de poder acessar o meu perfil e gerenciar a minha aprendizagem dos cursos que me matriculei, podendo ver a porcentagem de andamento do curso, notas, certificados e conquistas. | Baixo      |
+| [F14] - Requisição de Aulas Particulares | Eu, como Aluno, gostaria de poder requisitar aulas particulares, tanto quanto remoto ou presencial, com o professor do curso em que estou matriculado.                                                   | Alta       |
 
 ## Requisitos Não Funcionais
 
