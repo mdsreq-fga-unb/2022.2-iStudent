@@ -14,6 +14,7 @@
 | 16/11/2022 | 0.4    | Adição das lições aprendidas na unidade 1                                                                      | Bruno Cardoso                                                          |
 | 16/11/2022 | 0.5    | Atualização da organização do projeto                                                                          | Lucas Caldas                                                           |
 | 17/11/2022 | 0.6    | Adição Matriz de Comunicação, Gerenciamento de Risco, Critérios de Replanejamento e Referências Bibliográficas | Wesley Lira                                                            |
+| 06/12/2022 | 0.7    | Adicionado o planejamento de desenvolvimento                                                                   | Wesley                                                                 |
 
 ## 1. Visão Geral do Produto
 
@@ -116,6 +117,7 @@ Devido aos pontos levantados, além de outros mais, a equipe decidiu que a metod
 
 | Atividade                 | Método                  | Ferramenta       | Entrega                                                                                                                              |
 | ------------------------- | ----------------------- | ---------------- | ------------------------------------------------------------------------------------------------------------------------------------ |
+| Plano de Planejamento     | Conversa                | Discord          | Plano que vai conter as expectativas de entrega e abordar a duração das sprints, núemro de releases e as data das releases           |
 | Elicitação dos requisitos | User Story              | Discord e Zenhub | Requisitos levantados e priorizados                                                                                                  |
 | Priorizando Backlog       | Conversa                | Discord e Zenhub | Listar os requisitos                                                                                                                 |
 | Validação e Verificação   | Conversar com o Cliente | Discord          | Verificar e Validar se os requisitos levantados estão corretos com o objetivo do Cliente e se está coeso com a construção do Produto |
