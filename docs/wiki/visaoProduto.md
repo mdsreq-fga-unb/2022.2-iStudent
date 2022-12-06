@@ -65,7 +65,7 @@
 | Semana 0  | Definição da Equipe                        | 25/10/2022  | 28/10/2022 |
 | Semana 1  | Definição do Produto                       | 01/11/2022  | 08/11/2022 |
 | Semana 2  | Desenvolvimento de atividades da Unidade 1 | 14/11/2022  | 17/11/2022 |
-| Semana 3  | Criação do backlog do produto | 14/11/2022  | 17/11/2022 |
+| Semana 3  | Criação do backlog do produto              | 14/11/2022  | 17/11/2022 |
 | Unidade 1 | Entrega de atividades da Unidade 1         | 17/11/2022  | 17/11/2022 |
 | Unidade 3 | Implementação e entrega do MVP1            | 08/12/2022  | 10/01/2023 |
 | Unidade 4 | Implementação e entrega do MVP2            | 12/01/2023  | 24/01/2023 |
@@ -101,13 +101,35 @@ O gerenciamento de riscos levantado pela a equipe do nosso projeto optou avaliar
 
 ## 3 Processo de Desenvolvimento de Software
 
-Para chegar a uma método de desenvolvimento de software viável para o projeto, foram analisados os seguintes tópicos: 
+Para chegar a uma método de desenvolvimento de software viável para o projeto, foram analisados os seguintes tópicos:
+
 - Escopo inicial do projeto e do produto
 - Conhecimento técnico dos membros
 - Presença do usuário no processo de desenvolvimento
 - Entregas de funcionalidades parcialmente
 
-Devido aos pontos levantados, além de outros mais, a equipe decidiu que a metodologia utilizada será o Extreme Programming(XP), com o auxílio de uma metodologia de gerenciamento de projetos e prazos, o Scrum. Além dos ritos do Scrum e do XP, também utilizaremos as User Stories (Histórias de usuário) para a gestão dos requisitos juntamente com o usuário. 
+Devido aos pontos levantados, além de outros mais, a equipe decidiu que a metodologia utilizada será o Extreme Programming(XP), com o auxílio de uma metodologia de gerenciamento de projetos e prazos, o Scrum. Além dos ritos do Scrum e do XP, também utilizaremos as User Stories (Histórias de usuário) para a gestão dos requisitos juntamente com o usuário. A equipe vai adotar as práticas e valores do XP e as atividades de gestão do time com o Scrum.
+
+### 3.1 Atividades
+
+#### Planning
+
+| Atividade                 | Método                  | Ferramenta       | Entrega                                                                                                                              |
+| ------------------------- | ----------------------- | ---------------- | ------------------------------------------------------------------------------------------------------------------------------------ |
+| Elicitação dos requisitos | User Story              | Discord e Zenhub | Requisitos levantados e priorizados                                                                                                  |
+| Priorizando Backlog       | ----------              | Discord e Zenhub | Listar os requisitos                                                                                                                 |
+| Validação e Verificação   | Conversar com o Cliente | Discord          | Verificar e Validar se os requisitos levantados estão corretos com o objetivo do Cliente e se está coeso com a construção do Produto |
+
+#### Desenvolvimento
+
+| Atividade | Método | Ferramenta | Entrega |
+| --------- | ------ | ---------- | ------- |
+
+#### Revisão
+
+| Atividade | Método | Ferramenta | Entrega |
+| --------- | ------ | ---------- | ------- |
+
 ## 4 Lições Aprendidas
 
 ### 4.1 Unidade 1
