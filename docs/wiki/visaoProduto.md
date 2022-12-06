@@ -117,18 +117,22 @@ Devido aos pontos levantados, além de outros mais, a equipe decidiu que a metod
 | Atividade                 | Método                  | Ferramenta       | Entrega                                                                                                                              |
 | ------------------------- | ----------------------- | ---------------- | ------------------------------------------------------------------------------------------------------------------------------------ |
 | Elicitação dos requisitos | User Story              | Discord e Zenhub | Requisitos levantados e priorizados                                                                                                  |
-| Priorizando Backlog       | ----------              | Discord e Zenhub | Listar os requisitos                                                                                                                 |
+| Priorizando Backlog       | Conversa                | Discord e Zenhub | Listar os requisitos                                                                                                                 |
 | Validação e Verificação   | Conversar com o Cliente | Discord          | Verificar e Validar se os requisitos levantados estão corretos com o objetivo do Cliente e se está coeso com a construção do Produto |
 
 #### Desenvolvimento
 
-| Atividade | Método | Ferramenta | Entrega |
-| --------- | ------ | ---------- | ------- |
+| Atividade               | Método           | Ferramenta                           | Entrega                                                                  |
+| ----------------------- | ---------------- | ------------------------------------ | ------------------------------------------------------------------------ |
+| Interface do usuário    | Protótipo        | Figma                                | Protótipo da interface do produto                                        |
+| Implementação dos MVP'S | Pair Programming | VsCode, NodeJs, ReactJS e TypeScript | Implementar e incrementar o produto de acordo com o objetivo de cada MVP |
+| Codificação de Testes   | Testes unitários | Jest                                 | Realizar testes unitários para manter o código limpo                     |
 
 #### Revisão
 
-| Atividade | Método | Ferramenta | Entrega |
-| --------- | ------ | ---------- | ------- |
+| Atividade     | Método       | Ferramenta       | Entrega                                                 |
+| ------------- | ------------ | ---------------- | ------------------------------------------------------- |
+| Sprint Review | Apresentação | Discord e Zenhub | Mostrar o que foi feito durante a Sprint para o cliente |
 
 ## 4 Lições Aprendidas
 
