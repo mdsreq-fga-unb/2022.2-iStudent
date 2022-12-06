@@ -18,7 +18,7 @@
 
 # Documentação
 
-[Clique Aqui](https://mdsreq-fga-unb.github.io/2022.2-iStudent/) para acessar o link da documentação
+[Clique Aqui](https://mdsreq-fga-unb.github.io/2022.2-iStudent/#/./wiki/visaoProduto) para acessar o link da documentação
 do nosso projeto.
 
 # Equipe
