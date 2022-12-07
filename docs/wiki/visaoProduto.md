@@ -142,6 +142,12 @@ Devido aos pontos levantados, além de outros mais, a equipe decidiu que a metod
     Dentre as lições aprendidas, é importante citar a tomada de decisão para metodologias a se seguir durante o desenvolvimento do projeto, bem como o entendimento e organização geral do produto. Juntamente com isso, o aprendizado por parte de cada integrante da equipe e escolhas de tecnologia tendo em vista as funcionalidades do software em desenvolvimento. O entendimento da organização da equipe e distribuição de tarefas individuais foram fundamentais para o andamento do produto durante essa unidade 1.  
 </p>
 
+### 4.2 Unidade 2
+
+<p>
+    Nesta unidade aprendemos muito mais sobre como o que é e como funciona a Engenharia de Requisitos, assim como são as atividades dentro da ER e como ocorre uma elicitação de requisitos juntos com outras atividades, por exemplo questionários, protótipos e os cenários de usuário. Além disso, entendemos como deixar o nosso escopo do backlog de acordo com o SAFe, trabalhando para a criação de Épicos, Features e User Story. Por fim, complementamos a unidade com uma grande aprendizagem de definir o backlog de nosso produto aprendendo a definir as features e os user story, para que no final possamos definir os MVP’S do produto que estamos implementando.
+</p>
+
 ## 5 Referências Bibliográficas
 
 - Engenharia de Software, Marco Tulio Valente.
