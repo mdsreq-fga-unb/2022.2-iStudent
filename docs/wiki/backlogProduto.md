@@ -56,13 +56,32 @@ O escopo do projeto foi delimitado de acordo com a necessidade de criar uma plat
 | F05US03 | Eu, como Professor, gostaria de poder visualizar o aluno que requisitou o pedido de agendamento dentro da plataforma. | Baixa       |
 
 ## Épico 3: Área do Aluno
+#### Feature 06: Acesso ao Curso
 
-| Feature                                  | User Story                                                                                                                                                                                               | Prioridade |
-| ---------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------- |
-| [F11] - Matricular no Curso              | Eu, como Aluno, gostaria de poder me matricular nos cursos dentro da plataforma.                                                                                                                         | Alta       |
-| [F12] - Visualização de Curso            | Eu, como Aluno, gostaria de poder visualizar o que o curso propõe e, após matriculado, visualizar as tarefas e as aulas dentro da plataforma.                                                            | Médio      |
-| [F13] - Gerenciamento de Aprendizagem    | Eu, como Aluno, gostaria de poder acessar o meu perfil e gerenciar a minha aprendizagem dos cursos que me matriculei, podendo ver a porcentagem de andamento do curso, notas, certificados e conquistas. | Baixo      |
-| [F14] - Requisição de Aulas Particulares | Eu, como Aluno, gostaria de poder requisitar aulas particulares, tanto quanto remoto ou presencial, com o professor do curso em que estou matriculado.                                                   | Alta       |
+| ID                        | User Story                                                                                                                                           | Prioridade |
+| ------------------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------- | ---------- |
+| F06US01  | Eu, como Aluno, gostaria de poder visualizar o que os cursos propõe dentro da plataforma. | Alta       |
+| F06US02 | Eu, como Aluno, gostaria de poder me matricular nos cursos dentro da plataforma. | Alta      |
+| F06US03 | Eu, como Aluno, gostaria de, após matriculado, visualizar o conteúdo do curso e os seus materiais de aprendizagem. | Alta       |
+| F06US04 | Eu, como Aluno, gostaria de poder me desmatricular do curso em que já estou matriculado. | Média       |
+
+#### Feature 07: Gerenciamento de Aprendizagem
+
+| ID                        | User Story                                                                                                                                           | Prioridade |
+| ------------------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------- | ---------- |
+| F07US01  | Eu, como Aluno, gostaria de poder acessar a aba de Aprendizagem dentro do meu perfil. | Baixa       |
+| F07US02 | Eu, como Aluno, gostaria de poder visualizar a porcentagem do andamento do curso em que estou matriculado. | Baixa      |
+| F07US03 | Eu, como Aluno, gostaria de poder visualizar as minhas conquistas ao decorrer do curso dentro da plataforma. | Baixa       |
+| F07US04 | Eu, como Aluno, gostaria de poder visualizar os meus certificados ganhos após a finalização dos cursos. | Baixa       |
+
+#### Feature 08: Requisição de Aulas Particulares
+
+| ID                        | User Story                                                                                                                                           | Prioridade |
+| ------------------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------- | ---------- |
+| F08US01  | Eu, como Aluno, gostaria de poder requisitar uma Aula Particular com o Professor do curso em que estou matriculado. | Alta       |
+| F08US02 | Eu, como Aluno, gostaria de poder especificar, dentro da requisição da aula, se a aula pode ser via Remoto ou Presencial. | Alta      |
+| F08US03 | Eu, como Aluno, gostaria de poder especificar o dia e horário da requisição da aula particular com professor. | Alta       |
+| F08US04 | Eu, como Aluno, gostaria de poder receber uma resposta do pedido de agendamento de aula por meio do Professor dentro da plataforma. | Média       |
 
 ## Requisitos Não Funcionais
 
