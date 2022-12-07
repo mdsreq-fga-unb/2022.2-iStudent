@@ -16,6 +16,7 @@
 | 17/11/2022 | 0.6    | Adição Matriz de Comunicação, Gerenciamento de Risco, Critérios de Replanejamento e Referências Bibliográficas | Wesley Lira                                                            |
 | 06/12/2022 | 0.7    | Adicionado o planejamento de desenvolvimento                                                                   | Wesley                                                                 |
 | 07/12/2022 | 0.8    | Mudança no planejamento de fases e iterações                                                                   | Wesley Lira                                                            |
+| 07/12/2022 | 0.9    | Adicionado o resumo da Unidade 2                                                                               | Wesley Lira                                                            |
 
 ## 1. Visão Geral do Produto
 
@@ -140,6 +141,12 @@ Devido aos pontos levantados, além de outros mais, a equipe decidiu que a metod
 
 <p>
     Dentre as lições aprendidas, é importante citar a tomada de decisão para metodologias a se seguir durante o desenvolvimento do projeto, bem como o entendimento e organização geral do produto. Juntamente com isso, o aprendizado por parte de cada integrante da equipe e escolhas de tecnologia tendo em vista as funcionalidades do software em desenvolvimento. O entendimento da organização da equipe e distribuição de tarefas individuais foram fundamentais para o andamento do produto durante essa unidade 1.  
+</p>
+
+### 4.2 Unidade 2
+
+<p>
+    Para essa unidade, foi de extrema importância o aprendizado sobre o que é e como funciona as atividades dentro da Engenharia de Requisitos, pois assim conseguimos nos localizar na hora de realizar a elicitação de requisitos e o refinamento do Backlog. Além disso, o ensinamento sobre a estrutura do SAFe ajudou bastante para conseguirmos montar o nosso Backlog criando os Épicos, Features e User Story, assim aprendendo e entendendo sobre como definir o MVP.
 </p>
 
 ## 5 Referências Bibliográficas
