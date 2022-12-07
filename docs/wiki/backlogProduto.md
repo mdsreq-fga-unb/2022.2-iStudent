@@ -37,13 +37,23 @@ O escopo do projeto foi delimitado de acordo com a necessidade de criar uma plat
 | F03US03 | Eu, como usuário, gostaria de poder me autenticar na plataforma via conta da Apple. | Baixa       |
 
 ## Épico 2: Área do Professor
+#### Feature 04: Gerenciamento de Curso
 
-| Feature                              | User Story                                                                                                                                                                    | Prioridade |
-| ------------------------------------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------- |
-| [F07] - Gerenciamento de Turma       | Eu, como usuário, gostaria de poder me comunicar por um chat com outros alunos e/ou professores cadastrados na plataforma.                                                    | Alta       |
-| [F08] - Cadastro de Curso            | Eu, como usuário, gostaria de poder me comunicar por um chat com outros alunos e/ou professores cadastrados na plataforma.                                                    | Alta       |
-| [F09] - Edição de Dados (Curso)      | Eu, como Professor, gostaria de poder editar os dados cadastrados do meu curso dentro da plataforma.                                                                          | Médio      |
-| [F10] - Gerenciamento de Agendamento | Eu, como Professor, gostaria de poder gerenciar os pedidos, dos alunos matriculados em meus cursos, de agendamento de aulas particulares ou presenciais dentro da plataforma. | Alta       |
+| ID                        | User Story                                                                                                                                           | Prioridade |
+| ------------------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------- | ---------- |
+| F04US01  | Eu, como Professor, gostaria de poder cadastrar um ou mais cursos dentro da plataforma. | Alta       |
+| F04US02 | Eu, como Professor, gostaria de poder visualizar os dados do meu curso dentro da plataforma. | Alta      |
+| F04US03 | Eu, como Professor, gostaria de poder editar os dados do me curso dentro da plataforma. | Alta       |
+| F04US04 | Eu, como Professor, gostaria de poder visualizar os alunos matriculados no(s) meu(s) curso(s). | Média       |
+| F04US05 | Eu, como Professor, gostaria de poder excluir o meu curso após ele ter sido adicionado dentro da plataforma. | Média      |
+
+#### Feature 05: Gerenciamento de Agendamento
+
+| ID                        | User Story                                                                                                                                           | Prioridade |
+| ------------------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------- | ---------- |
+| F05US01  | Eu, como Professor, gostaria de poder acessar os pedidos de agendamento dos meus alunos dentro da plataforma. | Alta       |
+| F05US02 | Eu, como Professor, gostaria de poder aceitar ou recusar os pedidos de agendamento dos meus alunos dentro da plataforma. | Alta      |
+| F05US03 | Eu, como Professor, gostaria de poder visualizar o aluno que requisitou o pedido de agendamento dentro da plataforma. | Baixa       |
 
 ## Épico 3: Área do Aluno
 
