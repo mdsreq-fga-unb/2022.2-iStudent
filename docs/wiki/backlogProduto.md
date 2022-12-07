@@ -11,15 +11,30 @@ A seguir vai ser apresentado o Backlog do requisito de produto da plataforma iSt
 O escopo do projeto foi delimitado de acordo com a necessidade de criar uma plataforma interligando o professor autônomo e o aluno de forma remota ou então presencial.
 
 ## Épico 1: Área Ambiente
+#### Feature 01: Gerenciamento de Usuário
 
-| Feature                        | User Story                                                                                                                                           | Prioridade |
+| ID                        | User Story                                                                                                                                           | Prioridade |
 | ------------------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------- | ---------- |
-| [F01] - Cadastro de Usuário    | Eu, como usuário, gostaria de poder me cadastrar dentro da plataforma.                                                                               | Alta       |
-| [F02] - Visualização de Perfil | Eu, como usuário, gostaria de poder me cadastrar dentro da plataforma.                                                                               | Média      |
-| [FO3] - Edição de Perfil       | Eu, como usuário, gostaria de poder editar os dados cadastrados do meu perfil dentro da plataforma.                                                  | Alta       |
-| [F04] - Pareamento de Usuários | Eu, como usuário, gostaria de poder encontrar professores e cursos de acordo com as preferências, que escolhi no meu cadastro, dentro da plataforma. | Alta       |
-| [F05] - Autenticação           | Eu, como usuário, gostaria de me autenticar dentro da plataforma.                                                                                    | Média      |
-| [F06] - Comunicação via Chat   | Eu, como usuário, gostaria de poder me comunicar por um chat com outros alunos e/ou professores cadastrados na plataforma.                           | Baixa      |
+| F01US01  | Eu, como usuário, gostaria de poder cadastrar os meus dados dentro da plataforma. | Alta       |
+| F01US02 | Eu, como usuário, gostaria de, dentro do cadastro, poder especificar se sou Aluno ou Professor. | Alta      |
+| F01US03 | Eu, como usuário, gostaria de poder visualizar o meu perfil após o cadastro. | Média       |
+| F01US04 | Eu, como usuário, gostaria de poder editar os dados já cadastrados do meu perfil dentro da plataforma. | Média       |
+| F01US05 | Eu, como usuário, gostaria de poder excluir a minha conta dentro da plataforma. | Média      |
+
+#### Feature 02: Pareamento dos Usuários
+
+| ID                        | User Story                                                                                                                                           | Prioridade |
+| ------------------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------- | ---------- |
+| F02US01  | Eu, como usuário, gostaria de, após cadastrado, poder visualizar os cursos e professores da plataforma já cadastrados. | Alta       |
+| F02US02 | Eu, como usuário, gostaria de, após cadastrado, poder visualizar cursos e professores de acordo com as minhas preferências. | Média      |
+
+#### Feature 03: Autenticação
+
+| ID                        | User Story                                                                                                                                           | Prioridade |
+| ------------------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------- | ---------- |
+| F03US01  | Eu, como usuário, gostaria de poder me autenticar na plataforma via conta do Google. | Baixa       |
+| F03US02 | Eu, como usuário, gostaria de poder me autenticar na plataforma via conta do Facebook. | Baixa      |
+| F03US03 | Eu, como usuário, gostaria de poder me autenticar na plataforma via conta da Apple. | Baixa       |
 
 ## Épico 2: Área do Professor
 
