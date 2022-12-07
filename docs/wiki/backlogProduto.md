@@ -87,38 +87,32 @@ O escopo do projeto foi delimitado de acordo com a necessidade de criar uma plat
 
 | N°    | Requisito                                                                                                                                                          |
 | ----- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| RNF01 | O Frontend do sistema deve ser desenvolvido com ReactJS e TypeScript                                                                                               |
-| RNF02 | O Backend do sistema deve ser desenvolvido com NodeJS e TypeScript                                                                                                 |
-| RNF03 | O banco de dados do sistema deve ser modelado utilizando PostgreSQL                                                                                                |
-| RNF04 | O sistema deve ter uma enorme adaptabilidade para os usuários, do qual devem ser capazes de realizar suas atividades sem terem que precisar passar por treinamento |
-| RNF05 | O sistema deve ser Web                                                                                                                                             |
-| RNF06 | O sistema deve ter segurança com os dados dos usuários                                                                                                             |
-| RNF07 | O sistema deve ser testável                                                                                                                                        |
+| RNF01 | O Frontend do sistema deve ser desenvolvido com ReactJS e TypeScript.                                                                                               |
+| RNF02 | O Backend do sistema deve ser desenvolvido com NodeJS e TypeScript.                                                                                                 |
+| RNF03 | O banco de dados do sistema deve ser modelado utilizando PostgreSQL.                                                                                                |
+| RNF04 | O sistema deve ter uma enorme adaptabilidade para os usuários, do qual devem ser capazes de realizar suas atividades sem terem que precisar passar por treinamento. |
+| RNF05 | O sistema deve ser Web.                                                                                                                                             |
+| RNF06 | O sistema deve ter segurança com os dados dos usuários.                                                                                                             |
+| RNF07 | O sistema deve ser testável.                                                                                                                                        |
 
-## Proposta de MPV
+## Proposta de MVP
 
-### MVP1:
+#### MVP1:
 
-- Objetivos: Prover ao cliente o Cadastro de Usuário, Pareamento de Usuários, Gerenciamento de Agendamento e a Requisição de Aulas Particulares
+- Objetivo: Prover ao cliente o Cadastro de Usuário, Pareamento de Usuários, Gerenciamento de Agendamento e a Requisição de Aulas Particulares.
 
 - Features:
-  - [F01] - Cadastro de Usuário
+  - [F01] - Gerenciamento de Usuário
   - [F02] - Pareamento de Usuários
-  - [F10] - Gerenciamento de Agendamento
-  - [F14] - Requisição de Aulas Particulares
+  - [F05] - Gerenciamento de Agendamento
+  - [F08] - Requisição de Aulas Particulares
 
-### MVP2:
+#### MVP2:
 
-- Objetivos: Prover ao cliente o gerenciamento de usuário, tanto como Professor quanto para Aluno, e a comunicação via Chat na plataforma
+- Objetivo: Prover ao cliente o gerenciamento de usuário, tanto como Professor quanto para Aluno, e a comunicação via Chat na plataforma.
 
 - Features:
-  - [F03] - Edição de Perfil
-  - [F04] - Visualização de Perfil
-  - [F05] - Autenticação
-  - [F06] - Comunicação via Chat
-  - [F07] - Gerenciamento de Turmas
-  - [F08] - Cadastro de Curso
-  - [F09] - Edição de Dados (Curso)
-  - [F11] - Matricular no Curso
-  - [F12] - Visualização de Cursos
-  - [F13] - Gerenciamento de Aprendizagem
+  - [F03] - Autenticação
+  - [F04] - Gerenciamento de Curso
+  - [F06] - Acesso ao Curso
+  - [F07] - Gerenciamento de Aprendizagem
