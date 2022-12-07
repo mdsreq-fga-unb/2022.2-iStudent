@@ -15,20 +15,20 @@
 | 16/11/2022 | 0.5    | Atualização da organização do projeto                                                                          | Lucas Caldas                                                           |
 | 17/11/2022 | 0.6    | Adição Matriz de Comunicação, Gerenciamento de Risco, Critérios de Replanejamento e Referências Bibliográficas | Wesley Lira                                                            |
 | 06/12/2022 | 0.7    | Adicionado o planejamento de desenvolvimento                                                                   | Wesley                                                                 |
+| 07/12/2022 | 0.8    | Mudança no planejamento de fases e iterações                                                                   | Wesley Lira                                                            |
 
 ## 1. Visão Geral do Produto
 
 ### 1.1 Declaração de Posição do Produto
 
-
 | Software      | iStudent                                                                                                                                                                                                                                                                                                                   |
 | ------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Para          | Professores autônomos e alunos que buscam aprimorar ou adquirir novos conhecimentos                                                                                                                                                                                                                                                     |
-| Quem          |  Professores: pretendem dar aulas ou cursos particulares; Alunos: Buscam aulas particulares ou cursos de modo descomplicado, sejam online ou presenciais                                                                            |
+| Para          | Professores autônomos e alunos que buscam aprimorar ou adquirir novos conhecimentos                                                                                                                                                                                                                                        |
+| Quem          | Professores: pretendem dar aulas ou cursos particulares; Alunos: Buscam aulas particulares ou cursos de modo descomplicado, sejam online ou presenciais                                                                                                                                                                    |
 | O iStudent    | É uma plataforma de cursos/aula onlines e presenciais, onde o professor tem a disponibilidade de agendar suas aulas, disponibilizar material e conversar com seus alunos/turma simultâneamente via chat na plataforma, e o aluno tem a facilidade de encontrar o professor ideal para o conteudo que precisa em sua região |
-| Que           | Foca numa melhor experiência de ambos os lados, professor e aluno, desde o primeiro contato até a finalização das aulas ou curso.                                                                                                                                                                                                                                                      |
-| Ao contrário  | Udemy, que apenas existe contato online e uma experiência rasa entre professor e aluno, contando apenas com disponibilização de aulas e o resto é por conta do aluno.                                                                                                                                                                                                                                                                   |
-| Nosso produto | Permite a condução de aulas síncronas e presenciais, contato simultâneo com seus alunos por meio de um chat na plataforma, disponibilização de material para o aluno e facilita a organização dos professores com relação aos seus alunos.                                                                                                                                                         |
+| Que           | Foca numa melhor experiência de ambos os lados, professor e aluno, desde o primeiro contato até a finalização das aulas ou curso.                                                                                                                                                                                          |
+| Ao contrário  | Udemy, que apenas existe contato online e uma experiência rasa entre professor e aluno, contando apenas com disponibilização de aulas e o resto é por conta do aluno.                                                                                                                                                      |
+| Nosso produto | Permite a condução de aulas síncronas e presenciais, contato simultâneo com seus alunos por meio de um chat na plataforma, disponibilização de material para o aluno e facilita a organização dos professores com relação aos seus alunos.                                                                                 |
 
 ### 1.2 Objetivo do Produto
 
@@ -57,15 +57,17 @@
 
 ### 2.2 Planejamento das Fases e/ou Iterações do Projeto
 
-| Semana    | Atividade                                  | Data início | Data Fim   |
-| --------- | ------------------------------------------ | ----------- | ---------- |
-| Semana 0  | Definição da Equipe                        | 25/10/2022  | 28/10/2022 |
-| Semana 1  | Definição do Produto                       | 01/11/2022  | 08/11/2022 |
-| Semana 2  | Desenvolvimento de atividades da Unidade 1 | 14/11/2022  | 17/11/2022 |
-| Semana 3  | Criação do backlog do produto              | 14/11/2022  | 17/11/2022 |
-| Unidade 1 | Entrega de atividades da Unidade 1         | 17/11/2022  | 17/11/2022 |
-| Unidade 3 | Implementação e entrega do MVP1            | 08/12/2022  | 10/01/2023 |
-| Unidade 4 | Implementação e entrega do MVP2            | 12/01/2023  | 24/01/2023 |
+| Sprint   | Atividade (Entrega)                                        | Data início | Data Fim   |
+| -------- | ---------------------------------------------------------- | ----------- | ---------- |
+| Sprint 0 | Definição da Equipe e do Produto                           | 25/10/2022  | 03/11/2022 |
+| Sprint 1 | Trabalhar na primeira versão do visão de produto e projeto | 04/11/2022  | 17/11/2022 |
+| Sprint 2 | Definição do backlog do produto                            | 22/11/2022  | 01/12/2022 |
+| Sprint 3 | Definição do MVP e Validação do MVP1                       | 01/12/2022  | 08/12/2022 |
+| Sprint 4 | Preparação do Ambiente de Desenvolvimento                  | 08/12/2022  | 15/12/2022 |
+| Sprint 5 | Implementação do MPV1                                      | 15/12/2022  | 29/12/2022 |
+| Sprint 6 | Implementar e Entrega do MVP1                              | 03/01/2023  | 12/01/2023 |
+| Sprint 7 | Implementação do MVP2                                      | 16/01/2023  | 30/01/2023 |
+| Sprint 8 | Implementar e Entrega do MVP2                              | 31/02/2023  | 09/02/2023 |
 
 ### 2.3 Matriz de Comunicação
 
