@@ -20,9 +20,6 @@
 
 ### 1.1 Declaração de Posição do Produto
 
-<p style="text-indent: 20px; text-align: justify">
-     O iStudent é uma plataforma de cursos e aulas para professores autônomos e alunos que visa facilitar o trabalho para o agendamento de aulas, disponibilização do material de curso e a comunicação entre Aluno(a) e Professor(a). O diferencial do nosso produto é entregar uma melhor experiência para ambos, aluno e professor, por meio de funcionalidades mais aprimoradas de chat e disponibilização de material comparada a outras soluções já existentes, criando uma relação mais profunda e agradável. Por conta disso o iStudent possui a capacidade de facilitar tanto a vida do professor quanto do aluno, agregando para ambos em sua vida acadêmica.
-</p>
 
 | Software      | iStudent                                                                                                                                                                                                                                                                                                                   |
 | ------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
