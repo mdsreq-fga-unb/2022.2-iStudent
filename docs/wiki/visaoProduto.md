@@ -145,7 +145,7 @@ Devido aos pontos levantados, além de outros mais, a equipe decidiu que a metod
 ### 4.2 Unidade 2
 
 <p>
-    Nesta unidade aprendemos muito mais sobre como o que é e como funciona a Engenharia de Requisitos, assim como são as atividades dentro da ER e como ocorre uma elicitação de requisitos juntos com outras atividades, por exemplo questionários, protótipos e os cenários de usuário. Além disso, entendemos como deixar o nosso escopo do backlog de acordo com o SAFe, trabalhando para a criação de Épicos, Features e User Story. Por fim, complementamos a unidade com uma grande aprendizagem de definir o backlog de nosso produto aprendendo a definir as features e os user story, para que no final possamos definir os MVP’S do produto que estamos implementando.
+    Para essa unidade, foi de extrema importância o aprendizado sobre o que é e como funciona as atividades dentro da Engenharia de Requisitos, pois assim conseguimos nos localizar na hora de realizar a elicitação de requisitos e o refinamento do Backlog. Além disso, o ensinamento sobre a estrutura do SAFe ajudou bastante para conseguirmos montar o nosso Backlog criando os Épicos, Features e User Story, assim aprendendo e entendendo sobre como definir o MVP.
 </p>
 
 ## 5 Referências Bibliográficas
