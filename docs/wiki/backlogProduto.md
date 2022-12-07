@@ -4,6 +4,7 @@
 | ---------- | ------ | ------------------------------------------- | ----------- |
 | 04/12/2022 | 1.0    | Adicionar primeira versão do Backlog        | Wesley Lira |
 | 05/12/2022 | 1.1    | Adicionar os User Story das funcionalidades | Wesley Lira |
+| 07/12/2022 | 1.2    | Refatorado Épicos 1, 2, 3 e Proposta de MVP | Cleber Brant |
 
 # Backlog do Produto
 
