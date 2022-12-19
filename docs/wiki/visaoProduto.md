@@ -17,6 +17,7 @@
 | 06/12/2022 | 0.7    | Adicionado o planejamento de desenvolvimento                                                                   | Wesley                                                                 |
 | 07/12/2022 | 0.8    | Mudança no planejamento de fases e iterações                                                                   | Wesley Lira                                                            |
 | 07/12/2022 | 0.9    | Adicionado o resumo da Unidade 2                                                                               | Wesley Lira                                                            |
+| 18/12/2022 | 1.0    | Refatorando Processo de Desenvolvimento de Software                                                            | Wesley Lira                                                            |
 
 ## 1. Visão Geral do Produto
 
@@ -101,39 +102,37 @@ O gerenciamento de riscos levantado pela a equipe do nosso projeto optou avaliar
 
 ## 3 Processo de Desenvolvimento de Software
 
-Para chegar a uma método de desenvolvimento de software viável para o projeto, foram analisados os seguintes tópicos:
+Para chegar na decisão da escolha de qual metodologia de desenvolvimento viável para o nosso projeto, foram levantados e decididos os seguintes pontos:
 
-- Escopo inicial do projeto e do produto
-- Conhecimento técnico dos membros
-- Presença do usuário no processo de desenvolvimento
-- Entregas de funcionalidades parcialmente
+- Escopo inicial do projeto e do produto será viável.
+- Presença do cliente no processo de desenvolvimento para coletar os feedback e a validação com as entregas das releases.
+- Entregas das funcionalidas será feita de forma parcial, garantindo que toda funcionalidade entregue esteja completa e de acordo com as especificações e validação do cliente.
 
-Devido aos pontos levantados, além de outros mais, a equipe decidiu que a metodologia utilizada será o Extreme Programming(XP), com o auxílio de uma metodologia de gerenciamento de projetos e prazos, o Scrum. Além dos ritos do Scrum e do XP, também utilizaremos as User Stories (Histórias de usuário) para a gestão dos requisitos juntamente com o usuário. A equipe vai adotar as práticas e valores do XP e as atividades de gestão do time com o Scrum.
+Devido aos pontos levantados, ficou claro que a equipe decidiu adotar como metodologia o Extreme Programming(XP), utilizando as práticas e os valores que o XP nos traz. Ademais, iremos utilizar o XP junto com o Scrum para ajudar no gerenciamento do escopo de nosso produto e também o gerenciamento da equipe e suas atividades.
 
 ### 3.1 Atividades
 
 #### Planning
 
-| Atividade                 | Método                  | Ferramenta       | Entrega                                                                                                                              |
-| ------------------------- | ----------------------- | ---------------- | ------------------------------------------------------------------------------------------------------------------------------------ |
-| Plano de Planejamento     | Conversa                | Discord          | Plano que vai conter as expectativas de entrega e abordar a duração das sprints, núemro de releases e as data das releases           |
-| Elicitação dos requisitos | User Story              | Discord e Zenhub | Requisitos levantados e priorizados                                                                                                  |
-| Priorizando Backlog       | Conversa                | Discord e Zenhub | Listar os requisitos                                                                                                                 |
-| Validação e Verificação   | Conversar com o Cliente | Discord          | Verificar e Validar se os requisitos levantados estão corretos com o objetivo do Cliente e se está coeso com a construção do Produto |
+| Atividade                 | Método                  | Ferramenta       | Entrega                                                                                                 |
+| ------------------------- | ----------------------- | ---------------- | ------------------------------------------------------------------------------------------------------- |
+| Elicitação dos requisitos | User Story              | Discord e Trello | Levantamento dos requisitos que foram levantados e quais os seus níveis de prioridade                   |
+| Priorizando Backlog       | Conversa                | Discord e Trello | Lista com os requisitos levantados                                                                      |
+| Validação e Verificação   | Conversar com o Cliente | Discord          | Lista com os requisitos antes levantados porém agora de acordo com os ideais do Cliente sobre o produto |
 
 #### Desenvolvimento
 
-| Atividade               | Método           | Ferramenta                           | Entrega                                                                  |
-| ----------------------- | ---------------- | ------------------------------------ | ------------------------------------------------------------------------ |
-| Interface do usuário    | Protótipo        | Figma                                | Protótipo da interface do produto                                        |
-| Implementação dos MVP'S | Pair Programming | VsCode, NodeJs, ReactJS e TypeScript | Implementar e incrementar o produto de acordo com o objetivo de cada MVP |
-| Codificação de Testes   | Testes unitários | Jest                                 | Realizar testes unitários para manter o código limpo                     |
+| Atividade               | Método           | Ferramenta                           | Entrega                                                                    |
+| ----------------------- | ---------------- | ------------------------------------ | -------------------------------------------------------------------------- |
+| Interface do usuário    | Protótipo        | Figma                                | Protótipo da interface do produto                                          |
+| Implementação dos MVP'S | Pair Programming | VsCode, NodeJs, ReactJS e TypeScript | Entrega das funcionalidades propostas e definidas para cada MVP do produto |
+| Codificação de Testes   | Testes unitários | Jest                                 | Garantia que o sistema esteja testado e com erros corrigidos               |
 
 #### Revisão
 
-| Atividade     | Método       | Ferramenta       | Entrega                                                 |
-| ------------- | ------------ | ---------------- | ------------------------------------------------------- |
-| Sprint Review | Apresentação | Discord e Zenhub | Mostrar o que foi feito durante a Sprint para o cliente |
+| Atividade     | Método       | Ferramenta       | Entrega                                        |
+| ------------- | ------------ | ---------------- | ---------------------------------------------- |
+| Sprint Review | Apresentação | Discord e Trello | Inspeção do incremento do Produto desenvolvido |
 
 ## 4 Lições Aprendidas
 
