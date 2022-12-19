@@ -7,7 +7,7 @@
         "strictNullChecks": false
     },
     "include": [
-        "../backend",
+        "src/",
     ],
     "exclude": [
         "**/*.spec.ts",
