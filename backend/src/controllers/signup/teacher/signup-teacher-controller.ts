@@ -1,34 +1,22 @@
-import { MissingParamError } from "../../errors/missign-param-errors";
+import { badRequest, ok, serverError } from "../../helpers/http/http-helper";
 import { Controller, HttpRequest, HttpResponse } from "../../protocols";
+import { Validation } from "../../protocols/validation";
 
 export class SignUpTeacherController implements Controller {
+    constructor(
+        private readonly _validation: Validation
+    ) {}
+    
     async handle(httpRequest: HttpRequest): Promise<HttpResponse> {
-        const requiredField = [
-            'name',
-            'email',
-            'password',
-            'confirmationPassword',
-            'photo_url',
-            'whatsapp',
-            'biography',
-            'materials',
-            'costPerHour',
-            'disponibility'
-        ]
-        for (const field of requiredField) {
-            if (!httpRequest.body[field]) {
-                return {
-                    statusCode: 400,
-                    body: new MissingParamError(field)
-                }
+        try {
+            const error = this._validation.validate(httpRequest.body)
+            if (error) {
+                return badRequest(error)
             }
-        }
 
-        return {
-            statusCode: 200,
-            body: {
-                message: 'ok'
-            }
+            return ok({ data: 'ok' })
+        } catch (error) {
+            return serverError(error)
         }
     }
 }
