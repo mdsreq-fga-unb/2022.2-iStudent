@@ -1,9 +1,12 @@
 import { MissingParamError } from '../../errors/missign-param-errors'
+import { badRequest } from '../../helpers/http/http-helper'
 import { HttpRequest } from '../../protocols'
+import { Validation } from '../../protocols/validation'
 import { SignUpTeacherController } from './signup-teacher-controller'
 
 interface SutTypes {
     sut: SignUpTeacherController
+    validationStub: Validation
 }
 
 const makeFakeRequest = (): HttpRequest => ({
@@ -25,10 +28,21 @@ const makeFakeRequest = (): HttpRequest => ({
     }
 })
 
+const makeValidation = (): Validation => {
+    class ValidationStub implements Validation {
+        validate(input: any): Error {
+            return null
+        }
+    }
+    return new ValidationStub()
+}
+
 const makeSut = (): SutTypes => {
-    const sut = new SignUpTeacherController()
+    const validationStub = makeValidation()
+    const sut = new SignUpTeacherController(validationStub)
     return {
-        sut
+        sut,
+        validationStub
     }
 }
 
@@ -40,202 +54,18 @@ describe('SignUpTeacher Controller', () => {
         expect(httpResponse.statusCode).toBe(200)
     })
 
-    test('should return 400 if no name is provided', async () => {
-        const { sut } = makeSut()
-        const httpRequest = ({
-            body: {
-                name: '',
-                email: 'any_email@email.com',
-                password: 'any_password',
-                confirmationPassword: 'any_password',
-                photo_url: 'any_photo_url',
-                whatsapp: 'any_whatsapp',
-                biography: 'any_biography',
-                materials: [
-                    {
-                        name: 'any_material_name',
-                    }
-                ],
-                costPerHour: 30,
-                disponibility: "10/10/2020",
-            }
-        })
-        const httpResponse = await sut.handle(httpRequest)
-        expect(httpResponse.statusCode).toBe(400)
-        expect(httpResponse.body).toEqual(new MissingParamError('name'))
-    })
-    
-    test('should return 400 if no email is provided', async () => {
-        const { sut } = makeSut()
-        const httpRequest = ({
-            body: {
-                name: 'any_name',
-                email: '',
-                password: 'any_password',
-                confirmationPassword: 'any_password',
-                photo_url: 'any_photo_url',
-                whatsapp: 'any_whatsapp',
-                biography: 'any_biography',
-                materials: [
-                    {
-                        name: 'any_material_name',
-                    }
-                ],
-                costPerHour: 30,
-                disponibility: "10/10/2020",
-            }
-        })
-        const httpResponse = await sut.handle(httpRequest)
-        expect(httpResponse.statusCode).toBe(400)
-        expect(httpResponse.body).toEqual(new MissingParamError('email'))
+    test('should call Validation with correct values', () => {
+        const { sut, validationStub } = makeSut()
+        const validateSpy = jest.spyOn(validationStub, 'validate')
+        const httpRequest = makeFakeRequest()
+        sut.handle(httpRequest)
+        expect(validateSpy).toHaveBeenCalledWith(httpRequest.body)
     })
 
-    test('should return 400 if no password is provided', async () => {
-        const { sut } = makeSut()
-        const httpRequest = ({
-            body: {
-                name: 'any_name',
-                email: 'any_email@email.com',
-                password: '',
-                confirmationPassword: 'any_password',
-                photo_url: 'any_photo_url',
-                whatsapp: 'any_whatsapp',
-                biography: 'any_biography',
-                materials: [
-                    {
-                        name: 'any_material_name',
-                    }
-                ],
-                costPerHour: 30,
-                disponibility: "10/10/2020",
-            }
-        })
-        const httpResponse = await sut.handle(httpRequest)
-        expect(httpResponse.statusCode).toBe(400)
-        expect(httpResponse.body).toEqual(new MissingParamError('password'))
-    })
-    
-    test('should return 400 if no confirmation password is provided', async () => {
-        const { sut } = makeSut()
-        const httpRequest = ({
-            body: {
-                name: 'any_name',
-                email: 'any_email@email.com',
-                password: 'any_password',
-                photo_url: 'any_photo_url',
-                whatsapp: 'any_whatsapp',
-                biography: 'any_biography',
-                materials: [
-                    {
-                        name: 'any_material_name',
-                    }
-                ],
-                costPerHour: 30,
-                disponibility: "10/10/2020",
-            }
-        })
-        const httpResponse = await sut.handle(httpRequest)
-        expect(httpResponse.statusCode).toBe(400)
-        expect(httpResponse.body).toEqual(new MissingParamError('confirmationPassword'))
-    })
-
-    test('should return 400 if no photo url is provided', async () => {
-        const { sut } = makeSut()
-        const httpRequest = ({
-            body: {
-                name: 'any_name',
-                email: 'any_email@email.com',
-                password: 'any_password',
-                confirmationPassword: 'any_password',
-                photo_url: '',
-                whatsapp: 'any_whatsapp',
-                biography: 'any_biography',
-                materials: [
-                    {
-                        name: 'any_material_name',
-                    }
-                ],
-                costPerHour: 30,
-                disponibility: "10/10/2020",
-            }
-        })
-        const httpResponse = await sut.handle(httpRequest)
-        expect(httpResponse.statusCode).toBe(400)
-        expect(httpResponse.body).toEqual(new MissingParamError('photo_url'))
-    })
-
-    test('should return 400 if no biography is provided', async () => {
-        const { sut } = makeSut()
-        const httpRequest = ({
-            body: {
-                name: 'any_name',
-                email: 'any_email@email.com',
-                password: 'any_password',
-                confirmationPassword: 'any_password',
-                photo_url: 'any_photo_url',
-                whatsapp: 'any_whatsapp',
-                biography: '',
-                materials: [
-                    {
-                        name: 'any_material_name',
-                    }
-                ],
-                costPerHour: 30,
-                disponibility: "10/10/2020",
-            }
-        })
-        const httpResponse = await sut.handle(httpRequest)
-        expect(httpResponse.statusCode).toBe(400)
-        expect(httpResponse.body).toEqual(new MissingParamError('biography'))
-    })
-
-    test('should return 400 if no cost per hour is provided', async () => {
-        const { sut } = makeSut()
-        const httpRequest = ({
-            body: {
-                name: 'any_name',
-                email: 'any_email@email.com',
-                password: 'any_password',
-                confirmationPassword: 'any_password',
-                photo_url: 'any_photo_url',
-                whatsapp: 'any_whatsapp',
-                biography: 'any_biography',
-                materials: [
-                    {
-                    name: 'any_material_name',
-                    }
-                ],
-                costPerHour: '',
-                disponibility: "10/10/2020",
-            }
-        })
-        const httpResponse = await sut.handle(httpRequest)
-        expect(httpResponse.statusCode).toBe(400)
-        expect(httpResponse.body).toEqual(new MissingParamError('costPerHour'))
-    })
-
-    test('should return 400 if no disponibility is provided', async () => {
-        const { sut } = makeSut()
-        const httpRequest = ({
-            body: {
-                name: 'any_name',
-                email: 'any_email@email.com',
-                password: 'any_password',
-                confirmationPassword: 'any_password',
-                photo_url: 'any_photo_url',
-                whatsapp: 'any_whatsapp',
-                biography: 'any_biography',
-                materials: [
-                    {
-                    name: 'any_material_name',
-                    }
-                ],
-                costPerHour: 30,
-                disponibility: "",
-            }
-        })
-        const httpResponse = await sut.handle(httpRequest)
-        expect(httpResponse.statusCode).toBe(400)
-        expect(httpResponse.body).toEqual(new MissingParamError('disponibility'))
+    test('should return 400 if Validation returns an error', async () => {
+        const { sut, validationStub } = makeSut()
+        jest.spyOn(validationStub, 'validate').mockReturnValueOnce(new MissingParamError('any_field'))
+        const httpResponse = await sut.handle(makeFakeRequest())
+        expect(httpResponse).toEqual(badRequest(new MissingParamError('any_field')))
     })
 })
