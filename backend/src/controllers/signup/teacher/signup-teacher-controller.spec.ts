@@ -1,3 +1,4 @@
+import { MissingParamError } from '../../errors/missign-param-errors'
 import { HttpRequest } from '../../protocols'
 import { SignUpTeacherController } from './signup-teacher-controller'
 
@@ -25,5 +26,29 @@ describe('SignUpTeacher Controller', () => {
         const httpRequest = makeFakeRequest()
         const httpResponse = await sut.handle(httpRequest)
         expect(httpResponse.statusCode).toBe(200)
+    })
+
+    test('should return 400 if no name is provided', async () => {
+        const sut = new SignUpTeacherController()
+        const httpRequest = ({
+            body: {
+                name: '',
+                email: 'any_email@email.com',
+                password: 'any_password',
+                photo_url: 'any_photo_url',
+                whatsapp: 'any_whatsapp',
+                biography: 'any_biography',
+                materials: [
+                    {
+                        name: 'any_material_name',
+                    }
+                ],
+                costPerHour: 30,
+                disponibility: "10/10/2020",
+            }
+        })
+        const httpResponse = await sut.handle(httpRequest)
+        expect(httpResponse.statusCode).toBe(400)
+        expect(httpResponse.body).toEqual(new MissingParamError('name'))
     })
 })
