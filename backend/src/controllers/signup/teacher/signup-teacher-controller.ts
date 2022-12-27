@@ -7,6 +7,7 @@ export class SignUpTeacherController implements Controller {
             'name',
             'email',
             'password',
+            'confirmationPassword',
             'photo_url',
             'whatsapp',
             'biography',
