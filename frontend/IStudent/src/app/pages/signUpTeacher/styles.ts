@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-  height: 100vh;
+  height: 155vh;
   background: #d9d9d9;
 `;
 
@@ -47,7 +47,7 @@ export const Body = styled.div`
   z-index: 999;
   background-color: #ffffff;
   width: 500px;
-  height: 65vh;
+  height: 120vh;
   border-radius: 8px;
   display: flex;
   flex-direction: column;
@@ -90,20 +90,41 @@ export const Body = styled.div`
     border-color: #000000;
   }
 
-  .my-password-title {
+  .bio textarea {
+    height: 100px;
+    width: 95%;
+    background-color: #e6e6f0;
+    border-radius: 8px;
+    border-style: none;
+    margin-top: 5px;
+    padding-left: 5px;
+    padding-top: 5px;
+  }
+
+  .bio textarea:hover {
+    border-style: outset;
+    border-bottom: 2px solid #000000;
+  }
+
+  .bio textarea:focus {
+    border-style: inset;
+    border-bottom: 2px solid #000000;
+  }
+
+  .my-material-title {
     padding: 20px;
     border-bottom: 1px solid #000000;
     margin-right: 20px;
   }
 
-  .my-password {
+  .my-material {
     padding-top: 8px;
     display: flex;
     flex-direction: column;
     gap: 8px;
   }
 
-  .my-password input {
+  .my-material input {
     width: 95%;
     height: 30px;
     background-color: #e6e6f0;
@@ -113,14 +134,63 @@ export const Body = styled.div`
     padding-left: 5px;
   }
 
-  .my-password input:hover {
+  .my-material input:hover {
     border-style: inset;
     border-bottom: 2px solid #000000;
   }
 
-  .my-password input:focus {
+  .my-material input:focus {
     border-style: inset;
     border-bottom: 2px solid #000000;
+  }
+
+  .schedule-title {
+    padding: 20px;
+    border-bottom: 1px solid #000000;
+    margin-right: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .schedule-title button {
+    border-style: none;
+    background-color: #ffffff;
+    color: #000080;
+    font-family: "Poppins";
+    font-size: 12px;
+    font-weight: 900;
+  }
+
+  .schedule-title button:hover {
+    color: #ffa500;
+  }
+
+  .schedule {
+    padding-top: 10px;
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+  }
+
+  .schedule input {
+    width: 100%;
+    height: 30px;
+    background-color: #e6e6f0;
+    border-radius: 8px;
+    border-style: none;
+    margin-top: 5px;
+    padding-left: 5px;
+  }
+
+  .schedule input:hover {
+    border-style: inset;
+    border-bottom: 1px solid #000000;
+  }
+
+  .schedule input:focus {
+    border-style: inset;
+    border-bottom: 1px solid #000000;
   }
 
   .final {

@@ -44,47 +44,25 @@ export const SignUpStudent = () => {
           </div>
           <div className="whatsapp">
             <p>WhatsApp</p>
-            <input type="text" />
-          </div>
-          <div>
-            <p>Biografia</p>
-            <input type="text" />
+            <input type="tel" />
           </div>
         </div>
-        <div className="my-material-title">
-          <h1>Suas Matérias</h1>
+        <div className="my-password-title">
+          <h1>Escolha uma Senha</h1>
         </div>
-        <div className="my-material">
-          <div className="material">
-            <p>Matérias</p>
-            <input type="text" />
+        <div className="my-password">
+          <div className="password">
+            <p>Sua nova senha</p>
+            <input type="password" />
           </div>
-          <div className="value-hour">
-            <p>Custo da sua hora por aula</p>
-            <input type="number" />
-          </div>
-        </div>
-        <div className="schedule-title">
-          <h1>Horários Disponíveis</h1>
-          <button>+ Novo Horário</button>
-        </div>
-        <div className="schedule">
-          <div className="week-day">
-            <p>Dia da semana</p>
-            <input type="text" />
-          </div>
-          <div className="initial-hour">
-            <p>Das</p>
-            <input type="number" />
-          </div>
-          <div className="final-hour">
-            <p>Até</p>
-            <input type="number" />
+          <div className="confirm-password">
+            <p>Confirme sua nova senha</p>
+            <input type="password" />
           </div>
         </div>
         <div className="final">
           <div className="alert-area">
-            <ErrorOutlineIcon />
+            <ErrorOutlineIcon style={{ color: "#000080" }} />
             <div className="alert-text">
               <p>Importante!</p>
               <p>Preencha todas as informações</p>
