@@ -47,7 +47,7 @@ export const Body = styled.div`
   z-index: 999;
   background-color: #ffffff;
   width: 500px;
-  height: 65vh;
+  height: 60vh;
   border-radius: 8px;
   display: flex;
   flex-direction: column;
