@@ -1,8 +1,8 @@
-import prisma from '..';
+import { AccountTeacherModel } from '../../domain/models/account';
+import { addTeacherAccountModel } from '../../domain/useCases/addTeacherAccount';
 
-const userRepository = {
-  getAll: () => {
-    return prisma.user.findMany();
-  },
-};
-export default userRepository;
+export interface TeacherRepository {
+  addTeacher(account: addTeacherAccountModel): Promise<AccountTeacherModel>;
+}
+
+export default {};
