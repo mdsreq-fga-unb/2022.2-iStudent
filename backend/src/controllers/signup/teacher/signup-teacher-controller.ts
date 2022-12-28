@@ -1,50 +1,52 @@
-import { AddTeacherAccount } from "../../../domain/useCases/addTeacherAccount";
-import { EmailInUseError } from "../../errors";
-import { badRequest, forbidden, ok, serverError } from "../../helpers/http/http-helper";
-import { Controller, HttpRequest, HttpResponse } from "../../protocols";
-import { Validation } from "../../protocols/validation";
+import { TeacherRepository } from '../../../database/repositories/users';
+import {
+  badRequest,
+  forbidden,
+  ok,
+  serverError,
+} from '../../helpers/http/http-helper';
+import { Controller, HttpRequest, HttpResponse } from '../../protocols';
+import { Validation } from '../../protocols/validation';
 
 export class SignUpTeacherController implements Controller {
-    constructor(
-        private readonly _addTeacherAccount: AddTeacherAccount,
-        private readonly _validation: Validation
-    ) {}
-    
-    async handle(httpRequest: HttpRequest): Promise<HttpResponse> {
-        try {
-            const error = this._validation.validate(httpRequest.body)
-            if (error) {
-                return badRequest(error)
-            }
+  constructor(
+    private readonly teacherRepository: TeacherRepository,
+    private readonly _validation: Validation,
+  ) {}
 
-            const { 
-                name,
-                email,
-                password,
-                photo_url,
-                whatsapp,
-                biography,
-                materials,
-                costPerHour,
-                disponibility
-            } = httpRequest.body
-            const account = await this._addTeacherAccount.addTeacher({
-                name,
-                email,
-                password,
-                photo_url,
-                whatsapp,
-                biography,
-                materials,
-                costPerHour,
-                disponibility
-            })
+  async handle(httpRequest: HttpRequest): Promise<HttpResponse> {
+    try {
+      const error = this._validation.validate(httpRequest.body);
+      if (error) {
+        return badRequest(error);
+      }
 
-            if (!account) return forbidden(new EmailInUseError())
+      const {
+        name,
+        email,
+        password,
+        photo_url,
+        whatsapp,
+        biography,
+        materials,
+        costPerHour,
+        disponibility,
+      } = httpRequest.body;
+      await this.teacherRepository.addTeacher({
+        name,
+        email,
+        password,
+        photo_url,
+        whatsapp,
+        biography,
+        materials,
+        costPerHour,
+        disponibility,
+      });
 
-            return ok({ data: 'ok' })
-        } catch (error) {
-            return serverError(error)
-        }
+      return ok({ data: 'ok' });
+    } catch (error) {
+      return serverError(error);
     }
+  }
 }
