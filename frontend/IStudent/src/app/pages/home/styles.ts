@@ -1,8 +1,19 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-  height: 100vh;
+  height: 180vh;
   background: #d9d9d9;
+
+  footer {
+    font-size: 18px;
+    font-family: "Poppins";
+    font-weight: 900;
+    text-align: center;
+    margin-top: 25vh;
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+  }
 `;
 
 export const Header = styled.div`
@@ -122,5 +133,37 @@ export const Category = styled.div`
 
   .category-card:hover {
     scale: 1.1;
+  }
+`;
+
+export const CourseArea = styled.div`
+  h3 {
+    margin-left: 350px;
+    margin-top: 50px;
+    font-family: "Poppins";
+  }
+
+  ul {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    list-style: none;
+    justify-content: center;
+  }
+`;
+
+export const TeacherArea = styled.div`
+  h3 {
+    margin-left: 350px;
+    margin-top: 50px;
+    font-family: "Poppins";
+  }
+
+  ul {
+    display: flex;
+    flex-direction: row;
+    gap: 60px;
+    list-style: none;
+    justify-content: center;
   }
 `;
