@@ -12,9 +12,19 @@ export class PrismaTeacherRepository implements TeacherRepository {
       data: {
         email: account.email,
         password: account.password,
+        biography: account.biography,
+        name: account.name,
         role: 'TEACHER'
       },
     });
     return;
+  }
+
+  async findOne(email: string): Promise<AccountTeacherModel | null> {
+    return await prisma.user.findFirst({
+      where: {
+        email: email
+      }
+    })
   }
 }

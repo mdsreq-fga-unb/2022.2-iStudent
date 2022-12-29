@@ -1,9 +1,11 @@
 import { ServerError } from '../../errors/server.error'
 import { HttpResponse } from '../../protocols/http'
 
-export const badRequest = (error: Error): HttpResponse => ({
+export const badRequest = (error: Error | string): HttpResponse => ({
     statusCode: 400,
-    body: error
+    body: {
+        error: error
+    }
 })
 
 export const forbidden = (error: Error): HttpResponse => ({
