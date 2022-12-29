@@ -1,6 +1,13 @@
-import { Container, Header, BodyHeader, Category, CourseArea } from "./styles";
+import {
+  Container,
+  Header,
+  BodyHeader,
+  Category,
+  CourseArea,
+  TeacherArea,
+} from "./styles";
 import { useNavigate } from "react-router-dom";
-import { CoursesCard } from "../../shared/components";
+import { CoursesCard, TeacherCard } from "../../shared/components";
 
 export const Home = () => {
   const navigate = useNavigate();
@@ -116,6 +123,45 @@ export const Home = () => {
           </li>
         </ul>
       </CourseArea>
+      <TeacherArea>
+        <h3>Professores mais procurados</h3>
+        <ul>
+          <li>
+            <TeacherCard
+              name="Lucas Caldas"
+              courseName="Matemática"
+              valueHour={50}
+              rating={5}
+            />
+          </li>
+
+          <li>
+            <TeacherCard
+              name="Lucas Caldas"
+              courseName="Matemática"
+              valueHour={50}
+              rating={5}
+            />
+          </li>
+          <li>
+            <TeacherCard
+              name="Lucas Caldas"
+              courseName="Matemática"
+              valueHour={50}
+              rating={5}
+            />
+          </li>
+          <li>
+            <TeacherCard
+              name="Lucas Caldas"
+              courseName="Matemática"
+              valueHour={50}
+              rating={5}
+            />
+          </li>
+        </ul>
+      </TeacherArea>
+      <footer>Sobre o iStudent</footer>
     </Container>
   );
 };

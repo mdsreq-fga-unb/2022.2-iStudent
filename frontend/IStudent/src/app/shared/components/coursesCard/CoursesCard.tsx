@@ -30,9 +30,19 @@ export const CoursesCard = (props: CourseCardProps) => {
           />
         </div>
         <div className="course-price">
-          <span className="current-price">R${props.currentPrice}</span>
+          <span className="current-price">
+            {props.currentPrice.toLocaleString("pt-br", {
+              style: "currency",
+              currency: "BRL",
+            })}
+          </span>
           <span className="original-price">
-            <s>R${props.originalPrice}</s>
+            <s>
+              {props.originalPrice.toLocaleString("pt-br", {
+                style: "currency",
+                currency: "BRL",
+              })}
+            </s>
           </span>
         </div>
       </div>
