@@ -25,23 +25,15 @@ export class SignUpTeacherController implements Controller {
         name,
         email,
         password,
-        photo_url,
         whatsapp,
         biography,
-        materials,
-        costPerHour,
-        disponibility,
       } = httpRequest.body;
       await this.teacherRepository.addTeacher({
         name,
         email,
         password,
-        photo_url,
         whatsapp,
         biography,
-        materials,
-        costPerHour,
-        disponibility,
       });
 
       return ok({ data: 'ok' });
