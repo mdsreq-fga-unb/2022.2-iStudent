@@ -6,18 +6,10 @@ export interface AccountStudentModel {
 }
 
 export interface AccountTeacherModel {
-    id: string
+    id: number
     name: string
     email: string
     password: string
-    photo_url: string
-    whatsapp: string
+    subjects: string[]
     biography: string
-    materials: [
-        {
-            name: string
-        }
-    ],
-    costPerHour: number
-    disponibility: string
 }
