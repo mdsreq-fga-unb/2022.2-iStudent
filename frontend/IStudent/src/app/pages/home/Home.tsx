@@ -1,5 +1,6 @@
-import { Container, Header, BodyHeader, Category } from "./styles";
+import { Container, Header, BodyHeader, Category, CourseArea } from "./styles";
 import { useNavigate } from "react-router-dom";
+import { CoursesCard } from "../../shared/components";
 
 export const Home = () => {
   const navigate = useNavigate();
@@ -74,6 +75,47 @@ export const Home = () => {
           </ul>
         </div>
       </Category>
+      <CourseArea>
+        <h3>Cursos mais procurados</h3>
+        <ul>
+          <li>
+            <CoursesCard
+              name="Calculo 1"
+              teacher="Lucas Caldas"
+              raiting={4.6}
+              currentPrice={29.9}
+              originalPrice={289.0}
+            />
+          </li>
+          <li>
+            <CoursesCard
+              name="Calculo 1"
+              teacher="Lucas Caldas"
+              raiting={4.9}
+              currentPrice={29.9}
+              originalPrice={289.0}
+            />
+          </li>
+          <li>
+            <CoursesCard
+              name="Calculo 1"
+              teacher="Lucas Caldas"
+              raiting={4.4}
+              currentPrice={29.9}
+              originalPrice={289.0}
+            />
+          </li>
+          <li>
+            <CoursesCard
+              name="Calculo 1"
+              teacher="Lucas Caldas"
+              raiting={4.0}
+              currentPrice={29.9}
+              originalPrice={289.0}
+            />
+          </li>
+        </ul>
+      </CourseArea>
     </Container>
   );
 };
