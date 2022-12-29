@@ -47,12 +47,12 @@ export const Body = styled.div`
   z-index: 999;
   background-color: #ffffff;
   width: 500px;
-  height: 45vh;
+  height: 40vh;
   border-radius: 8px;
   display: flex;
   flex-direction: column;
   padding-left: 20px;
-  margin-left: 35vw;
+  margin-left: calc(100vw / 2.7);
   margin-top: -50px;
   font-family: "Poppins";
   font-size: 12px;
@@ -152,6 +152,7 @@ export const Body = styled.div`
     gap: 5px;
     align-items: center;
     justify-content: center;
+    margin-right: 30px;
     margin-top: 40px;
   }
 `;
