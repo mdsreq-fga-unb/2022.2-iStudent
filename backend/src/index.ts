@@ -17,6 +17,7 @@ const server = app.listen(PORT, () =>
 process.on('SIGINT', async () => {
   try {
     await prisma.$disconnect();
+    server.close();
     console.log('Database connection closed');
   } catch (error) {
     console.error('Error when closing server: ', error);
