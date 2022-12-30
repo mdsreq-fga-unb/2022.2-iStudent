@@ -3,6 +3,8 @@ export interface AccountStudentModel {
     name: string
     email: string
     password: string
+    whatsapp: string
+    biography: string
 }
 
 export interface AccountTeacherModel {
