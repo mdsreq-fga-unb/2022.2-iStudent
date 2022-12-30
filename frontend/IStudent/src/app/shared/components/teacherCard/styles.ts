@@ -6,9 +6,9 @@ export const Teachers = styled.div`
   flex-direction: column;
   padding-left: 40px;
   gap: 30px;
-  background-color: #ffffff;
   width: 250px;
   height: 300px;
+  border: 1px solid black;
 
   .teacher-card {
     width: 300px;
@@ -37,7 +37,6 @@ export const Teachers = styled.div`
   }
 
   .teacher-details {
-    background-color: #ffffff;
     width: 250px;
     margin-left: -45px;
     padding: 10px;
