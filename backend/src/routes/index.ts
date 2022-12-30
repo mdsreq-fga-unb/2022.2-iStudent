@@ -2,7 +2,7 @@ import { Router } from 'express';
 import { adaptRoute } from '../main/adapters/express/express-route.adapter';
 import { makeLoginTeacherController } from '../main/factories/login-teacher-controller-factory';
 import { makeSignUpStudentController } from '../main/factories/signup-student/signup-student-controller-factory';
-import { makeSignUpTeacherController } from '../main/factories/signup-teacher-controller-factory';
+import { makeSignUpTeacherController } from '../main/factories/signup-teacher/signup-teacher-controller-factory';
 
 const routes = Router();
 
