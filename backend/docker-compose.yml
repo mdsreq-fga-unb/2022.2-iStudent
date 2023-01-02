@@ -1,0 +1,23 @@
+version: '3'
+services:
+  db:
+    container_name: istudent-db
+    image: bitnami/postgresql:14
+    ports:
+      - "5440:5432"
+    environment:
+      - POSTGRESQL_PASSWORD=password1234
+      - POSTGRESQL_DATABASE=istudent-db
+  app:
+    container_name: 2022.2-istudent
+    image: 2022.2-istudent
+    command: npm start
+    volumes:
+      - ./dist:/usr/src/2022.2-iStudent/dist
+    links:
+      - db
+    environment:
+      - APP_HOST=http://localhost:3001
+      - HTTP_PORT=3001
+      
+      - DB_URL=postgresql://postgres:password1234@db:5432/istudent-db

@@ -15,7 +15,10 @@ model User {
   createdAt DateTime @default(now())
   email     String   @unique
   password  String
+  name      String
+  biography String
   role      Role     @default(STUDENT)
+  subjects  String[] @default([])
 }
 
 enum Role {
