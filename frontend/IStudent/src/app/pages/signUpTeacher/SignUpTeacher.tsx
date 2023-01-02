@@ -2,11 +2,17 @@ import { Container, Header, Body } from "./styles";
 import ArrowBackIcon from "@mui/icons-material/ArrowBack";
 import ErrorOutlineIcon from "@mui/icons-material/ErrorOutline";
 import { useNavigate } from "react-router-dom";
+import { api } from "../../shared/services";
+import { useEffect, useState } from "react";
 
 export const SignUpTeacher = () => {
   const navigate = useNavigate();
 
+  const [textInput, setTextInput] = useState({});
+
   const handleClickSignUp = () => {
+    console.log("----");
+    api.post("signup/teacher", textInput);
     navigate("/cadastro");
   };
 
@@ -36,11 +42,27 @@ export const SignUpTeacher = () => {
         <div className="my-data">
           <div className="complete-name">
             <p>Nome Completo</p>
-            <input type="text" />
+            <input
+              type="text"
+              onChange={(e) => {
+                setTextInput({
+                  ...textInput,
+                  name: e.target.value,
+                });
+              }}
+            />
           </div>
           <div className="email">
             <p>E-mail</p>
-            <input type="email" />
+            <input
+              type="email"
+              onChange={(e) => {
+                setTextInput({
+                  ...textInput,
+                  email: e.target.value,
+                });
+              }}
+            />
           </div>
           <div className="whatsapp">
             <p>WhatsApp</p>
@@ -48,7 +70,14 @@ export const SignUpTeacher = () => {
           </div>
           <div className="bio">
             <p>Biografia</p>
-            <textarea />
+            <textarea
+              onChange={(e) => {
+                setTextInput({
+                  ...textInput,
+                  biography: e.target.value,
+                });
+              }}
+            />
           </div>
         </div>
         <div className="my-material-title">
@@ -88,11 +117,27 @@ export const SignUpTeacher = () => {
         <div className="my-material">
           <div className="material">
             <p>Sua nova senha</p>
-            <input type="password" />
+            <input
+              type="password"
+              onChange={(e) => {
+                setTextInput({
+                  ...textInput,
+                  password: e.target.value,
+                });
+              }}
+            />
           </div>
           <div className="value-hour">
             <p>Confirme sua nova senha</p>
-            <input type="password" />
+            <input
+              type="password"
+              onChange={(e) => {
+                setTextInput({
+                  ...textInput,
+                  confirmationPassword: e.target.value,
+                });
+              }}
+            />
           </div>
         </div>
         <div className="final">
@@ -103,7 +148,7 @@ export const SignUpTeacher = () => {
               <p>Preencha todas as informações</p>
             </div>
           </div>
-          <button>Salvar Cadastro</button>
+          <button onClick={handleClickSignUp}>Salvar Cadastro</button>
         </div>
       </Body>
     </Container>
