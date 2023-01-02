@@ -3,7 +3,7 @@ import prisma from './database';
 import routes from './routes';
 import cors from 'cors';
 
-const PORT = 3000;
+const PORT = 3000 | 3001;
 
 const app = express();
 
@@ -18,6 +18,7 @@ const server = app.listen(PORT, () =>
 process.on('SIGINT', async () => {
   try {
     await prisma.$disconnect();
+    server.close();
     console.log('Database connection closed');
   } catch (error) {
     console.error('Error when closing server: ', error);
