@@ -3,12 +3,13 @@ import prisma from './database';
 import routes from './routes';
 import cors from 'cors';
 
-const PORT = 3000 | 3001;
+const PORT = 3001;
 
 const app = express();
 
-app.use(express.json());
 app.use(cors());
+
+app.use(express.json());
 app.use(routes);
 
 const server = app.listen(PORT, () =>

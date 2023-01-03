@@ -3,16 +3,37 @@ import ArrowBackIcon from "@mui/icons-material/ArrowBack";
 import ErrorOutlineIcon from "@mui/icons-material/ErrorOutline";
 import { useNavigate } from "react-router-dom";
 import { api } from "../../shared/services";
-import { useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
+
+const inicialValues = {
+  name: "",
+  email: "",
+  password: "",
+  confirmationPassword: "",
+  biography: "",
+};
 
 export const SignUpTeacher = () => {
   const navigate = useNavigate();
 
-  const [textInput, setTextInput] = useState({});
+  const [textInput, setTextInput] = useState(inicialValues);
 
-  const handleClickSignUp = () => {
-    console.log("----");
-    api.post("signup/teacher", textInput);
+  function onChange(
+    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+  ) {
+    const { name, value } = e.target;
+    console.log({ name, value });
+
+    setTextInput({ ...textInput, [name]: value });
+  }
+
+  function handleClickSignUp() {
+    api.post("signup/teacher", textInput).then((res) => {
+      navigate("/pagina-inicial");
+    });
+  }
+
+  const handleClickSignUpPage = () => {
     navigate("/cadastro");
   };
 
@@ -27,7 +48,7 @@ export const SignUpTeacher = () => {
           <ArrowBackIcon
             fontSize="large"
             className="arrow"
-            onClick={handleClickSignUp}
+            onClick={handleClickSignUpPage}
           />
           <div className="product-name" onClick={handleClickHome}>
             iStudent
@@ -42,27 +63,11 @@ export const SignUpTeacher = () => {
         <div className="my-data">
           <div className="complete-name">
             <p>Nome Completo</p>
-            <input
-              type="text"
-              onChange={(e) => {
-                setTextInput({
-                  ...textInput,
-                  name: e.target.value,
-                });
-              }}
-            />
+            <input type="text" name="name" onChange={onChange} />
           </div>
           <div className="email">
             <p>E-mail</p>
-            <input
-              type="email"
-              onChange={(e) => {
-                setTextInput({
-                  ...textInput,
-                  email: e.target.value,
-                });
-              }}
-            />
+            <input type="email" name="email" onChange={onChange} />
           </div>
           <div className="whatsapp">
             <p>WhatsApp</p>
@@ -70,14 +75,7 @@ export const SignUpTeacher = () => {
           </div>
           <div className="bio">
             <p>Biografia</p>
-            <textarea
-              onChange={(e) => {
-                setTextInput({
-                  ...textInput,
-                  biography: e.target.value,
-                });
-              }}
-            />
+            <textarea name="biography" onChange={onChange} />
           </div>
         </div>
         <div className="my-material-title">
@@ -117,26 +115,14 @@ export const SignUpTeacher = () => {
         <div className="my-material">
           <div className="material">
             <p>Sua nova senha</p>
-            <input
-              type="password"
-              onChange={(e) => {
-                setTextInput({
-                  ...textInput,
-                  password: e.target.value,
-                });
-              }}
-            />
+            <input type="password" name="password" onChange={onChange} />
           </div>
           <div className="value-hour">
             <p>Confirme sua nova senha</p>
             <input
               type="password"
-              onChange={(e) => {
-                setTextInput({
-                  ...textInput,
-                  confirmationPassword: e.target.value,
-                });
-              }}
+              name="confirmationPassword"
+              onChange={onChange}
             />
           </div>
         </div>

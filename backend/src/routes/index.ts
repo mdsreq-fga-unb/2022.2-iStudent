@@ -13,7 +13,7 @@ routes.get('/', (req, res) => {
 });
 
 routes.post('/signup/teacher', adaptRoute(makeSignUpTeacherController()));
-routes.post('/signup/student', adaptRoute(makeSignUpStudentController()))
+routes.post('/signup/student', adaptRoute(makeSignUpStudentController()));
 
 routes.post('/login/teacher', adaptRoute(makeLoginTeacherController()));
 
