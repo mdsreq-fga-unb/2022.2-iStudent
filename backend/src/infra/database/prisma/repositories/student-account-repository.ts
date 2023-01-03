@@ -5,15 +5,15 @@ import { prisma } from "@prisma/client";
 
 export class StudentAccountPrismaRepository implements AddStudentRepository {
     async addStudent(account: addStudentAccountModel): Promise<AccountStudentModel> {
-        await prisma.student.create({
-            data: {
-                name: account.name,
-                email: account.email,
-                password: account.password,
-                whatsapp: account.whatsapp,
-                biography: account.biography
-            }
-        })
+        // await prisma.student.create({
+        //     data: {
+        //         name: account.name,
+        //         email: account.email,
+        //         password: account.password,
+        //         whatsapp: account.whatsapp,
+        //         biography: account.biography
+        //     }
+        // })
 
         return
     }

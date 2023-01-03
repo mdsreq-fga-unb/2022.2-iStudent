@@ -2,10 +2,10 @@ import { Container, Header, Body } from "./styles";
 import ArrowBackIcon from "@mui/icons-material/ArrowBack";
 import ErrorOutlineIcon from "@mui/icons-material/ErrorOutline";
 import { useNavigate } from "react-router-dom";
-import { api } from "../../shared/services";
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
+import { signupTeacher } from "../../shared/services/auth/signUp";
 
-const inicialValues = {
+const initialValues = {
   name: "",
   email: "",
   password: "",
@@ -16,7 +16,7 @@ const inicialValues = {
 export const SignUpTeacher = () => {
   const navigate = useNavigate();
 
-  const [textInput, setTextInput] = useState(inicialValues);
+  const [textInput, setTextInput] = useState(initialValues);
 
   function onChange(
     e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
@@ -27,10 +27,14 @@ export const SignUpTeacher = () => {
     setTextInput({ ...textInput, [name]: value });
   }
 
-  function handleClickSignUp() {
-    api.post("signup/teacher", textInput).then((res) => {
-      navigate("/pagina-inicial");
-    });
+  async function handleClickSignUp() {
+    try {
+      await signupTeacher(textInput)
+      navigate("/login")
+      alert("Cadastro feito com sucesso, agora só fazer o login!")
+    } catch (error) {
+      alert('Erro no cadastro, tente novamente!')
+    }
   }
 
   const handleClickSignUpPage = () => {
@@ -69,44 +73,9 @@ export const SignUpTeacher = () => {
             <p>E-mail</p>
             <input type="email" name="email" onChange={onChange} />
           </div>
-          <div className="whatsapp">
-            <p>WhatsApp</p>
-            <input type="tel" />
-          </div>
           <div className="bio">
             <p>Biografia</p>
             <textarea name="biography" onChange={onChange} />
-          </div>
-        </div>
-        <div className="my-material-title">
-          <h1>Suas Matérias</h1>
-        </div>
-        <div className="my-material">
-          <div className="material">
-            <p>Matérias</p>
-            <input type="text" />
-          </div>
-          <div className="value-hour">
-            <p>Custo da sua hora por aula</p>
-            <input type="number" />
-          </div>
-        </div>
-        <div className="schedule-title">
-          <h1>Horários Disponíveis</h1>
-          <button>+ Novo Horário</button>
-        </div>
-        <div className="schedule">
-          <div className="week-day">
-            <p>Dia da semana</p>
-            <input type="text" />
-          </div>
-          <div className="initial-hour">
-            <p>Das</p>
-            <input type="time" />
-          </div>
-          <div className="final-hour">
-            <p>Até</p>
-            <input type="time" />
           </div>
         </div>
         <div className="my-material-title">

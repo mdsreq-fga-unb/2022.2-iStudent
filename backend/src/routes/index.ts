@@ -1,8 +1,9 @@
 import { Router } from 'express';
 import { adaptRoute } from '../main/adapters/express/express-route.adapter';
-import { makeLoginTeacherController } from '../main/factories/login-teacher-controller-factory';
-import { makeSignUpStudentController } from '../main/factories/signup-student/signup-student-controller-factory';
-import { makeSignUpTeacherController } from '../main/factories/signup-teacher/signup-teacher-controller-factory';
+import { makeLoginController } from '../main/factories/login-controller-factory';
+import { makeMeController } from '../main/factories/me/me-controller-factory';
+import { makeSignUpController } from '../main/factories/signup/signup-controller-factory';
+import auth from '../main/middlewares/auth';
 
 const routes = Router();
 
@@ -12,9 +13,9 @@ routes.get('/', (req, res) => {
   });
 });
 
-routes.post('/signup/teacher', adaptRoute(makeSignUpTeacherController()));
-routes.post('/signup/student', adaptRoute(makeSignUpStudentController()));
+routes.post('/signup', adaptRoute(makeSignUpController()));
+routes.post('/login', adaptRoute(makeLoginController()));
 
-routes.post('/login/teacher', adaptRoute(makeLoginTeacherController()));
+routes.get('/me', auth(), adaptRoute(makeMeController()));
 
 export default routes;

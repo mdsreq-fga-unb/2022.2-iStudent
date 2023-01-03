@@ -2,13 +2,33 @@ import { Container, Header, Body } from "./styles";
 import ArrowBackIcon from "@mui/icons-material/ArrowBack";
 import ErrorOutlineIcon from "@mui/icons-material/ErrorOutline";
 import { useNavigate, Link } from "react-router-dom";
+import { useState } from "react";
+import { api } from "../../shared/services";
+import login from "../../shared/services/auth/login";
+import { useUser } from "../../contexts/User";
 
 export const Login = () => {
   const navigate = useNavigate();
+  const { setToken } = useUser();
+
+  const [user, setUser] = useState({
+    email: '',
+    password: '',
+  })
 
   const handleClickHome = () => {
     navigate("/pagina-inicial");
   };
+
+  const handleLogin = async () => {
+    try {
+      const token = await login(user.email, user.password)
+      if(token) setToken(token)
+      navigate('/')
+    } catch (error) {
+      console.log(error);
+    }
+  }
 
   return (
     <Container>
@@ -32,13 +52,13 @@ export const Login = () => {
         <div className="my-data">
           <div className="email">
             <p>E-mail</p>
-            <input type="email" />
+            <input type="email" onChange={(e) => setUser({ ...user, email: e.target.value})}/>
           </div>
         </div>
         <div className="my-password">
           <div className="password">
             <p>Senha</p>
-            <input type="password" />
+            <input type="password" onChange={(e) => setUser({ ...user, password: e.target.value})}/>
           </div>
         </div>
         <div className="final">
@@ -49,7 +69,7 @@ export const Login = () => {
               <p>Preencha todas as informações</p>
             </div>
           </div>
-          <button>Entrar</button>
+          <button onClick={handleLogin}>Entrar</button>
         </div>
         <div className="havent-login">
           <span>
