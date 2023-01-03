@@ -10,6 +10,10 @@
   - [Sprint 3](./wiki/sprint03.md)
   - [Sprint 4](./wiki/sprint04.md)
 
+- Backlog
+
+  - [Backlog](./wiki/backlog.md)
+
 - Entregáveis
   - [Unidade 1](./wiki/unidade1.md)
   - [Unidade 2](./wiki/unidade2.md)
