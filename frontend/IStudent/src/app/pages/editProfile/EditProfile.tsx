@@ -1,4 +1,4 @@
-import { Body, Container, Header } from "./styles";
+import { Body, Container, Header, DeleteAccount } from "./styles";
 import { useNavigate } from "react-router-dom";
 import NotificationsIcon from "@mui/icons-material/Notifications";
 import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
@@ -41,6 +41,9 @@ export const EditProfile = () => {
         </div>
         <button>Salvar</button>
       </Body>
+      <DeleteAccount>
+        <button>Excluir minha conta</button>
+      </DeleteAccount>
     </Container>
   );
 };

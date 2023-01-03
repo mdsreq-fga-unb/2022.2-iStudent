@@ -180,3 +180,26 @@ export const Body = styled.div`
     background-color: #ffa500;
   }
 `;
+
+export const DeleteAccount = styled.div`
+  margin-top: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  button {
+    width: 200px;
+    height: 40px;
+    background-color: #ff4747;
+    border-style: none;
+    border-radius: 8px;
+    color: #ffffff;
+    font-size: 16px;
+    font-family: "Poppins";
+    font-weight: 900;
+  }
+
+  button:hover {
+    background-color: red;
+  }
+`;
