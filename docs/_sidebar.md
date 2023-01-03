@@ -15,6 +15,10 @@
 
   - [Backlog](./wiki/backlog.md)
 
+- Product Backlog Building
+
+  - [PBB](./wiki/pbb.md)
+
 - Entregáveis
   - [Unidade 1](./wiki/unidade1.md)
   - [Unidade 2](./wiki/unidade2.md)
