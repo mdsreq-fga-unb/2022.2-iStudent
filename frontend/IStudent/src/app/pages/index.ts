@@ -4,3 +4,4 @@ export * from "./signUpTeacher/SignUpTeacher";
 export * from "./signUpStudent/SignUpStudent";
 export * from "./login/Login";
 export * from "./forgotPassword/ForgotPassword";
+export * from "./editProfile/EditProfile";
