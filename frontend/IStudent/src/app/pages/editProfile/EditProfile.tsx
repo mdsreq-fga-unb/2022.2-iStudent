@@ -1,18 +1,15 @@
 import { Body, Container, Header, DeleteAccount } from "./styles";
 import { useNavigate } from "react-router-dom";
-import NotificationsIcon from "@mui/icons-material/Notifications";
-import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
 import { useUser } from "../../contexts/User";
 import deleteAccount from "../../shared/services/user/deleteAccount";
-import Tippy from "@tippyjs/react";
-import { ToolTip } from "../../shared/components";
+import { HeaderUser } from "../../shared/components";
 
 export const EditProfile = () => {
   const navigate = useNavigate();
   const { user, setUser, changeToken } = useUser();
 
   const handleClickHome = () => {
-    navigate("/pagina-inicial-usuario");
+    navigate("/pagina-inicial");
   };
 
   const handleDeleteAccount = async () => {
@@ -25,19 +22,7 @@ export const EditProfile = () => {
 
   return (
     <Container>
-      <Header>
-        <div className="product-name" onClick={handleClickHome}>
-          iStudent
-        </div>
-        <input type="text" placeholder="Pesquise por qualquer coisa" />
-        <div className="button-space">
-          <ShoppingCartIcon className="shoppingCart-item" />
-          <NotificationsIcon className="notification-item" />
-          <Tippy content={<ToolTip></ToolTip>} interactive={true}>
-            <div className="profile-space"></div>
-          </Tippy>
-        </div>
-      </Header>
+      <HeaderUser />
       <Body>
         <div className="my-data-title">
           <h1>Seus Dados</h1>

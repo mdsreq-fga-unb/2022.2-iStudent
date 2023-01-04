@@ -5,9 +5,7 @@ import {
   SignUpTeacher,
   SignUpStudent,
   Login,
-  ForgotPassword,
   EditProfile,
-  HomeUser,
 } from "../pages/index";
 
 export const Router = () => {
@@ -19,9 +17,7 @@ export const Router = () => {
         <Route path="/cadastro-professor" element={<SignUpTeacher />} />
         <Route path="/cadastro-estudante" element={<SignUpStudent />} />
         <Route path="/login" element={<Login />} />
-        <Route path="/senha-esquecida" element={<ForgotPassword />} />
         <Route path="/editar-dados" element={<EditProfile />} />
-        <Route path="/pagina-inicial-usuario" element={<HomeUser />} />
 
         <Route path="*" element={<Navigate to="/pagina-inicial" />} />
       </Routes>

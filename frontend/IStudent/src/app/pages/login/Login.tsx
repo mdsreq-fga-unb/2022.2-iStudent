@@ -24,9 +24,9 @@ export const Login = () => {
     try {
       const token = await login(user.email, user.password);
       if (token) setToken(token);
-      navigate("/pagina-inicial-usuario");
+      navigate("/pagina-inicial");
     } catch (error) {
-      alert('Erro no login, tente novamente!')
+      alert("Erro no login, tente novamente!");
       console.log(error);
     }
   };
@@ -81,9 +81,6 @@ export const Login = () => {
         <div className="havent-login">
           <span>
             Não possui cadastro? <Link to={"/cadastro"}>Cadastre-se Já!</Link>
-          </span>
-          <span>
-            <Link to={"/senha-esquecida"}>Esqueci a senha</Link>
           </span>
         </div>
       </Body>
