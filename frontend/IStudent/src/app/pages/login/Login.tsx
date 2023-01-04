@@ -24,8 +24,9 @@ export const Login = () => {
     try {
       const token = await login(user.email, user.password)
       if(token) setToken(token)
-      navigate('/')
+      navigate('/editar-dados')
     } catch (error) {
+      alert('Erro no login, tente novamente!')
       console.log(error);
     }
   }
