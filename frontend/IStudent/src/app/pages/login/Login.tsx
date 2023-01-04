@@ -12,9 +12,9 @@ export const Login = () => {
   const { setToken } = useUser();
 
   const [user, setUser] = useState({
-    email: '',
-    password: '',
-  })
+    email: "",
+    password: "",
+  });
 
   const handleClickHome = () => {
     navigate("/pagina-inicial");
@@ -22,13 +22,13 @@ export const Login = () => {
 
   const handleLogin = async () => {
     try {
-      const token = await login(user.email, user.password)
-      if(token) setToken(token)
-      navigate('/')
+      const token = await login(user.email, user.password);
+      if (token) setToken(token);
+      navigate("/pagina-inicial-usuario");
     } catch (error) {
       console.log(error);
     }
-  }
+  };
 
   return (
     <Container>
@@ -52,13 +52,19 @@ export const Login = () => {
         <div className="my-data">
           <div className="email">
             <p>E-mail</p>
-            <input type="email" onChange={(e) => setUser({ ...user, email: e.target.value})}/>
+            <input
+              type="email"
+              onChange={(e) => setUser({ ...user, email: e.target.value })}
+            />
           </div>
         </div>
         <div className="my-password">
           <div className="password">
             <p>Senha</p>
-            <input type="password" onChange={(e) => setUser({ ...user, password: e.target.value})}/>
+            <input
+              type="password"
+              onChange={(e) => setUser({ ...user, password: e.target.value })}
+            />
           </div>
         </div>
         <div className="final">
