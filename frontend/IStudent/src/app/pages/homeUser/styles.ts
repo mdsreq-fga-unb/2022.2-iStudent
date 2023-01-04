@@ -65,9 +65,9 @@ export const Header = styled.div`
     background-color: #c9c9c9;
     border-radius: 100%;
     width: 50px;
+    height: 50px;
     align-items: center;
-    margin-top: 10px;
-    margin-bottom: 10px;
+    margin-top: 5px;
     cursor: pointer;
   }
 
