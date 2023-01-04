@@ -15,12 +15,14 @@
     "@material-ui/lab": "^4.0.0-alpha.61",
     "@mui/icons-material": "^5.11.0",
     "@mui/material": "^5.11.2",
+    "@tippyjs/react": "^4.2.6",
     "axios": "^1.2.2",
     "modal": "^1.2.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-modal": "^3.16.1",
     "react-router-dom": "^6.6.0",
+    "react-tooltip": "^5.3.4",
     "styled-components": "^5.3.6"
   },
   "devDependencies": {

@@ -4,22 +4,24 @@ import NotificationsIcon from "@mui/icons-material/Notifications";
 import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
 import { useUser } from "../../contexts/User";
 import deleteAccount from "../../shared/services/user/deleteAccount";
+import Tippy from "@tippyjs/react";
+import { ToolTip } from "../../shared/components";
 
 export const EditProfile = () => {
   const navigate = useNavigate();
-  const { user, setUser , changeToken} = useUser()
+  const { user, setUser, changeToken } = useUser();
 
   const handleClickHome = () => {
-    navigate("/pagina-inicial");
+    navigate("/pagina-inicial-usuario");
   };
 
   const handleDeleteAccount = async () => {
-    await deleteAccount()
-    alert("Conta deletada com sucesso!")
-    setUser(null)
-    changeToken('')
-    navigate('/')
-  }
+    await deleteAccount();
+    alert("Conta deletada com sucesso!");
+    setUser(null);
+    changeToken("");
+    navigate("/");
+  };
 
   return (
     <Container>
@@ -31,7 +33,9 @@ export const EditProfile = () => {
         <div className="button-space">
           <ShoppingCartIcon className="shoppingCart-item" />
           <NotificationsIcon className="notification-item" />
-          <div className="profile-space"></div>
+          <Tippy content={<ToolTip></ToolTip>} interactive={true}>
+            <div className="profile-space"></div>
+          </Tippy>
         </div>
       </Header>
       <Body>
@@ -41,13 +45,13 @@ export const EditProfile = () => {
         <div className="my-data">
           <div className="email">
             <p>Nome</p>
-            <input type="text" value={user?.name}/>
+            <input type="text" value={user?.name} />
           </div>
         </div>
         <div className="my-password">
           <div className="password">
             <p>E-mail</p>
-            <input type="email" value={user?.email}/>
+            <input type="email" value={user?.email} />
           </div>
         </div>
         <button>Salvar</button>

@@ -7,9 +7,10 @@ import {
   TeacherArea,
 } from "./styles";
 import { useNavigate } from "react-router-dom";
-import { CoursesCard, TeacherCard } from "../../shared/components";
+import { CoursesCard, TeacherCard, ToolTip } from "../../shared/components";
 import NotificationsIcon from "@mui/icons-material/Notifications";
 import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
+import Tippy from "@tippyjs/react";
 
 export const HomeUser = () => {
   const navigate = useNavigate();
@@ -28,7 +29,9 @@ export const HomeUser = () => {
         <div className="button-space">
           <ShoppingCartIcon className="shoppingCart-item" />
           <NotificationsIcon className="notification-item" />
-          <div className="profile-space"></div>
+          <Tippy content={<ToolTip></ToolTip>} interactive={true}>
+            <div className="profile-space"></div>
+          </Tippy>
         </div>
       </Header>
       <BodyHeader>
