@@ -6,6 +6,6 @@ export default async function userInfo() {
         const user = data.user
         return user
     } catch (error) {
-        alert('Erro ao pegar informações, tente novamente!')
+        throw new Error('Erro ao pegar informações, tente novamente!')
     }
 }
