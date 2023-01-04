@@ -1,41 +1,24 @@
 import {
   Container,
-  Header,
   BodyHeader,
   Category,
   CourseArea,
   TeacherArea,
 } from "./styles";
-import { useNavigate } from "react-router-dom";
-import { CoursesCard, TeacherCard } from "../../shared/components";
+import {
+  CoursesCard,
+  HeaderHome,
+  HeaderUser,
+  TeacherCard,
+} from "../../shared/components";
+import { useUser } from "../../contexts/User";
 
 export const Home = () => {
-  const navigate = useNavigate();
-
-  const handleClickSignUp = () => {
-    navigate("/cadastro");
-  };
-
-  const handleClickHome = () => {
-    navigate("/pagina-inicial");
-  };
-
-  const handleClickLogin = () => {
-    navigate("/login");
-  };
+  const { user } = useUser();
 
   return (
     <Container>
-      <Header>
-        <div className="product-name" onClick={handleClickHome}>
-          iStudent
-        </div>
-        <input type="text" placeholder="Pesquise por qualquer coisa" />
-        <div className="button-space">
-          <button onClick={handleClickLogin}>Fazer login</button>
-          <button onClick={handleClickSignUp}>Cadastrar-se</button>
-        </div>
-      </Header>
+      {user ? <HeaderUser /> : <HeaderHome />}
       <BodyHeader>
         <div className="phrase-area">
           <h1>O aprendizado é conhecimento, e conhecimento é liberdade</h1>
