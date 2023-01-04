@@ -2,13 +2,24 @@ import { Body, Container, Header, DeleteAccount } from "./styles";
 import { useNavigate } from "react-router-dom";
 import NotificationsIcon from "@mui/icons-material/Notifications";
 import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
+import { useUser } from "../../contexts/User";
+import deleteAccount from "../../shared/services/user/deleteAccount";
 
 export const EditProfile = () => {
   const navigate = useNavigate();
+  const { user, setUser , changeToken} = useUser()
 
   const handleClickHome = () => {
     navigate("/pagina-inicial");
   };
+
+  const handleDeleteAccount = async () => {
+    await deleteAccount()
+    alert("Conta deletada com sucesso!")
+    setUser(null)
+    changeToken('')
+    navigate('/')
+  }
 
   return (
     <Container>
@@ -30,19 +41,19 @@ export const EditProfile = () => {
         <div className="my-data">
           <div className="email">
             <p>Nome</p>
-            <input type="text" />
+            <input type="text" value={user?.name}/>
           </div>
         </div>
         <div className="my-password">
           <div className="password">
             <p>E-mail</p>
-            <input type="email" />
+            <input type="email" value={user?.email}/>
           </div>
         </div>
         <button>Salvar</button>
       </Body>
       <DeleteAccount>
-        <button>Excluir minha conta</button>
+        <button onClick={handleDeleteAccount}>Excluir minha conta</button>
       </DeleteAccount>
     </Container>
   );

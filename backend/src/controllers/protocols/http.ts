@@ -1,4 +1,4 @@
-import { UserRole } from "../../../types/user"
+import { UserRole } from "../../types/user"
 
 export interface HttpResponse {
     statusCode: number
@@ -10,6 +10,7 @@ export interface HttpRequest {
     headers?: any
     user?: {
         email: string,
-        role: UserRole
+        role: UserRole,
+        id: number,
     }
 }

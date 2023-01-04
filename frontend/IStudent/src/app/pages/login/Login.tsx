@@ -26,6 +26,7 @@ export const Login = () => {
       if (token) setToken(token);
       navigate("/pagina-inicial-usuario");
     } catch (error) {
+      alert('Erro no login, tente novamente!')
       console.log(error);
     }
   };

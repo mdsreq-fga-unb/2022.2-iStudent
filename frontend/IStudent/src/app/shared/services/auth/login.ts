@@ -8,6 +8,6 @@ export default async function login(email: string, password: string) {
         localStorage.setItem('ISTUDENT:TOKEN', token)
         return token
     } catch (error) {
-        alert('Erro no login, tente novamente!')
+        throw new Error('Erro no login, tente novamente!')
     }
 }

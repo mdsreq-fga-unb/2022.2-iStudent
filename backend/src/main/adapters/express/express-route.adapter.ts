@@ -10,6 +10,7 @@ export const adaptRoute = (controller: Controller) => {
             httpRequest.user = {
                 email: req.user.email || null,
                 role: req.user.role || null,
+                id: req.user.id || null
             }
         }
         const httpResponse = await controller.handle(httpRequest)
