@@ -5,6 +5,7 @@ export interface UserRepository {
   addTeacher(account: addTeacherAccountModel): Promise<AccountTeacherModel>;
   addStudent(account: addTeacherAccountModel): Promise<AccountTeacherModel>;
   findOne(email: string): Promise<AccountTeacherModel | null>;
+  deleteOne(id: number): Promise<void>;
 }
 
 export default {};
