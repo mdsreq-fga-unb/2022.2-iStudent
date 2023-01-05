@@ -4,6 +4,8 @@
 
 <h6 align="center">Projeto criado por estudantes da disciplina Requisitos de Software</h6>
 
+<h6 align="center"><a href="https://istudent-frontend.onrender.com/">Clique aqui para acessar o site</a></h6>
+
 # Índice
 
 - [Descrição do Projeto](#descrição-do-produto💡)
