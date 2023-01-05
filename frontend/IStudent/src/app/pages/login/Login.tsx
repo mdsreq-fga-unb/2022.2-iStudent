@@ -3,7 +3,6 @@ import ArrowBackIcon from "@mui/icons-material/ArrowBack";
 import ErrorOutlineIcon from "@mui/icons-material/ErrorOutline";
 import { useNavigate, Link } from "react-router-dom";
 import { useState } from "react";
-import { api } from "../../shared/services";
 import login from "../../shared/services/auth/login";
 import { useUser } from "../../contexts/User";
 

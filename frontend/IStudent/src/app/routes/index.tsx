@@ -6,6 +6,7 @@ import {
   SignUpStudent,
   Login,
   EditProfile,
+  AvailableTeacher,
 } from "../pages/index";
 
 export const Router = () => {
@@ -18,6 +19,7 @@ export const Router = () => {
         <Route path="/cadastro-estudante" element={<SignUpStudent />} />
         <Route path="/login" element={<Login />} />
         <Route path="/editar-dados" element={<EditProfile />} />
+        <Route path="/professores-disponiveis" element={<AvailableTeacher />} />
 
         <Route path="*" element={<Navigate to="/pagina-inicial" />} />
       </Routes>

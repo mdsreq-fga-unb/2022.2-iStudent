@@ -12,9 +12,15 @@ import {
   TeacherCard,
 } from "../../shared/components";
 import { useUser } from "../../contexts/User";
+import { useNavigate } from "react-router-dom";
 
 export const Home = () => {
   const { user } = useUser();
+  const navigate = useNavigate();
+
+  const handleAvblTeacherPage = () => {
+    navigate("/professores-disponiveis");
+  };
 
   return (
     <Container>
@@ -30,12 +36,12 @@ export const Home = () => {
         <h3>Principais Categorias</h3>
         <div className="categories-list">
           <ul>
-            <li>
+            <li onClick={handleAvblTeacherPage}>
               <div>
                 <div className="category-card">
-                  <img src="../public/port.svg" alt="" />
+                  <img src="../public/part.svg" alt="" />
                 </div>
-                <span>Português</span>
+                <span>Aulas Particulares</span>
               </div>
             </li>
             <li>
@@ -60,6 +66,40 @@ export const Home = () => {
                   <img src="../public/geo.svg" alt="" />
                 </div>
                 <span>Geografia</span>
+              </div>
+            </li>
+          </ul>
+          <ul>
+            <li>
+              <div>
+                <div className="category-card">
+                  <img src="../public/port.svg" alt="" />
+                </div>
+                <span>Português</span>
+              </div>
+            </li>
+            <li>
+              <div>
+                <div className="category-card">
+                  <img src="../public/physic.svg" alt="" />
+                </div>
+                <span>Física</span>
+              </div>
+            </li>
+            <li>
+              <div>
+                <div className="category-card">
+                  <img src="../public/chemic.svg" alt="" />
+                </div>
+                <span>Química</span>
+              </div>
+            </li>
+            <li>
+              <div>
+                <div className="category-card">
+                  <img src="../public/leng.svg" alt="" />
+                </div>
+                <span>Língua Estrangeira</span>
               </div>
             </li>
           </ul>
