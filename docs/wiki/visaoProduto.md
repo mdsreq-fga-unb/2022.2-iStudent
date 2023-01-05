@@ -59,17 +59,17 @@
 
 ### 2.2 Planejamento das Fases e/ou Iterações do Projeto
 
-| Sprint   | Atividade (Entrega)                                        | Data início | Data Fim   |
-| -------- | ---------------------------------------------------------- | ----------- | ---------- |
-| Sprint 0 | Definição da Equipe e do Produto                           | 25/10/2022  | 03/11/2022 |
-| Sprint 1 | Trabalhar na primeira versão do visão de produto e projeto | 04/11/2022  | 17/11/2022 |
-| Sprint 2 | Definição do backlog do produto                            | 22/11/2022  | 01/12/2022 |
-| Sprint 3 | Definição do MVP e Validação do MVP1                       | 01/12/2022  | 08/12/2022 |
-| Sprint 4 | Preparação do Ambiente de Desenvolvimento                  | 08/12/2022  | 15/12/2022 |
-| Sprint 5 | Implementação do MPV1                                      | 15/12/2022  | 29/12/2022 |
-| Sprint 6 | Implementar e Entrega do MVP1                              | 03/01/2023  | 12/01/2023 |
-| Sprint 7 | Implementação do MVP2                                      | 16/01/2023  | 30/01/2023 |
-| Sprint 8 | Implementar e Entrega do MVP2                              | 31/02/2023  | 09/02/2023 |
+| Sprint   | Atividade (Entrega)                                                    | Data início | Data Fim   |
+| -------- | ---------------------------------------------------------------------- | ----------- | ---------- |
+| Sprint 0 | Definição da Equipe e do Produto                                       | 25/10/2022  | 03/11/2022 |
+| Sprint 1 | Trabalhar na primeira versão do visão de produto e projeto             | 04/11/2022  | 17/11/2022 |
+| Sprint 2 | Definição do backlog do produto                                        | 22/11/2022  | 01/12/2022 |
+| Sprint 3 | Definição do MVP e Validação do MVP1                                   | 01/12/2022  | 08/12/2022 |
+| Sprint 4 | Preparação do Ambiente de Desenvolvimento e refinamento das User Story | 08/12/2022  | 15/12/2022 |
+| Sprint 5 | Implementação do MPV1                                                  | 15/12/2022  | 29/12/2022 |
+| Sprint 6 | Implementar e Entrega do MVP1                                          | 03/01/2023  | 12/01/2023 |
+| Sprint 7 | Implementação do MVP2                                                  | 16/01/2023  | 30/01/2023 |
+| Sprint 8 | Implementar e Entrega do MVP2                                          | 31/02/2023  | 09/02/2023 |
 
 ### 2.3 Matriz de Comunicação
 
