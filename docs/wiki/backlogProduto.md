@@ -25,7 +25,7 @@ O escopo do projeto foi delimitado de acordo com a necessidade de criar uma plat
 | F01US03 | Eu, como usuário, quero visualizar o meu perfil após o cadastro para verificar se os dados correspondem com o que cadastrei. | Média      |
 | F01US04 | Eu, como usuário, quero editar os dados já cadastrados do meu perfil para atualizar os meus dados.                           | Média      |
 | F01US05 | Eu, como usuário quero me autenticar para validar a minha conta na plataforma.                                               | Média      |
-| F01US05 | Eu, como usuário, quero excluir a minha conta para não ter mais um perfil na plataforma.                                     | Média      |
+| F01US06 | Eu, como usuário, quero excluir a minha conta para não ter mais um perfil na plataforma.                                     | Média      |
 
 #### Feature 02: Pareamento dos Usuários
 
