@@ -1,5 +1,6 @@
 import { useNavigate } from "react-router-dom";
 import { Container } from "./styles";
+import signupImage from "../../shared/assets/signupImage/signUpImage.svg";
 
 export const SignUp = () => {
   const navigate = useNavigate();
@@ -31,7 +32,7 @@ export const SignUp = () => {
             </button>
           </div>
         </div>
-        <img className="signUp-image" src="../public/signUpImage.svg" />
+        <img className="signUp-image" src={signupImage} />
       </div>
     </Container>
   );
