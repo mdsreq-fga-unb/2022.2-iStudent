@@ -1,7 +1,8 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-  height: 180vh;
+  height: 100%;
+  width: 100%;
   background: #d9d9d9;
 
   footer {
@@ -10,6 +11,7 @@ export const Container = styled.div`
     font-weight: 900;
     text-align: center;
     margin-top: 25vh;
+    padding-bottom: 20px;
     display: flex;
     flex-direction: column;
     cursor: pointer;
@@ -24,8 +26,12 @@ export const BodyHeader = styled.div`
   box-shadow: 5px 5px 5px gray;
   display: flex;
   flex-direction: row;
-  gap: 150px;
+  justify-content: space-between;
   padding: 10px;
+
+  img {
+    margin-right: 120px;
+  }
 
   .phrase-area {
     width: 50%;
@@ -48,7 +54,7 @@ export const BodyHeader = styled.div`
   .phrase-area span {
     font-family: "Poppins";
     font-size: 16;
-    margin-left: 150px;
+    text-align: center;
   }
 `;
 
@@ -71,6 +77,7 @@ export const Category = styled.div`
     text-align: center;
     list-style: none;
     font-family: "Poppins";
+    margin-bottom: 20px;
   }
 
   .categories-list img {

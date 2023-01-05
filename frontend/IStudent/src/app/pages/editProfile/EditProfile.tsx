@@ -30,13 +30,13 @@ export const EditProfile = () => {
         <div className="my-data">
           <div className="email">
             <p>Nome</p>
-            <input type="text" value={user?.name} />
+            <input type="text" placeholder={user?.name} />
           </div>
         </div>
         <div className="my-password">
           <div className="password">
             <p>E-mail</p>
-            <input type="email" value={user?.email} />
+            <input type="email" placeholder={user?.email} />
           </div>
         </div>
         <button>Salvar</button>
