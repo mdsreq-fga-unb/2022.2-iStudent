@@ -40,19 +40,19 @@ O escopo do projeto foi delimitado de acordo com a necessidade de criar uma plat
 
 | ID      | User Story                                                                                                                                 | Prioridade |
 | ------- | ------------------------------------------------------------------------------------------------------------------------------------------ | ---------- |
-| F04US01 | Eu, como Professor, quero cadastrar um ou mais cursos para disponibilizar na plataforma.                                                   | Alta       |
-| F04US02 | Eu, como Professor, quero visualizar os dados do meu curso para verificar se correspondem com os dados que cadastrei.                      | Alta       |
-| F04US03 | Eu, como Professor, quero editar os dados do meu curso para atualizar os campos que eu gostaria de mudar.                                  | Alta       |
-| F04US04 | Eu, como Professor, quero visualizar os alunos matriculados no(s) meu(s) curso(s) para saber quantos alunos tenho matriculado no meu curso | Média      |
-| F04US05 | Eu, como Professor, quero excluir o meu curso após ele ter sido adicionado para retirar da plataforma                                      | Média      |
+| F03US01 | Eu, como Professor, quero cadastrar um ou mais cursos para disponibilizar na plataforma.                                                   | Alta       |
+| F03US02 | Eu, como Professor, quero visualizar os dados do meu curso para verificar se correspondem com os dados que cadastrei.                      | Alta       |
+| F03US03 | Eu, como Professor, quero editar os dados do meu curso para atualizar os campos que eu gostaria de mudar.                                  | Alta       |
+| F03US04 | Eu, como Professor, quero visualizar os alunos matriculados no(s) meu(s) curso(s) para saber quantos alunos tenho matriculado no meu curso | Média      |
+| F03US05 | Eu, como Professor, quero excluir o meu curso após ele ter sido adicionado para retirar da plataforma                                      | Média      |
 
 #### Feature 04: Gerenciamento de Agendamento
 
 | ID      | User Story                                                                                                                                  | Prioridade |
 | ------- | ------------------------------------------------------------------------------------------------------------------------------------------- | ---------- |
-| F05US01 | Eu, como Professor, quero acessar os pedidos de agendamento dos meus alunos para visualizar o que cada aluno está pedindo.                  | Alta       |
-| F05US02 | Eu, como Professor, quero aceitar ou recusar os pedidos de agendamento dos meus alunos para gerenciar os pedidos de agendamento.            | Alta       |
-| F05US03 | Eu, como Professor, quero visualizar o(a) aluno(a) que requisitou o pedido de agendamento para saber quem requisitou o agendamento de aula. | Baixa      |
+| F04US01 | Eu, como Professor, quero acessar os pedidos de agendamento dos meus alunos para visualizar o que cada aluno está pedindo.                  | Alta       |
+| F04US02 | Eu, como Professor, quero aceitar ou recusar os pedidos de agendamento dos meus alunos para gerenciar os pedidos de agendamento.            | Alta       |
+| F04US03 | Eu, como Professor, quero visualizar o(a) aluno(a) que requisitou o pedido de agendamento para saber quem requisitou o agendamento de aula. | Baixa      |
 
 ## Épico 3: Área do Aluno
 
@@ -60,28 +60,28 @@ O escopo do projeto foi delimitado de acordo com a necessidade de criar uma plat
 
 | ID      | User Story                                                                                                              | Prioridade |
 | ------- | ----------------------------------------------------------------------------------------------------------------------- | ---------- |
-| F06US01 | Eu, como Aluno, quero visualizar o que o curso propõe dentro da plataforma para saber se satisfaz com o que procuro.    | Alta       |
-| F06US02 | Eu, como Aluno, quero me matricular nos cursos dentro da plataforma para acessar as aulas que o curso disponibiliza.    | Alta       |
-| F06US03 | Eu, como Aluno, quero visualizar o conteúdo do curso para poder estudar e assistir os vídeos que o curso disponibiliza. | Alta       |
-| F06US04 | Eu, como Aluno, quero me desmatricular do curso em que já estou matriculado para caso não queira mais fazer o curso.    | Média      |
+| F05US01 | Eu, como Aluno, quero visualizar o que o curso propõe dentro da plataforma para saber se satisfaz com o que procuro.    | Alta       |
+| F05US02 | Eu, como Aluno, quero me matricular nos cursos dentro da plataforma para acessar as aulas que o curso disponibiliza.    | Alta       |
+| F05US03 | Eu, como Aluno, quero visualizar o conteúdo do curso para poder estudar e assistir os vídeos que o curso disponibiliza. | Alta       |
+| F05US04 | Eu, como Aluno, quero me desmatricular do curso em que já estou matriculado para caso não queira mais fazer o curso.    | Média      |
 
 #### Feature 06: Gerenciamento de Aprendizagem
 
 | ID      | User Story                                                                                                                                                 | Prioridade |
 | ------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------- |
-| F07US01 | Eu, como Aluno, quero acessar a aba de Aprendizagem dentro do meu perfil para visualizar como está sendo o meu desempenho.                                 | Baixa      |
-| F07US02 | Eu, como Aluno, quero visualizar a porcentagem do andamento do curso em que estou matriculado para visualizar o meu desempenho dentro do curso.            | Baixa      |
-| F07US03 | Eu, como Aluno, quero visualizar as minhas conquistas ao decorrer do curso dentro da plataforma para visualizar as conquistas que ganhei.                  | Baixa      |
-| F07US04 | Eu, como Aluno, quero visualizar os meus certificados ganhos após a finalização dos cursos para poder imprimir ou visualizar na minha aba de aprendizagem. | Baixa      |
+| F06US01 | Eu, como Aluno, quero acessar a aba de Aprendizagem dentro do meu perfil para visualizar como está sendo o meu desempenho.                                 | Baixa      |
+| F06US02 | Eu, como Aluno, quero visualizar a porcentagem do andamento do curso em que estou matriculado para visualizar o meu desempenho dentro do curso.            | Baixa      |
+| F06US03 | Eu, como Aluno, quero visualizar as minhas conquistas ao decorrer do curso dentro da plataforma para visualizar as conquistas que ganhei.                  | Baixa      |
+| F06US04 | Eu, como Aluno, quero visualizar os meus certificados ganhos após a finalização dos cursos para poder imprimir ou visualizar na minha aba de aprendizagem. | Baixa      |
 
 #### Feature 07: Requisição de Aulas Particulares
 
 | ID      | User Story                                                                                                                                                           | Prioridade |
 | ------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------- |
-| F08US01 | Eu, como Aluno, quero requisitar uma Aula Particular com o Professor do curso em que estou matriculado para reforçar o meu aprendizado dentro do curso.              | Alta       |
-| F08US02 | Eu, como Aluno, quero especificar a modalidade da aula para reforçar o meu aprendizado dentro do curso.                                                              | Alta       |
-| F08US03 | Eu, como Aluno, quero especificar o dia e horário da requisição da aula particular com professor para definir o dia da aula de reforço.                              | Alta       |
-| F08US04 | Eu, como Aluno, quero receber uma resposta do pedido de agendamento de aula por meio do Professor dentro da plataforma para saber se o meu pedido foi aceito ou não. | Média      |
+| F07US01 | Eu, como Aluno, quero requisitar uma Aula Particular com o Professor do curso em que estou matriculado para reforçar o meu aprendizado dentro do curso.              | Alta       |
+| F07US02 | Eu, como Aluno, quero especificar a modalidade da aula para reforçar o meu aprendizado dentro do curso.                                                              | Alta       |
+| F07US03 | Eu, como Aluno, quero especificar o dia e horário da requisição da aula particular com professor para definir o dia da aula de reforço.                              | Alta       |
+| F07US04 | Eu, como Aluno, quero receber uma resposta do pedido de agendamento de aula por meio do Professor dentro da plataforma para saber se o meu pedido foi aceito ou não. | Média      |
 
 ## Requisitos Não Funcionais
 
