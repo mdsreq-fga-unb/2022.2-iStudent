@@ -13,7 +13,15 @@ import {
 } from "../../shared/components";
 import { useUser } from "../../contexts/User";
 import { useNavigate } from "react-router-dom";
-
+import geoImage from "../../shared/assets/geoImage/geo.svg";
+import hisImage from "../../shared/assets/hisImage/his.svg";
+import portImage from "../../shared/assets/portImage/port.svg";
+import physicImage from "../../shared/assets/physicImage/physic.svg";
+import lengImage from "../../shared/assets/lengImage/leng.svg";
+import homeImage from "../../shared/assets/homeImage/homeImage.svg";
+import mathImage from "../../shared/assets/mathImage/math.svg";
+import partImage from "../../shared/assets/partImage/part.svg";
+import chemicImage from "../../shared/assets/chemicImage/chemic.svg";
 export const Home = () => {
   const { user } = useUser();
   const navigate = useNavigate();
@@ -30,7 +38,7 @@ export const Home = () => {
           <h1>O aprendizado é conhecimento, e conhecimento é liberdade</h1>
           <span>Comece conosco!</span>
         </div>
-        <img src="../public/homeImage.svg" alt="" />
+        <img src={homeImage} alt="" />
       </BodyHeader>
       <Category>
         <h3>Principais Categorias</h3>
@@ -39,7 +47,7 @@ export const Home = () => {
             <li onClick={handleAvblTeacherPage}>
               <div>
                 <div className="category-card">
-                  <img src="../public/part.svg" alt="" />
+                  <img src={partImage} alt="" />
                 </div>
                 <span>Aulas Particulares</span>
               </div>
@@ -47,7 +55,7 @@ export const Home = () => {
             <li>
               <div>
                 <div className="category-card">
-                  <img src="../public/math.svg" alt="" />
+                  <img src={mathImage} alt="" />
                 </div>
                 <span>Matemática</span>
               </div>
@@ -55,7 +63,7 @@ export const Home = () => {
             <li>
               <div>
                 <div className="category-card">
-                  <img src="../public/his.svg" alt="" />
+                  <img src={hisImage} alt="" />
                 </div>
                 <span>História</span>
               </div>
@@ -63,7 +71,7 @@ export const Home = () => {
             <li>
               <div>
                 <div className="category-card">
-                  <img src="../public/geo.svg" alt="" />
+                  <img src={geoImage} alt="" />
                 </div>
                 <span>Geografia</span>
               </div>
@@ -73,7 +81,7 @@ export const Home = () => {
             <li>
               <div>
                 <div className="category-card">
-                  <img src="../public/port.svg" alt="" />
+                  <img src={portImage} alt="" />
                 </div>
                 <span>Português</span>
               </div>
@@ -81,7 +89,7 @@ export const Home = () => {
             <li>
               <div>
                 <div className="category-card">
-                  <img src="../public/physic.svg" alt="" />
+                  <img src={physicImage} alt="" />
                 </div>
                 <span>Física</span>
               </div>
@@ -89,7 +97,7 @@ export const Home = () => {
             <li>
               <div>
                 <div className="category-card">
-                  <img src="../public/chemic.svg" alt="" />
+                  <img src={chemicImage} alt="" />
                 </div>
                 <span>Química</span>
               </div>
@@ -97,7 +105,7 @@ export const Home = () => {
             <li>
               <div>
                 <div className="category-card">
-                  <img src="../public/leng.svg" alt="" />
+                  <img src={lengImage} alt="" />
                 </div>
                 <span>Língua Estrangeira</span>
               </div>
