@@ -68,6 +68,16 @@ export const Input = styled.div`
     padding-left: 20px;
     box-shadow: 5px 5px 5px blue;
   }
+
+  select {
+    width: 200px;
+    border-style: none;
+    height: 40px;
+    border-radius: 8px;
+    padding-left: 20px;
+    box-shadow: 5px 5px 5px blue;
+    font-family: "Poppins";
+  }
 `;
 
 export const Cards = styled.div``;
