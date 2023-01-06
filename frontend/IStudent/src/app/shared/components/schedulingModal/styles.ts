@@ -55,13 +55,14 @@ export const Container = styled.div`
     margin-top: 10px;
   }
 
-  .week-day input {
+  .week-day select {
     border-style: none;
     background-color: #c9c9c9;
     height: 30px;
     width: 200px;
     padding-left: 10px;
     border-radius: 4px;
+    font-family: "Poppins";
   }
 
   .initial-hour input {

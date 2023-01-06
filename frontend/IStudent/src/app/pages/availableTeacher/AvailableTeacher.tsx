@@ -32,7 +32,15 @@ export const AvailableTeacher = () => {
         </div>
         <div>
           <span>Dia da Semana</span>
-          <input type="text" />
+          <select>
+            <option value="Segunda-feira">Segunda-feira</option>
+            <option value="Terça-feira">Terça-feira</option>
+            <option value="Quarta-feira">Quarta-feira</option>
+            <option value="Quinta-feira">Quinta-feira</option>
+            <option value="Sexta-feira">Sexta-feira</option>
+            <option value="Sabado">Sábado</option>
+            <option value="Domingo">Domingo</option>
+          </select>
         </div>
         <div>
           <span>Horário</span>
