@@ -70,6 +70,7 @@ export const Input = styled.div`
   }
 
   select {
+    background-color: #fff;
     width: 200px;
     border-style: none;
     height: 40px;
