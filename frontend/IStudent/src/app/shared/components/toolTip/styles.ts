@@ -1,12 +1,13 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-  width: 200px;
-  height: 380px;
+  width: 250px;
+  height: 400px;
   background-color: #ffffff;
   border: 1px solid #000;
   padding-left: 10px;
   padding-right: 10px;
+  overflow-y: auto;
 
   .button {
     border-style: none;
