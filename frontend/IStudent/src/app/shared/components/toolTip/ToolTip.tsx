@@ -29,7 +29,7 @@ export const ToolTip = () => {
             <button className="button" onClick={handleRequestPage}>
               Solicitações de Aula
             </button>
-            <button className="button">Meus cursos</button>
+            <button className="button">Meus Cursos</button>
             <button className="button">Meus Professores</button>
           </div>
         ) : (
