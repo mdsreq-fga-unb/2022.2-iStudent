@@ -13,6 +13,10 @@ export const ToolTip = () => {
   const handleEditPage = () => {
     navigate("/editar-dados");
   };
+
+  const handleRequestPage = () => {
+    navigate("/solicitacoes-agendamento");
+  };
   return (
     <Container>
       <div id="my-element">
@@ -20,10 +24,21 @@ export const ToolTip = () => {
           <div className="photo"></div>
           <div className="name">{user?.name}</div>
         </div>
-        <div className="perfil">
-          <button className="button">Meus cursos</button>
-          <button className="button">Meus Professores</button>
-        </div>
+        {user?.role === "TEACHER" ? (
+          <div className="perfil">
+            <button className="button" onClick={handleRequestPage}>
+              Solicitações de Aula
+            </button>
+            <button className="button">Meus cursos</button>
+            <button className="button">Meus Professores</button>
+          </div>
+        ) : (
+          <div className="perfil">
+            <button className="button">Meus cursos</button>
+            <button className="button">Meus Professores</button>
+          </div>
+        )}
+
         <div className="edit">
           <button className="button" onClick={handleEditPage}>
             Editar Meus Dados

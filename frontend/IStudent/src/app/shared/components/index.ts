@@ -5,3 +5,4 @@ export * from "./headerHome/HeaderHome";
 export * from "./headerUser/HeaderUser";
 export * from "./avTeacherCard/AvTeacherCard";
 export * from "./schedulingModal/SchedulingModal";
+export * from "./requestSchedule/RequestSchedule";

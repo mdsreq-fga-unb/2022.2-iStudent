@@ -7,6 +7,7 @@ import {
   Login,
   EditProfile,
   AvailableTeacher,
+  TeacherSchedule,
 } from "../pages/index";
 
 export const Router = () => {
@@ -20,6 +21,7 @@ export const Router = () => {
         <Route path="/login" element={<Login />} />
         <Route path="/editar-dados" element={<EditProfile />} />
         <Route path="/professores-disponiveis" element={<AvailableTeacher />} />
+        <Route path="/solicitacoes-agendamento" element={<TeacherSchedule />} />
 
         <Route path="*" element={<Navigate to="/pagina-inicial" />} />
       </Routes>

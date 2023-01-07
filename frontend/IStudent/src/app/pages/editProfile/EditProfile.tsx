@@ -8,10 +8,6 @@ export const EditProfile = () => {
   const navigate = useNavigate();
   const { user, setUser, changeToken } = useUser();
 
-  const handleClickHome = () => {
-    navigate("/pagina-inicial");
-  };
-
   const handleDeleteAccount = async () => {
     await deleteAccount();
     alert("Conta deletada com sucesso!");
