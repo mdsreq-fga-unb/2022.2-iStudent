@@ -2,6 +2,8 @@ import { Container, Header, Body, Button } from "./styles";
 import { useState } from "react";
 import Modal from "react-modal";
 import { SchedulingModal } from "../schedulingModal/SchedulingModal";
+import { useUser } from "../../../contexts/User";
+import { useNavigate } from "react-router-dom";
 
 type CardProps = {
   name: string;
@@ -39,6 +41,13 @@ Modal.setAppElement("#root");
 export const AvTeacherCard = (props: CardProps) => {
   const [modalIsOpen, setIsOpen] = useState(false);
 
+  const navigate = useNavigate();
+  const { user } = useUser();
+
+  const handleLoginPage = () => {
+    navigate("/login");
+  };
+
   const openModal = () => {
     setIsOpen(true);
   };
@@ -62,9 +71,15 @@ export const AvTeacherCard = (props: CardProps) => {
         </div>
       </Body>
       <Button>
-        <button id="modal" onClick={openModal}>
-          Solicitar Aula
-        </button>
+        {user ? (
+          <button id="modal" onClick={openModal}>
+            Solicitar Aula
+          </button>
+        ) : (
+          <button id="modal" onClick={handleLoginPage}>
+            Solicitar Aula
+          </button>
+        )}
         <Modal
           isOpen={modalIsOpen}
           onRequestClose={closeModal}
