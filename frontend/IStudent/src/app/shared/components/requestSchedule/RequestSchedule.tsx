@@ -1,4 +1,6 @@
 import { Container } from "./styles";
+import Tippy from "@tippyjs/react";
+import { DetailCard } from "../index";
 
 export const RequestSchedule = () => {
   return (
@@ -8,7 +10,15 @@ export const RequestSchedule = () => {
         <div className="button-area">
           <button className="accept">Aceitar</button>
           <button className="refuse">Recusar</button>
-          <button className="detail">Detalhes</button>
+          <Tippy
+            content={<DetailCard />}
+            interactive={true}
+            delay={1}
+            duration={1}
+            placement="right"
+          >
+            <button className="detail">Detalhes</button>
+          </Tippy>
         </div>
       </div>
     </Container>

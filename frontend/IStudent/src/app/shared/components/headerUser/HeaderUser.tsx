@@ -2,7 +2,7 @@ import { Header } from "./styles";
 import NotificationsIcon from "@mui/icons-material/Notifications";
 import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
 import { useNavigate } from "react-router-dom";
-import { ToolTip } from "../toolTip/ToolTip";
+import { ToolTip, NotificationTooltip } from "../../components/index";
 import Tippy from "@tippyjs/react";
 
 export const HeaderUser = () => {
@@ -19,8 +19,22 @@ export const HeaderUser = () => {
       <input type="text" placeholder="Pesquise por qualquer coisa" />
       <div className="button-space">
         <ShoppingCartIcon className="shoppingCart-item" />
-        <NotificationsIcon className="notification-item" />
-        <Tippy content={<ToolTip></ToolTip>} interactive={true}>
+        <Tippy
+          content={<NotificationTooltip></NotificationTooltip>}
+          interactive={true}
+          delay={1}
+          duration={1}
+          placement="bottom-start"
+        >
+          <NotificationsIcon className="notification-item" />
+        </Tippy>
+        <Tippy
+          content={<ToolTip></ToolTip>}
+          interactive={true}
+          delay={1}
+          duration={1}
+          placement="bottom-start"
+        >
           <div className="profile-space"></div>
         </Tippy>
       </div>
