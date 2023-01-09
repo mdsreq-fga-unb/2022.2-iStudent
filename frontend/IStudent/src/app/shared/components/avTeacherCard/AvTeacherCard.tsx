@@ -59,7 +59,9 @@ export const AvTeacherCard = (props: CardProps) => {
   return (
     <Container>
       <Header>
-        <div className="img"></div>
+        <div className="img">
+          <img src="" alt="" />
+        </div>
         <div className="teacher-name">
           <h3>{props.name}</h3>
           <span>{props.course}</span>

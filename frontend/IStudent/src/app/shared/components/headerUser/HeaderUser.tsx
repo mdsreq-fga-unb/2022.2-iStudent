@@ -35,7 +35,9 @@ export const HeaderUser = () => {
           duration={1}
           placement="bottom-start"
         >
-          <div className="profile-space"></div>
+          <div className="profile-space">
+            <img src="" alt="" />
+          </div>
         </Tippy>
       </div>
     </Header>

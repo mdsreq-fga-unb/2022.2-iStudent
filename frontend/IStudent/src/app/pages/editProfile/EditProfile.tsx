@@ -1,4 +1,4 @@
-import { Body, Container, Header, DeleteAccount } from "./styles";
+import { Body, Container, DeleteAccount } from "./styles";
 import { useNavigate } from "react-router-dom";
 import { useUser } from "../../contexts/User";
 import deleteAccount from "../../shared/services/user/deleteAccount";
@@ -24,6 +24,12 @@ export const EditProfile = () => {
           <h1>Seus Dados</h1>
         </div>
         <div className="my-data">
+          <div className="photo-input">
+            <input type="file" accept="image/*" id="picture-input" />
+            <label htmlFor="picture-input">
+              <span className="picture-image">Sua Foto</span>
+            </label>
+          </div>
           <div className="email">
             <p>Nome</p>
             <input type="text" placeholder={user?.name} />

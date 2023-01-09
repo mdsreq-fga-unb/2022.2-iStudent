@@ -37,6 +37,12 @@ export const Container = styled.div`
     border-radius: 100%;
   }
 
+  img {
+    width: 60px;
+    height: 60px;
+    border-radius: 100%;
+  }
+
   .name {
     font-family: "Poppins";
     font-weight: 900;
