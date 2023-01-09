@@ -25,6 +25,12 @@ export const Header = styled.div`
     background-color: #c9c9c9;
   }
 
+  img {
+    width: 70px;
+    height: 70px;
+    border-radius: 100%;
+  }
+
   h3 {
     font-family: "Poppins";
     font-size: 24px;

@@ -56,6 +56,12 @@ export const Header = styled.div`
     cursor: pointer;
   }
 
+  img {
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+  }
+
   .profile-space:hover {
     transform: scale(1.1);
   }

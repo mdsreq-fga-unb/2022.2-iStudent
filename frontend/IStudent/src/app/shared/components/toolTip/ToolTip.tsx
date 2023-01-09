@@ -21,7 +21,9 @@ export const ToolTip = () => {
     <Container>
       <div id="my-element">
         <div className="header">
-          <div className="photo"></div>
+          <div className="photo">
+            <img src="" alt="" />
+          </div>
           <div className="name">{user?.name}</div>
         </div>
         {user?.role === "TEACHER" ? (
