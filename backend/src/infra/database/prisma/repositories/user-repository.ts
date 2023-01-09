@@ -2,6 +2,7 @@ import prisma from '../../../../database';
 import { UserRepository } from '../../../../database/repositories/users';
 import { AccountTeacherModel } from '../../../../domain/models/account';
 import { addTeacherAccountModel } from '../../../../domain/useCases/addTeacherAccount';
+import { editStudentAccountModel } from '../../../../domain/useCases/editAccount/editStudentAccount';
 
 export class PrismaUserRepository implements UserRepository {
   async addTeacher(
@@ -40,6 +41,20 @@ export class PrismaUserRepository implements UserRepository {
     return await prisma.user.findFirst({
       where: {
         email: email
+      }
+    })
+  }
+
+  async updateOne(id: number, account: editStudentAccountModel): Promise<void> {
+    await prisma.user.update({
+      where: {
+        id: id
+      },
+      data: {
+        name: account.name,
+        email: account.email,
+        password: account.password,
+        biography: account.biography
       }
     })
   }
