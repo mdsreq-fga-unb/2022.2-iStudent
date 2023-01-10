@@ -3,10 +3,14 @@ import { useNavigate } from "react-router-dom";
 import { useUser } from "../../contexts/User";
 import deleteAccount from "../../shared/services/user/deleteAccount";
 import { HeaderUser } from "../../shared/components";
+import { useState } from "react";
+import saveSubject from "../../shared/services/teachers/saveSubject";
 
 export const EditProfile = () => {
   const navigate = useNavigate();
   const { user, setUser, changeToken } = useUser();
+
+  const [subject, setSubject] = useState('')
 
   const handleDeleteAccount = async () => {
     await deleteAccount();
@@ -15,6 +19,11 @@ export const EditProfile = () => {
     changeToken("");
     navigate("/");
   };
+
+  const handleSaveSubject = async () => {
+    await saveSubject(subject, user?.subject?.id || 0)
+    alert("Materia salva com sucesso!");
+  }
 
   return (
     <Container>
@@ -42,6 +51,20 @@ export const EditProfile = () => {
           </div>
         </div>
         <button>Salvar</button>
+
+        {user?.role === 'TEACHER' && <>
+        <div className="my-data-title">
+          <h1>Escolha sua matéria</h1>
+        </div>
+        <div className="my-data">
+          <div className="email">
+            <p>Matéria</p>
+            <input type="text" placeholder={user?.subject?.name}  onChange={(e) => setSubject(e.target.value)}/>
+          </div>
+        </div>
+        <button onClick={handleSaveSubject}>Salvar</button>
+        </>
+        }
       </Body>
       <DeleteAccount>
         <button onClick={handleDeleteAccount}>Excluir minha conta</button>

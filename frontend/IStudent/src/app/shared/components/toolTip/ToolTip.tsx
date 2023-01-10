@@ -4,9 +4,10 @@ import { useUser } from "../../../contexts/User";
 
 export const ToolTip = () => {
   const navigate = useNavigate();
-  const { user } = useUser();
+  const { user, logout } = useUser();
 
   const handleLogOut = () => {
+    logout()
     navigate("/pagina-inicial");
   };
 
