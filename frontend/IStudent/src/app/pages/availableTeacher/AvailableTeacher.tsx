@@ -2,8 +2,12 @@ import { useNavigate } from "react-router-dom";
 import { Container, Header, Input, Cards } from "./styles";
 import ArrowBackIcon from "@mui/icons-material/ArrowBack";
 import { AvTeacherCard } from "../../shared/components";
+import useTeachers from "../../shared/hooks/useTeachers";
+
 export const AvailableTeacher = () => {
   const navigate = useNavigate();
+  const { teachers } = useTeachers()
+
   const handleClickHome = () => {
     navigate("/pagina-inicial");
   };
@@ -48,21 +52,13 @@ export const AvailableTeacher = () => {
         </div>
       </Input>
       <Cards>
-        <AvTeacherCard
-          name="Kleber"
-          course="Química"
-          bio="Entusiasta das melhores tecnologias de química avançada. Apaixonado por explodir coisas em laboratório e por mudar a vida das pessoas através de experiências. Mais de 200.000 pessoas já passaram por uma das minhas explosões."
+        {teachers.map( teacher => (
+          <AvTeacherCard
+          name={teacher.name}
+          course={teacher.subject?.name ? teacher.subject.name : 'Sem materia'}
+          bio={teacher.biography}
         />
-        <AvTeacherCard
-          name="Kleber"
-          course="Química"
-          bio="Entusiasta das melhores tecnologias de química avançada. Apaixonado por explodir coisas em laboratório e por mudar a vida das pessoas através de experiências. Mais de 200.000 pessoas já passaram por uma das minhas explosões."
-        />
-        <AvTeacherCard
-          name="Kleber"
-          course="Química"
-          bio="Entusiasta das melhores tecnologias de química avançada. Apaixonado por explodir coisas em laboratório e por mudar a vida das pessoas através de experiências. Mais de 200.000 pessoas já passaram por uma das minhas explosões."
-        />
+        ))}
       </Cards>
     </Container>
   );
