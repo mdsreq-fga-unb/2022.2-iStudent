@@ -18,7 +18,15 @@ model User {
   name      String
   biography String
   role      Role     @default(STUDENT)
-  subjects  String[] @default([])
+  subject   Subject?
+}
+
+model Subject {
+  id        Int      @id @default(autoincrement())
+  createdAt DateTime @default(now())
+  name      String
+  teacher   User     @relation(fields: [teacherId], references: [id])
+  teacherId Int      @unique
 }
 
 enum Role {
