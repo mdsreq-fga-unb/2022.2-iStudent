@@ -5,6 +5,8 @@ import { makeEditAccountController } from '../main/factories/editAccount/edit-ac
 import { makeLoginController } from '../main/factories/login-controller-factory';
 import { makeMeController } from '../main/factories/me/me-controller-factory';
 import { makeSignUpController } from '../main/factories/signup/signup-controller-factory';
+import { makeAddSubjectontroller } from '../main/factories/subjects/add-subject-factory';
+import { makeAllTeachersController } from '../main/factories/teachers/all-teachers-factory';
 import auth from '../main/middlewares/auth';
 
 const routes = Router();
@@ -22,5 +24,8 @@ routes.get('/me', auth(), adaptRoute(makeMeController()));
 routes.delete('/me', auth(), adaptRoute(makeDeleteAccountController()));
 
 routes.get('/uptade-account', adaptRoute(makeEditAccountController()));
+
+routes.get('/teachers', adaptRoute(makeAllTeachersController()));
+routes.post('/teachers/subject', auth(), adaptRoute(makeAddSubjectontroller()));
 
 export default routes;

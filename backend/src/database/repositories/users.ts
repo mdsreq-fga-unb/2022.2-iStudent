@@ -8,6 +8,7 @@ export interface UserRepository {
   findOne(email: string): Promise<AccountTeacherModel | null>;
   updateOne(id: number, account: editStudentAccountModel): Promise<void>;
   deleteOne(id: number): Promise<void>;
+  AllTeachers(): Promise<AccountTeacherModel[]>;
 }
 
 export default {};
