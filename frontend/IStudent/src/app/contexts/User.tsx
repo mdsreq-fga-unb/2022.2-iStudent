@@ -6,11 +6,13 @@ import {
   useState,
 } from 'react';
 import userInfo from '../shared/services/user/userInfo';
+import { Subject } from '../types/subject';
 
 type UserProps = {
     name: string
     email: string
     role: 'STUDENT' | 'TEACHER'
+    subject?: Subject
 } | null;
 
 interface UserContextProps {
@@ -19,6 +21,7 @@ interface UserContextProps {
   setUser: React.Dispatch<React.SetStateAction<UserProps>>;
   setToken:  React.Dispatch<React.SetStateAction<string>>;
   changeToken: Function
+  logout: Function
 }
 
 const UserContext = createContext<UserContextProps>({} as UserContextProps);
@@ -31,12 +34,18 @@ const UserProvider = ({ children }: { children: ReactNode }) => {
     setToken(token);
     localStorage.setItem('ISTUDENT:TOKEN', token);
   }
+  
+  const logout = () => {
+    changeToken('')
+    setUser(null);
+  }
+
   useEffect(() => {
     if(!token) return
     userInfo().then((userInfo) => setUser(userInfo))
   },[token])
   return (
-    <UserContext.Provider value={{ user, setUser, token, setToken, changeToken }}>
+    <UserContext.Provider value={{ user, setUser, token, setToken, changeToken, logout }}>
       {children}
     </UserContext.Provider>
   );
