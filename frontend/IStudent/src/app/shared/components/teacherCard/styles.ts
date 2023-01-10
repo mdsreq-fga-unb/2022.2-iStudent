@@ -4,31 +4,17 @@ export const Teachers = styled.div`
   margin-top: 50px;
   display: flex;
   flex-direction: column;
-  padding-left: 40px;
-  gap: 30px;
+  align-items: center;
   background-color: #ffffff;
-  width: 250px;
-  height: 300px;
-
-  .teacher-card {
-    width: 300px;
-    height: 300px;
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
-    align-items: flex-start;
-    justify-content: center;
-    padding-left: 5px;
-    font-family: "Poppins";
-    color: #000000;
-  }
+  width: 13vw;
+  height: 15vw;
 
   .teacher-image {
-    margin-left: -25px;
     width: 70%;
-    height: 50%;
+    height: 40%;
     background-color: #000000;
     margin-top: 8px;
+    margin-bottom: 8px;
     cursor: pointer;
   }
 
@@ -38,9 +24,9 @@ export const Teachers = styled.div`
 
   .teacher-details {
     background-color: #ffffff;
-    width: 250px;
-    margin-left: -45px;
+    width: 13vw;
     padding: 10px;
+    padding-left: 1vw;
     display: flex;
     flex-direction: column;
     gap: 8px;
@@ -49,16 +35,16 @@ export const Teachers = styled.div`
 
   .teacher-name {
     font-weight: 900;
-    font-size: 18px;
+    font-size: 1vw;
   }
 
   .teacher-course-name {
-    font-size: 14px;
+    font-size: 1vw;
     opacity: 70%;
   }
 
   .value-hour {
-    font-size: 18px;
+    font-size: 1vw;
     font-weight: 900;
     display: flex;
     flex-direction: row;
@@ -72,8 +58,9 @@ export const Teachers = styled.div`
   .rating {
     display: flex;
     flex-direction: row;
+    align-items: center;
     gap: 10px;
-    font-size: 16px;
+    font-size: 1vw;
     font-weight: 900;
     color: #ffa500;
   }
