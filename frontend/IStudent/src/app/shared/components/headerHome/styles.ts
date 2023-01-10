@@ -3,6 +3,7 @@ import styled from "styled-components";
 export const Header = styled.div`
   height: 60px;
   width: 100%;
+  min-width: 100%;
   background: #000080;
   display: flex;
   flex-direction: row;
@@ -21,16 +22,22 @@ export const Header = styled.div`
   .button-space {
     display: flex;
     flex-direction: row;
-    margin-left: 300px;
+    align-self: center;
+    position: fixed;
+    right: 30px;
   }
 
   input {
     border-radius: 16px;
     height: 40px;
     width: 60%;
+    max-width: 60%;
+    min-width: 60%;
     align-self: center;
     padding-left: 15px;
     border-style: none;
+    position: fixed;
+    left: 180px;
   }
 
   button {
@@ -40,7 +47,6 @@ export const Header = styled.div`
     height: 40px;
     width: auto;
     padding: 10px;
-    align-self: center;
     margin-left: 5px;
     font-family: "Poppins";
   }

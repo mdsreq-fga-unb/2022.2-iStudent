@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-  height: 155vh;
+  height: 100vh;
   background: #d9d9d9;
 `;
 
@@ -47,12 +47,14 @@ export const Body = styled.div`
   z-index: 999;
   background-color: #ffffff;
   width: 500px;
-  height: 70vh;
+  height: auto;
   border-radius: 8px;
   display: flex;
   flex-direction: column;
   padding-left: 20px;
-  margin-left: calc(100vw / 2.7);
+  padding-bottom: 40px;
+  margin-left: auto;
+  margin-right: auto;
   margin-top: -50px;
   font-family: "Poppins";
   font-size: 12px;

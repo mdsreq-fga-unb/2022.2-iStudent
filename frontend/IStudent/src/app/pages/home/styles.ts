@@ -20,9 +20,10 @@ export const Container = styled.div`
 
 export const BodyHeader = styled.div`
   width: 60%;
-  height: 200px;
+  height: 20%;
   background-color: #ffffff;
-  margin-left: calc((100vw) / 5);
+  margin-left: auto;
+  margin-right: auto;
   box-shadow: 5px 5px 5px gray;
   display: flex;
   flex-direction: row;
@@ -30,6 +31,8 @@ export const BodyHeader = styled.div`
   padding: 10px;
 
   img {
+    width: 10vw;
+    height: 10vw;
     margin-right: 120px;
     margin-left: 20px;
   }
@@ -66,7 +69,9 @@ export const Category = styled.div`
   gap: 30px;
 
   h3 {
-    margin-left: 350px;
+    width: 300px;
+    margin-left: auto;
+    margin-right: auto;
     font-family: "Poppins";
   }
 
@@ -101,7 +106,9 @@ export const Category = styled.div`
 
 export const CourseArea = styled.div`
   h3 {
-    margin-left: 350px;
+    width: 300px;
+    margin-left: auto;
+    margin-right: auto;
     margin-top: 50px;
     font-family: "Poppins";
   }
@@ -117,7 +124,9 @@ export const CourseArea = styled.div`
 
 export const TeacherArea = styled.div`
   h3 {
-    margin-left: 350px;
+    width: 300px;
+    margin-left: auto;
+    margin-right: auto;
     margin-top: 50px;
     font-family: "Poppins";
   }
