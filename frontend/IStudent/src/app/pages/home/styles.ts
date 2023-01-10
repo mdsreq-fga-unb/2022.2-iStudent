@@ -31,6 +31,7 @@ export const BodyHeader = styled.div`
 
   img {
     margin-right: 120px;
+    margin-left: 20px;
   }
 
   .phrase-area {
@@ -47,13 +48,13 @@ export const BodyHeader = styled.div`
 
   .phrase-area h1 {
     font-family: "Poppins";
-    font-size: 24px;
+    font-size: 1vw;
     margin-left: 20px;
   }
 
   .phrase-area span {
     font-family: "Poppins";
-    font-size: 16;
+    font-size: 1vw;
     text-align: center;
   }
 `;
@@ -81,13 +82,13 @@ export const Category = styled.div`
   }
 
   .categories-list img {
-    width: 200px;
-    height: 200px;
+    width: 14vw;
+    height: 14vw;
   }
 
   .category-card {
-    width: 200px;
-    height: 200px;
+    width: 14vw;
+    height: 14vw;
     background-color: #ffffff;
     margin-bottom: 12px;
     cursor: pointer;

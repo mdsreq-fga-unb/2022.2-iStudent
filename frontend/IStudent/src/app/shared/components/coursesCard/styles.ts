@@ -12,8 +12,8 @@ export const Courses = styled.div`
   }
 
   .course-card {
-    width: 300px;
-    height: 300px;
+    width: 16vw;
+    height: 16vw;
     display: flex;
     flex-direction: column;
     gap: 8px;
@@ -35,21 +35,22 @@ export const Courses = styled.div`
   }
 
   .course-name {
-    font-size: 18px;
+    font-size: 1vw;
     font-weight: 900;
   }
 
   .course-teacher {
-    font-size: 14px;
+    font-size: 1vw;
     opacity: 70%;
   }
 
   .course-stars {
     display: flex;
     flex-direction: row;
+    align-items: center;
     gap: 10px;
     color: #ffa500;
-    font-size: 16px;
+    font-size: 1vw;
     font-weight: 900;
   }
 
@@ -60,12 +61,12 @@ export const Courses = styled.div`
   }
 
   .current-price {
-    font-size: 18px;
+    font-size: 1vw;
     font-weight: 900;
   }
 
   .original-price {
     opacity: 80%;
-    font-size: 16px;
+    font-size: 1vw;
   }
 `;

@@ -23,6 +23,7 @@ export const CoursesCard = (props: CourseCardProps) => {
         <div className="course-stars">
           <span>{props.raiting}</span>
           <Rating
+            size="small"
             name="half-rating"
             defaultValue={0}
             value={props.raiting}
