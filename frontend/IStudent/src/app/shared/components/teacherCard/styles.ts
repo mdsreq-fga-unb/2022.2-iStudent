@@ -8,13 +8,13 @@ export const Teachers = styled.div`
   background-color: #ffffff;
   width: 13vw;
   height: 15vw;
+  border: 1px solid #000;
 
   .teacher-image {
     width: 70%;
-    height: 40%;
+    height: 60%;
     background-color: #000000;
     margin-top: 8px;
-    margin-bottom: 8px;
     cursor: pointer;
   }
 
@@ -24,12 +24,14 @@ export const Teachers = styled.div`
 
   .teacher-details {
     background-color: #ffffff;
-    width: 13vw;
-    padding: 10px;
+    width: 100%;
+    height: 100%;
+    margin-top: 10%;
     padding-left: 1vw;
     display: flex;
     flex-direction: column;
     gap: 8px;
+    font-family: "Poppins";
     cursor: pointer;
   }
 
