@@ -1,5 +1,5 @@
 export interface AddClassRequestModel {
-    type: 'Remota' | 'Presencial';
+    type: 'REMOTA' | 'PRESENCIAL';
     days: string[];
     startHour: string;
 }
