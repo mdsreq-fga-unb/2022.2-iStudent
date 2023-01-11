@@ -3,7 +3,7 @@ import { Container, Header, Input, Cards } from './styles';
 import ArrowBackIcon from '@mui/icons-material/ArrowBack';
 import { AvTeacherCard } from '../../shared/components';
 import useTeachers from '../../shared/hooks/useTeachers';
-import React, { useState } from 'react';
+import { useState } from 'react';
 
 export const AvailableTeacher = () => {
   const navigate = useNavigate();
@@ -68,6 +68,7 @@ export const AvailableTeacher = () => {
                 teacher.subject?.name ? teacher.subject.name : 'Sem materia'
               }
               bio={teacher.biography}
+              id={parseInt(teacher.id, 10)}
             />
           ))}
       </Cards>

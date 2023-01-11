@@ -1,10 +1,37 @@
-import { Container, Button } from "./styles";
+import { useState } from 'react';
+import requestClass from '../../services/student/requestClass';
+import { Container, Button } from './styles';
 
 type Event = {
   event: () => void;
+  teacherId: number;
 };
 
+export interface Aula {
+  type: 'REMOTA' | 'PRESENCIAL';
+  days: string[];
+  startHour: string;
+  teacherId: number;
+}
+
 export const SchedulingModal = (props: Event) => {
+  const [aula, setAula] = useState<Aula>({
+    startHour: '12:00',
+    type: 'REMOTA',
+    teacherId: props.teacherId,
+    days: ['Segunda-Feira'],
+  });
+
+  const handleClassSubmit = async () => {
+    try {
+      await requestClass(aula);
+      alert('Aula requisitada com sucesso!');
+    } catch (error) {
+      alert(error);
+    } finally {
+      props.event();
+    }
+  };
   return (
     <Container>
       <div className="close-modal" onClick={props.event}>
@@ -13,8 +40,26 @@ export const SchedulingModal = (props: Event) => {
       <div className="class">
         <h3>Tipo de Aula</h3>
         <div className="class-button">
-          <button>Remota</button>
-          <button>Presencial</button>
+          <button
+            onClick={() =>
+              setAula({
+                ...aula,
+                type: 'REMOTA',
+              })
+            }
+          >
+            Remota
+          </button>
+          <button
+            onClick={() =>
+              setAula({
+                ...aula,
+                type: 'PRESENCIAL',
+              })
+            }
+          >
+            Presencial
+          </button>
         </div>
       </div>
       <div className="hour">
@@ -22,7 +67,14 @@ export const SchedulingModal = (props: Event) => {
         <div className="input-hour">
           <div className="week-day">
             <span>Dia da semana</span>
-            <select>
+            <select
+              onClick={e =>
+                setAula({
+                  ...aula,
+                  days: [e.currentTarget.value],
+                })
+              }
+            >
               <option value="Segunda-feira">Segunda-feira</option>
               <option value="Terça-feira">Terça-feira</option>
               <option value="Quarta-feira">Quarta-feira</option>
@@ -42,7 +94,7 @@ export const SchedulingModal = (props: Event) => {
           </div>
         </div>
       </div>
-      <Button>
+      <Button onClick={handleClassSubmit}>
         <button>Solicitar aula</button>
       </Button>
     </Container>
