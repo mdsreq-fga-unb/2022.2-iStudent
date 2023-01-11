@@ -29,6 +29,6 @@ routes.get('/uptade-account', adaptRoute(makeEditAccountController()));
 routes.get('/teachers', adaptRoute(makeAllTeachersController()));
 routes.post('/teachers/subject', auth(), adaptRoute(makeAddSubjectontroller()));
 
-routes.post('/class-request', adaptRoute(makeClassRequestController()))
+routes.post('/class', auth(), adaptRoute(makeClassRequestController()));
 
 export default routes;

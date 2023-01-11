@@ -19,6 +19,7 @@ model User {
   biography String
   role      Role     @default(STUDENT)
   subject   Subject?
+  Class     Class[]
 }
 
 model Subject {
@@ -35,6 +36,9 @@ model Class {
   type      ClassType @default(REMOTA)
   days      String[]
   time      String
+  student   User      @relation(fields: [studentId], references: [id])
+  studentId Int    
+  teacherId Int   
 }
 
 enum Role {
