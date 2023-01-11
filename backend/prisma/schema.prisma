@@ -29,7 +29,20 @@ model Subject {
   teacherId Int      @unique
 }
 
+model Class {
+  id        Int       @id @default(autoincrement())
+  createdAt DateTime  @default(now())
+  type      ClassType @default(REMOTA)
+  days      String[]
+  time      String
+}
+
 enum Role {
   STUDENT
   TEACHER
+}
+
+enum ClassType {
+  REMOTA
+  PRESENCIAL
 }
