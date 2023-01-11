@@ -1,7 +1,7 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
 export const Container = styled.div`
-  height: 100%;
+  height: 100vh;
   background: #d9d9d9;
 `;
 
@@ -11,7 +11,7 @@ export const Header = styled.div`
 
   .title {
     color: #ffffff;
-    font-family: "Poppins";
+    font-family: 'Poppins';
     font-size: 40px;
     font-weight: 500;
     text-align: center;
@@ -20,7 +20,7 @@ export const Header = styled.div`
 
   .product-name {
     color: #ffffff;
-    font-family: "Poppins";
+    font-family: 'Poppins';
     font-size: 32px;
     font-weight: 900;
     align-self: flex-end;
@@ -53,7 +53,7 @@ export const Input = styled.div`
 
   span {
     color: #fff;
-    font-family: "Poppins";
+    font-family: 'Poppins';
     font-size: 18px;
     font-weight: 900;
     display: flex;
@@ -77,7 +77,7 @@ export const Input = styled.div`
     border-radius: 8px;
     padding-left: 20px;
     box-shadow: 5px 5px 5px blue;
-    font-family: "Poppins";
+    font-family: 'Poppins';
   }
 `;
 
