@@ -1,15 +1,18 @@
-import { useNavigate } from "react-router-dom";
-import { Container, Header, Input, Cards } from "./styles";
-import ArrowBackIcon from "@mui/icons-material/ArrowBack";
-import { AvTeacherCard } from "../../shared/components";
-import useTeachers from "../../shared/hooks/useTeachers";
+import { useNavigate } from 'react-router-dom';
+import { Container, Header, Input, Cards } from './styles';
+import ArrowBackIcon from '@mui/icons-material/ArrowBack';
+import { AvTeacherCard } from '../../shared/components';
+import useTeachers from '../../shared/hooks/useTeachers';
+import React, { useState } from 'react';
 
 export const AvailableTeacher = () => {
   const navigate = useNavigate();
-  const { teachers } = useTeachers()
+  const { teachers, setTeachers } = useTeachers();
+
+  const [subjectFilter, setSubjectFilter] = useState('');
 
   const handleClickHome = () => {
-    navigate("/pagina-inicial");
+    navigate('/pagina-inicial');
   };
 
   return (
@@ -32,9 +35,9 @@ export const AvailableTeacher = () => {
       <Input>
         <div>
           <span>Matéria</span>
-          <input type="text" />
+          <input type="text" onChange={e => setSubjectFilter(e.target.value)} />
         </div>
-        <div>
+        {/* <div>
           <span>Dia da Semana</span>
           <select>
             <option value="Segunda-feira">Segunda-feira</option>
@@ -49,16 +52,24 @@ export const AvailableTeacher = () => {
         <div>
           <span>Horário</span>
           <input type="time" />
-        </div>
+        </div> */}
       </Input>
       <Cards>
-        {teachers.map( teacher => (
-          <AvTeacherCard
-          name={teacher.name}
-          course={teacher.subject?.name ? teacher.subject.name : 'Sem materia'}
-          bio={teacher.biography}
-        />
-        ))}
+        {teachers
+          .filter(teacher =>
+            subjectFilter
+              ? teacher.subject?.name.includes(subjectFilter)
+              : true,
+          )
+          .map(teacher => (
+            <AvTeacherCard
+              name={teacher.name}
+              course={
+                teacher.subject?.name ? teacher.subject.name : 'Sem materia'
+              }
+              bio={teacher.biography}
+            />
+          ))}
       </Cards>
     </Container>
   );
