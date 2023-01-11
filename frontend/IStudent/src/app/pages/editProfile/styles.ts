@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
 export const Container = styled.div`
   height: 100vh;
@@ -18,7 +18,7 @@ export const Body = styled.div`
   margin-left: calc(100vw / 2.7);
   margin-top: 50px;
   padding-bottom: 20px;
-  font-family: "Poppins";
+  font-family: 'Poppins';
   font-size: 12px;
 
   .my-data-title {
@@ -36,7 +36,8 @@ export const Body = styled.div`
     justify-content: flex-start;
   }
 
-  .photo-input label {
+  .photo-input label,
+  img {
     width: 60px;
     height: 60px;
     border-radius: 100%;
@@ -54,6 +55,12 @@ export const Body = styled.div`
 
   .picture-image {
     width: 100%;
+  }
+
+  .photo,
+  img {
+    padding: 0 !important;
+    border: none !important;
   }
 
   .my-data {
@@ -118,7 +125,7 @@ export const Body = styled.div`
     padding: 10px;
     margin-right: 30px;
     margin-top: 30px;
-    font-family: "Poppins";
+    font-family: 'Poppins';
     font-weight: 900;
     font-size: 14px;
     width: 100px;
@@ -143,7 +150,7 @@ export const DeleteAccount = styled.div`
     border-radius: 8px;
     color: #ffffff;
     font-size: 16px;
-    font-family: "Poppins";
+    font-family: 'Poppins';
     font-weight: 900;
   }
 
