@@ -7,7 +7,7 @@
 
 Os objetivos para essa sprint foram:
 
-- Concluir as User Story que foram deixadas como débito ténico da sprint passada: F01US03, F01US04, F01US06 e F02US01
+- Concluir as User Story que foram deixadas como débito ténico da sprint passada: F01US03, F01US04, F01US06, F02US01 e F02US02
 - Concluir as User Story da sprint atual: F04US01, F04US02, F04US03, F07US01, F07US02, F07US03, F07US04
 
 ### 1.2 Tarefas
@@ -36,6 +36,10 @@ Os objetivos para essa sprint foram:
 **Implementar F02US01: Prioridade Alta**
 
 - Parear os usuários cadastrados na plataforma para que possam visualizar os cursos e professores
+
+**Implementar F02US02: Prioridade Baixa**
+
+- Criar filtro para que o usuário possa pesquisar os cursos e professores de acordo com a sua preferência
 
 #### Sprint Atual:
 
@@ -86,6 +90,9 @@ Os objetivos para essa sprint foram:
 - [F01US04] Eu, como usuário, quero editar os dados já cadastrados do meu perfil para atualizar os meus dados.
 - [F01US06] Eu, como usuário, quero excluir a minha conta para não ter mais um perfil na plataforma.
 - [F02US01] Eu, como usuário, quero visualizar os cursos e professores da plataforma já cadastrados para visualizar os cursos e professores existentes na plataforma.
+- [F02US02] Eu, como usuário, quero filtrar cursos e professores de acordo com as minhas preferências para acessar os cursos da minha preferência.
+- [F04US01] Eu, como Professor, quero acessar os pedidos de agendamento dos meus alunos para visualizar o que cada aluno está pedindo.
+- [F04US03] Eu, como Professor, quero visualizar os pedidos de agendamentos para saber quem requisitou o agendamento de aula.
 - [F07US01] Eu, como Aluno, quero requisitar uma Aula Particular com o Professor do curso em que estou matriculado para reforçar o meu aprendizado dentro do curso.
 - [F07US02] Eu, como Aluno, quero especificar a modalidade da aula para reforçar o meu aprendizado dentro do curso.
 - [F07US03] Eu, como Aluno, quero especificar o dia e horário da requisição da aula particular com professor para definir o dia da aula de reforço.
@@ -93,8 +100,6 @@ Os objetivos para essa sprint foram:
 
 **User Story que ficaram incompletos**:
 
-- [F04US01] Eu, como Professor, quero acessar os pedidos de agendamento dos meus alunos para visualizar o que cada aluno está pedindo.
-- [F04US02] Eu, como Professor, quero aceitar ou recusar os pedidos de agendamento dos meus alunos para gerenciar os pedidos de agendamento.
 - [F04US03] Eu, como Professor, quero visualizar o(a) aluno(a) que requisitou o pedido de agendamento para saber quem requisitou o agendamento de aula.
 
 **Da parte do Cliente**:
@@ -107,6 +112,9 @@ No fim da nossa sprint o Cliente passou o feedback para a nossa equipe após nó
 - **F01US04** User Story
 - **F01US06** User Story
 - **F02US01** User Story
+- **F02US02** User Story
+- **F04US01** User Story
+- **F04US03** User Story
 - **F07US01** User Story
 - **F07US02** User Story
 - **F07US03** User Story
