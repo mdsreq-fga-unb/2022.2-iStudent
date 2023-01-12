@@ -1,17 +1,23 @@
-import { Container } from "./styles";
-import Tippy from "@tippyjs/react";
-import { DetailCard } from "../index";
+import { Container } from './styles';
+import Tippy from '@tippyjs/react';
+import { DetailCard } from '../index';
 
-export const RequestSchedule = () => {
+interface Props {
+  name: string;
+  type: string;
+  time: string;
+}
+
+export const RequestSchedule = ({ name, time, type }: Props) => {
   return (
     <Container>
       <div className="content">
-        <h5>Kleber Gomes De Morais</h5>
+        <h5>{name}</h5>
         <div className="button-area">
           <button className="accept">Aceitar</button>
           <button className="refuse">Recusar</button>
           <Tippy
-            content={<DetailCard />}
+            content={<DetailCard time={time} type={type} />}
             interactive={true}
             delay={1}
             duration={1}

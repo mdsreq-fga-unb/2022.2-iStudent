@@ -1,6 +1,10 @@
-import { Container } from "./styles";
+import { Container } from './styles';
+interface Props {
+  type: string;
+  time: string;
+}
 
-export const DetailCard = () => {
+export const DetailCard = ({ time, type }: Props) => {
   return (
     <Container>
       <div className="discipline">
@@ -10,12 +14,12 @@ export const DetailCard = () => {
       <hr />
       <div className="week-day">
         <h4>Dia da Semana:</h4>
-        <span>Segunda-feira</span>
+        <span>{time}</span>
       </div>
       <hr />
       <div className="hour">
-        <h4>Horário:</h4>
-        <span>14:00 às 15:00</span>
+        <h4>Tipo:</h4>
+        <span>{type}</span>
       </div>
     </Container>
   );
