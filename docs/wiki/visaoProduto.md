@@ -152,7 +152,7 @@ Devido aos pontos levantados, ficou claro que a equipe decidiu adotar como metod
 ### 4.3 Unidade 3
 
 <p>
-    ...
+    Nessa Unidade, o nosso grupo conseguiu aprender a melhorar a nossa Visão de Produto junto com o Backlog. Entedemos como funciona os critérios de aceitação e as User Story definindo o seu Persona, Ação e Valor de Negócio. Além disso, tivemos a chance de poder aprender sobre o PBB e USM além de aplicar em uma ativadade. Os ensinamentos dessa unidade serviu como aprendizado para a nossa carreira por conta de experimentar como é registrar cada Sprint: Kanbam, Planinng, Review e Retro e entregar um MVP1 para um cliente real.
 </p>
 
 ## 5 Referências Bibliográficas
