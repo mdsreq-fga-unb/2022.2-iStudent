@@ -1,5 +1,6 @@
 import { Router } from 'express';
 import { adaptRoute } from '../main/adapters/express/express-route.adapter';
+import { makeClassesByTeacherController } from '../main/factories/class/get-class-by-teacher-factory';
 import { makeClassRequestController } from '../main/factories/classRequest/classRequest-controller-factory';
 import { makeDeleteAccountController } from '../main/factories/deleteAccount/delete-account-factory';
 import { makeEditAccountController } from '../main/factories/editAccount/edit-account-factory';
@@ -28,6 +29,11 @@ routes.get('/uptade-account', adaptRoute(makeEditAccountController()));
 
 routes.get('/teachers', adaptRoute(makeAllTeachersController()));
 routes.post('/teachers/subject', auth(), adaptRoute(makeAddSubjectontroller()));
+routes.get(
+  '/teacher/classes',
+  auth(),
+  adaptRoute(makeClassesByTeacherController()),
+);
 
 routes.post('/class', auth(), adaptRoute(makeClassRequestController()));
 
