@@ -66,6 +66,7 @@ Os objetivos para essa sprint foram:
 - [F01US04] Eu, como usuário, quero editar os dados já cadastrados do meu perfil para atualizar os meus dados.
 - [FO1US06] Eu, como usuário, quero excluir a minha conta para não ter mais um perfil na plataforma.
 - [F02US01] Eu, como usuário, quero visualizar os cursos e professores da plataforma já cadastrados para visualizar os cursos e professores existentes na plataforma.
+- [F02US02] Eu, como usuário, quero filtrar cursos e professores de acordo com as minhas preferências para acessar os cursos da minha preferência.
 
 OBS: Por conta do refinamento das User Story, a Feature 03: Autenticação acabou sendo excluída e se tornando a **F01US06** da Feature 01: Gerenciamento de Usuário
 
@@ -83,3 +84,4 @@ Durante a sprint, mostrou-se que ocorreu diversos problemas com algumas User Sto
 - F01US04: Eu, como usuário, quero editar os dados já cadastrados do meu perfil para atualizar os meus dados.
 - F01US06: Eu, como usuário, quero excluir a minha conta para não ter mais um perfil na plataforma.
 - F02US01: Eu, como usuário, quero visualizar os cursos e professores da plataforma já cadastrados para visualizar os cursos e professores existentes na plataforma.
+- F02US02: Eu, como usuário, quero filtrar cursos e professores de acordo com as minhas preferências para acessar os cursos da minha preferência.
