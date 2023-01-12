@@ -30,5 +30,4 @@ do nosso projeto.
 | [Bruno Henrique](https://github.com/BrunoHenrique00) | 190134275 |
 | [Cleber Brant](https://github.com/Cleberbrant)       | 200061216 |
 | [Lucas Caldas](https://github.com/lucascaldasb)      | 190091606 |
-| [Pedro Augusto](https://github.com/PedroSiq)         | 190094320 |
 | [Wesley Lira](https://github.com/Weslin-0101)        | 200044559 |
