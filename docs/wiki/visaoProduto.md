@@ -149,6 +149,12 @@ Devido aos pontos levantados, ficou claro que a equipe decidiu adotar como metod
     Para essa unidade, foi de extrema importância o aprendizado sobre o que é e como funciona as atividades dentro da Engenharia de Requisitos, pois assim conseguimos nos localizar na hora de realizar a elicitação de requisitos e o refinamento do Backlog. Além disso, o ensinamento sobre a estrutura do SAFe ajudou bastante para conseguirmos montar o nosso Backlog criando os Épicos, Features e User Story, assim aprendendo e entendendo sobre como definir o MVP.
 </p>
 
+### 4.3 Unidade 3
+
+<p>
+    ...
+</p>
+
 ## 5 Referências Bibliográficas
 
 - Engenharia de Software, Marco Tulio Valente.
