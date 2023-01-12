@@ -96,11 +96,11 @@ Os objetivos para essa sprint foram:
 - [F07US01] Eu, como Aluno, quero requisitar uma Aula Particular com o Professor do curso em que estou matriculado para reforçar o meu aprendizado dentro do curso.
 - [F07US02] Eu, como Aluno, quero especificar a modalidade da aula para reforçar o meu aprendizado dentro do curso.
 - [F07US03] Eu, como Aluno, quero especificar o dia e horário da requisição da aula particular com professor para definir o dia da aula de reforço.
-- [F07US04] Eu, como Aluno, quero receber uma resposta do pedido de agendamento de aula por meio do Professor dentro da plataforma para saber se o meu pedido foi aceito ou não.
 
 **User Story que ficaram incompletos**:
 
 - [F04US03] Eu, como Professor, quero visualizar o(a) aluno(a) que requisitou o pedido de agendamento para saber quem requisitou o agendamento de aula.
+- [F07US04] Eu, como Aluno, quero receber uma resposta do pedido de agendamento de aula por meio do Professor dentro da plataforma para saber se o meu pedido foi aceito ou não.
 
 **Da parte do Cliente**:
 
@@ -118,10 +118,16 @@ No fim da nossa sprint o Cliente passou o feedback para a nossa equipe após nó
 - **F07US01** User Story
 - **F07US02** User Story
 - **F07US03** User Story
-- **F07US04** User Story
 
 ### 2.2 Melhorias
 
 Idenficamos que a equipe sofreu para tentar entregar o MVP1 completo, que do qual não foi possível. Por conta disso, encontramos um ponto do qual mais nos afetou durante a sprint:
 
 - Dificuldades Ténicas na implementação: muitas vezes tivemos problemas com algumas tecnologias como o Banco de Dados, e até mesmo para a integração do Frontend e Backend que por conta de só uma pessoa do grupo souber realizar tal atividade, acabou tomando muito tempo para que conseguissemos entregar o restante das US.
+
+Nessa Sprint não foi possível entregar o MVP1 completo por conta de ficou faltando as seguintes User Story da Funcionalidade 04 para serem entregues:
+
+- **F04US02** Eu, como Professor, quero aceitar ou recusar os pedidos de agendamento dos meus alunos para gerenciar os pedidos de agendamento.
+- **F07US04** Eu, como Aluno, quero receber uma resposta do pedido de agendamento de aula por meio do Professor para saber se o meu pedido foi aceito ou não.
+
+Por conta disso, essas duas User Story vão entrar como Débito Técnico na Sprint 07 quando for iniciada e entregue no MVP2.
