@@ -70,7 +70,7 @@
 | Sprint 5 | Implementação do escopo do MPV1: F01 - Gerenciamento de usuário, F02 - Pareamento de Usuários, F04 - Gerenciamento de Agendamento e F07 - Requisição de Aulas Particulares         | 15/12/2022  | 29/12/2022 |
 | Sprint 6 | Implementar e Entrega do escopo do MVP1: F01 - Gerenciamento de usuário, F02 - Pareamento de Usuários, F04 - Gerenciamento de Agendamento e F07 - Requisição de Aulas Particulares | 03/01/2023  | 12/01/2023 |
 | Sprint 7 | Implementação do escopo do MVP2: F03 - Gerenciamento de Curso, F05 - Acesso ao Curso e F06 - Gerenciamento de Aprendizagem                                                         | 16/01/2023  | 30/01/2023 |
-| Sprint 8 | Implementar e Entrega do MVP2                                                                                                                                                      | 31/02/2023  | 09/02/2023 |
+| Sprint 8 | Implementar e Entrega do MVP2                                                                                                                                                      | 31/01/2023  | 09/02/2023 |
 
 ### 2.3 Matriz de Comunicação
 
