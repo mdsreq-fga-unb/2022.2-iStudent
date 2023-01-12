@@ -8,6 +8,7 @@
 | 18/12/2022 | 1.3    | Refatorando os requisitos não funcionais    | Wesley Lira    |
 | 18/12/2022 | 1.4    | Corrigindo user story                       | Bruno Henrique |
 | 05/01/2023 | 1.5    | Adicionando valor de negócio nas user story | Wesley Lira    |
+| 12/01/2023 | 1.6    | Refatorando valor de negócio do backlog do produto | Cleber Brant    |
 
 # Backlog do Produto
 
@@ -20,19 +21,19 @@ O escopo do projeto foi delimitado de acordo com a necessidade de criar uma plat
 
 | ID      | User Story                                                                                                                   | Prioridade |
 | ------- | ---------------------------------------------------------------------------------------------------------------------------- | ---------- |
-| F01US01 | Eu, como usuário, quero cadastrar os meus dados para poder usar a plataforma.                                                | Alta       |
-| F01US02 | Eu, como usuário, quero especificar se sou Aluno ou Professor para utilizar a plataforma.                                    | Alta       |
+| F01US01 | Eu, como usuário, quero cadastrar os meus dados para conseguir ter acesso a ofertas de cursos disponiveis.                   | Alta       |
+| F01US02 | Eu, como usuário, quero especificar se sou Aluno ou Professor ao preencher as minhas informações para caso seja Professor criar e comprar cursos e caso seja Aluno poder comprar e usufruir de cursos.                                    | Alta       |
 | F01US03 | Eu, como usuário, quero visualizar o meu perfil após o cadastro para verificar se os dados correspondem com o que cadastrei. | Média      |
-| F01US04 | Eu, como usuário, quero editar os dados já cadastrados do meu perfil para atualizar os meus dados.                           | Média      |
-| F01US05 | Eu, como usuário quero me autenticar para validar a minha conta na plataforma.                                               | Média      |
-| F01US06 | Eu, como usuário, quero excluir a minha conta para não ter mais um perfil na plataforma.                                     | Média      |
+| F01US04 | Eu, como usuário, quero editar os dados já cadastrados do meu perfil para deixar meus dados atualizados.                           | Média      |
+| F01US05 | Eu, como usuário quero me autenticar para validar se minhas credenciais correpondem ao que foi cadastrado.                                               | Média      |
+| F01US06 | Eu, como usuário, quero excluir a minha conta para não ter mais um perfil.                                     | Média      |
 
 #### Feature 02: Pareamento dos Usuários
 
 | ID      | User Story                                                                                                                                                | Prioridade |
 | ------- | --------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------- |
-| F02US01 | Eu, como usuário, quero visualizar os cursos e professores da plataforma já cadastrados para visualizar os cursos e professores existentes na plataforma. | Alta       |
-| F02US02 | Eu, como usuário, quero visualizar cursos e professores de acordo com as minhas preferências para acessar os cursos da minha preferência.                 | Baixa      |
+| F02US01 | Eu, como usuário, quero visualizar os cursos e professores cadastrados para que eu possa decidir se o curso ou professor tem o que procuro.  | Alta       |
+| F02US02 | Eu, como usuário, quero filtrar cursos e professores de acordo com as minhas preferências para acessar os cursos da minha preferência.                 | Baixa      |
 
 ## Épico 2: Área do Professor
 
@@ -40,11 +41,11 @@ O escopo do projeto foi delimitado de acordo com a necessidade de criar uma plat
 
 | ID      | User Story                                                                                                                                 | Prioridade |
 | ------- | ------------------------------------------------------------------------------------------------------------------------------------------ | ---------- |
-| F03US01 | Eu, como Professor, quero cadastrar um ou mais cursos para disponibilizar na plataforma.                                                   | Alta       |
+| F03US01 | Eu, como Professor, quero cadastrar um ou mais cursos para para que os alunos possam ver e comprar meu curso.                              | Alta       |
 | F03US02 | Eu, como Professor, quero visualizar os dados do meu curso para verificar se correspondem com os dados que cadastrei.                      | Alta       |
-| F03US03 | Eu, como Professor, quero editar os dados do meu curso para atualizar os campos que eu gostaria de mudar.                                  | Alta       |
-| F03US04 | Eu, como Professor, quero visualizar os alunos matriculados no(s) meu(s) curso(s) para saber quantos alunos tenho matriculado no meu curso | Média      |
-| F03US05 | Eu, como Professor, quero excluir o meu curso após ele ter sido adicionado para retirar da plataforma                                      | Média      |
+| F03US03 | Eu, como Professor, quero editar os dados do meu curso para manter meu curso atualizado.                                                   | Alta       |
+| F03US04 | Eu, como Professor, quero visualizar os alunos matriculados no(s) meu(s) curso(s) para saber quantos alunos estão matriculados no meu curso. | Média      |
+| F03US05 | Eu, como Professor, quero excluir o meu curso após ter sido adicionado para manter meus cursos atualizados.                                      | Média      |
 
 #### Feature 04: Gerenciamento de Agendamento
 
@@ -52,7 +53,7 @@ O escopo do projeto foi delimitado de acordo com a necessidade de criar uma plat
 | ------- | ------------------------------------------------------------------------------------------------------------------------------------------- | ---------- |
 | F04US01 | Eu, como Professor, quero acessar os pedidos de agendamento dos meus alunos para visualizar o que cada aluno está pedindo.                  | Alta       |
 | F04US02 | Eu, como Professor, quero aceitar ou recusar os pedidos de agendamento dos meus alunos para gerenciar os pedidos de agendamento.            | Alta       |
-| F04US03 | Eu, como Professor, quero visualizar o(a) aluno(a) que requisitou o pedido de agendamento para saber quem requisitou o agendamento de aula. | Baixa      |
+| F04US03 | Eu, como Professor, quero visualizar os pedidos de agendamentos para saber quem requisitou o agendamento de aula. | Baixa      |
 
 ## Épico 3: Área do Aluno
 
@@ -60,18 +61,18 @@ O escopo do projeto foi delimitado de acordo com a necessidade de criar uma plat
 
 | ID      | User Story                                                                                                              | Prioridade |
 | ------- | ----------------------------------------------------------------------------------------------------------------------- | ---------- |
-| F05US01 | Eu, como Aluno, quero visualizar o que o curso propõe dentro da plataforma para saber se satisfaz com o que procuro.    | Alta       |
-| F05US02 | Eu, como Aluno, quero me matricular nos cursos dentro da plataforma para acessar as aulas que o curso disponibiliza.    | Alta       |
-| F05US03 | Eu, como Aluno, quero visualizar o conteúdo do curso para poder estudar e assistir os vídeos que o curso disponibiliza. | Alta       |
-| F05US04 | Eu, como Aluno, quero me desmatricular do curso em que já estou matriculado para caso não queira mais fazer o curso.    | Média      |
+| F05US01 | Eu, como Aluno, quero visualizar o que o curso propõe para saber se satisfaz com o que procuro.    | Alta       |
+| F05US02 | Eu, como Aluno, quero me matricular nos cursos para acessar as aulas que o curso disponibiliza.    | Alta       |
+| F05US03 | Eu, como Aluno, quero visualizar o conteúdo extra classe do curso para poder estudar o conteudo disponibilizado. | Alta       |
+| F05US04 | Eu, como Aluno, quero me desmatricular do curso em que já estou matriculado para não fazer mais o curso.    | Média      |
 
 #### Feature 06: Gerenciamento de Aprendizagem
 
 | ID      | User Story                                                                                                                                                 | Prioridade |
 | ------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------- |
-| F06US01 | Eu, como Aluno, quero acessar a aba de Aprendizagem dentro do meu perfil para visualizar como está sendo o meu desempenho.                                 | Baixa      |
+| F06US01 | Eu, como Aluno, quero acessar a aba de Aprendizagem dentro do meu perfil para visualizar quais são os cursos que eu estou fazendo.                         | Baixa      |
 | F06US02 | Eu, como Aluno, quero visualizar a porcentagem do andamento do curso em que estou matriculado para visualizar o meu desempenho dentro do curso.            | Baixa      |
-| F06US03 | Eu, como Aluno, quero visualizar as minhas conquistas ao decorrer do curso dentro da plataforma para visualizar as conquistas que ganhei.                  | Baixa      |
+| F06US03 | Eu, como Aluno, quero visualizar as minhas conquistas ao decorrer do curso para visualizar os desafios que cumpri.                                         | Baixa      |
 | F06US04 | Eu, como Aluno, quero visualizar os meus certificados ganhos após a finalização dos cursos para poder imprimir ou visualizar na minha aba de aprendizagem. | Baixa      |
 
 #### Feature 07: Requisição de Aulas Particulares
@@ -81,7 +82,7 @@ O escopo do projeto foi delimitado de acordo com a necessidade de criar uma plat
 | F07US01 | Eu, como Aluno, quero requisitar uma Aula Particular com o Professor do curso em que estou matriculado para reforçar o meu aprendizado dentro do curso.              | Alta       |
 | F07US02 | Eu, como Aluno, quero especificar a modalidade da aula para reforçar o meu aprendizado dentro do curso.                                                              | Alta       |
 | F07US03 | Eu, como Aluno, quero especificar o dia e horário da requisição da aula particular com professor para definir o dia da aula de reforço.                              | Alta       |
-| F07US04 | Eu, como Aluno, quero receber uma resposta do pedido de agendamento de aula por meio do Professor dentro da plataforma para saber se o meu pedido foi aceito ou não. | Média      |
+| F07US04 | Eu, como Aluno, quero receber uma resposta do pedido de agendamento de aula por meio do Professor para saber se o meu pedido foi aceito ou não. | Média      |
 
 ## Requisitos Não Funcionais
 
