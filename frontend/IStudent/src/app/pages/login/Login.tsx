@@ -1,31 +1,32 @@
-import { Container, Header, Body } from "./styles";
-import ArrowBackIcon from "@mui/icons-material/ArrowBack";
-import ErrorOutlineIcon from "@mui/icons-material/ErrorOutline";
-import { useNavigate, Link } from "react-router-dom";
-import { useState } from "react";
-import login from "../../shared/services/auth/login";
-import { useUser } from "../../contexts/User";
+import { Container, Header, Body } from './styles';
+import ArrowBackIcon from '@mui/icons-material/ArrowBack';
+import ErrorOutlineIcon from '@mui/icons-material/ErrorOutline';
+import { useNavigate, Link } from 'react-router-dom';
+import { useState } from 'react';
+import login from '../../shared/services/auth/login';
+import { useUser } from '../../contexts/User';
+import { Button } from '../../shared/components/Button';
 
 export const Login = () => {
   const navigate = useNavigate();
   const { setToken } = useUser();
 
   const [user, setUser] = useState({
-    email: "",
-    password: "",
+    email: '',
+    password: '',
   });
 
   const handleClickHome = () => {
-    navigate("/pagina-inicial");
+    navigate('/pagina-inicial');
   };
 
   const handleLogin = async () => {
     try {
       const token = await login(user.email, user.password);
       if (token) setToken(token);
-      navigate("/pagina-inicial");
+      navigate('/pagina-inicial');
     } catch (error) {
-      alert("Erro no login, tente novamente!");
+      alert('Erro no login, tente novamente!');
       console.log(error);
     }
   };
@@ -54,7 +55,7 @@ export const Login = () => {
             <p>E-mail</p>
             <input
               type="email"
-              onChange={(e) => setUser({ ...user, email: e.target.value })}
+              onChange={e => setUser({ ...user, email: e.target.value })}
             />
           </div>
         </div>
@@ -63,23 +64,23 @@ export const Login = () => {
             <p>Senha</p>
             <input
               type="password"
-              onChange={(e) => setUser({ ...user, password: e.target.value })}
+              onChange={e => setUser({ ...user, password: e.target.value })}
             />
           </div>
         </div>
         <div className="final">
           <div className="alert-area">
-            <ErrorOutlineIcon style={{ color: "#000080" }} />
+            <ErrorOutlineIcon style={{ color: '#000080' }} />
             <div className="alert-text">
               <p>Importante!</p>
               <p>Preencha todas as informações</p>
             </div>
           </div>
-          <button onClick={handleLogin}>Entrar</button>
+          <Button onClick={handleLogin}>Entrar</Button>
         </div>
         <div className="havent-login">
           <span>
-            Não possui cadastro? <Link to={"/cadastro"}>Cadastre-se Já!</Link>
+            Não possui cadastro? <Link to={'/cadastro'}>Cadastre-se Já!</Link>
           </span>
         </div>
       </Body>
