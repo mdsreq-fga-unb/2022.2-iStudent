@@ -7,8 +7,8 @@
 
 Os objetivos para essa sprint são:
 
-- Concluir as User Story que foram deixadas como débito técnico da sprint passada: F04US02 e F07US04
-- Concluir as User Story da sprint atual: F03US01, F03US02, F03US04, F05US01 e F05US02
+- Concluir as User Story que foram deixadas como débito técnico da sprint passada: US12 e US22
+- Concluir as User Story da sprint atual: US07, US08, US09, US10, US14 e US15
 
 ### 1.2 Tarefas
 
