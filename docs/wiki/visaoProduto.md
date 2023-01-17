@@ -60,17 +60,17 @@
 
 ### 2.2 Planejamento das Fases e/ou Iterações do Projeto
 
-| Sprint   | Atividade (Entrega)                                                                                                                                                                     | Data início | Data Fim   |
-| -------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------- | ---------- |
-| Sprint 0 | Definição da Equipe e do Produto                                                                                                                                                        | 25/10/2022  | 03/11/2022 |
-| Sprint 1 | Trabalhar na primeira versão do visão de produto e projeto                                                                                                                              | 04/11/2022  | 17/11/2022 |
-| Sprint 2 | Definição do backlog do produto                                                                                                                                                         | 22/11/2022  | 01/12/2022 |
-| Sprint 3 | Definição do MVP e Validação do MVP1                                                                                                                                                    | 01/12/2022  | 08/12/2022 |
-| Sprint 4 | Preparação do Ambiente de Desenvolvimento e refinamento das User Story                                                                                                                  | 08/12/2022  | 15/12/2022 |
-| Sprint 5 | Implementação do escopo do MPV1: **F01US01**, **F01US02**, **F01US03**, **F01US04**, **F01US05**, **F01US06**, **F02US01** e **F02US02**                                                | 15/12/2022  | 29/12/2022 |
-| Sprint 6 | Implementar e Entrega do escopo do MVP1: **F01US03**, **F01US04**, **F01US06**, **F02US02**, **F04US01**, **F04US02**, **F04US03**, **F07US01**, **F07US02**, **F07US03** e **F07US04** | 03/01/2023  | 12/01/2023 |
-| Sprint 7 | Implementação do escopo do MVP2: **F03 - Gerenciamento de Curso**, **F05 - Acesso ao Curso** e **F06 - Gerenciamento de Aprendizagem**                                                  | 16/01/2023  | 30/01/2023 |
-| Sprint 8 | Implementar e Entrega do MVP2: **F03 - Gerenciamento de Curso**, **F05 - Acesso ao Curso** e **F06 - Gerenciamento de Aprendizagem**                                                    | 31/01/2023  | 09/02/2023 |
+| Sprint   | Atividade (Entrega)                                                                                                        | Data início | Data Fim   |
+| -------- | -------------------------------------------------------------------------------------------------------------------------- | ----------- | ---------- |
+| Sprint 0 | Definição da Equipe e do Produto                                                                                           | 25/10/2022  | 03/11/2022 |
+| Sprint 1 | Trabalhar na primeira versão do visão de produto e projeto                                                                 | 04/11/2022  | 17/11/2022 |
+| Sprint 2 | Definição do backlog do produto                                                                                            | 22/11/2022  | 01/12/2022 |
+| Sprint 3 | Definição do MVP e Validação do MVP1                                                                                       | 01/12/2022  | 08/12/2022 |
+| Sprint 4 | Preparação do Ambiente de Desenvolvimento e refinamento das User Story                                                     | 08/12/2022  | 15/12/2022 |
+| Sprint 5 | Implementação do escopo do MPV1: **US01**, **US02**, **US03**, **US04**, **US05** e **US06**                               | 15/12/2022  | 29/12/2022 |
+| Sprint 6 | Implementar e Entrega do escopo do MVP1: **US03**, **US04**, **F02US06**, **US11**, **US12**, **US13**, **US21**, **US22** | 03/01/2023  | 12/01/2023 |
+| Sprint 7 | Implementação do escopo do MVP2: **US12**, **US22**, **US07**, **US08**, **US09**, **US10**, **US14**, **US15**            | 16/01/2023  | 30/01/2023 |
+| Sprint 8 | Implementar e Entrega do MVP2: **US16**, **US17**, **US19**                                                                | 31/01/2023  | 09/02/2023 |
 
 ### 2.3 Matriz de Comunicação
 
