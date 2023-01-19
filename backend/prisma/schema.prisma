@@ -37,8 +37,22 @@ model Class {
   days      String[]
   time      String
   student   User      @relation(fields: [studentId], references: [id])
-  studentId Int    
-  teacherId Int   
+  studentId Int
+  teacherId Int
+}
+
+model Course {
+  id                   Int      @id @default(autoincrement())
+  createdAt            DateTime @default(now())
+  name                 String
+  description          String
+  price                Int
+  contents             String[]
+  courseRating         Int
+  teacherId            Int
+  teacherName          String
+  teacherTotalStudents Int
+  teacherTotalHours    Int
 }
 
 enum Role {
