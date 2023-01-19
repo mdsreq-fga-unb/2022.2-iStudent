@@ -29,3 +29,4 @@
   - [Unidade 1](./wiki/unidade1.md)
   - [Unidade 2](./wiki/unidade2.md)
   - [Unidade 3](./wiki/unidade3.md)
+  - [Unidade 4](./wiki/unidade4.md)
