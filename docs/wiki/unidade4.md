@@ -54,3 +54,33 @@
 -   O Aluno deve conseguir visualizar as conquistas que ele ganhou enquanto acessava os vídeos e as atividades dentro do curso. 
 -   Só deve ser possível visualizar as conquistas dentro do curso caso o Aluno esteja matriculado no curso.
 -   Caso tenha concluído todo o curso, o Aluno vai receber uma notificação de conclusão do curso e vai poder visualizar o certificado de conclusão.
+
+
+## MVP2 - Débitos Técnicos
+
+#### US01 - Eu, como usuário, quero cadastrar os meus dados para poder usar a plataforma.
+-   Todos os campos, de acordo com o protótipo no Figma, devem ser obrigatórios.  
+-   O usuário antes de inserir os dados para o cadastro, pode especificar se quer se cadastrar como Aluno ou Professor.
+-   O usuário deve adicionar um email válido, caso contrário deve sinalizar que o email é inválido.
+-   A senha deve conter no mínimo 8 caracteres.
+-   Ao concluir o cadastro, deve-se gerar um Token de autorização para o usuário. 
+
+#### US03 - Eu como Usuário, gostaria de poder editar os dados já cadastrados do meu perfil dentro da plataforma.
+-   Os dados do usuário devem ser atualizados depois de clicar no botão “Salvar”.
+-   O usuário deve conseguir alterar qualquer dado do qual ele cadastrou anteriormente.
+-   Os novos dados inseridos devem ser válidos. 
+-   Os campos devem passar por validação para saber se são válidos e se não estão vazio.
+
+#### US05 - Eu, como usuário, quero visualizar os cursos e professores cadastrados para que eu possa decidir se o curso ou professor tem o que procuro.
+-   O usuário que após cadastrado deve poder conseguir visualizar os cursos e professores presentes na plataforma.
+-   O usuário pode visualizar quais professores estão dando o curso na plataforma. 
+
+#### US12 - Eu, como Professor quero aceitar ou recusar os pedidos de agendamento dos meus alunos para gerenciar os pedidos de agendamento.
+-   O professor deve conseguir aceitar ou recusar os pedidos de agendamento recebidos 
+-   O professor deve conseguir antes visualizar as informações do pedido de agendamento para decidir se aceita ou recusa
+-   O professor deve poder visualizar o nome do aluno que requisitou o pedido de agendamento
+
+#### US22 - Eu, como Aluno quero receber uma resposta do pedido de agendamento de aula por meio do Professor para saber se o meu pedido foi aceito ou não.
+-   O aluno deve inserir todos os dados no campo da tela de Requisitar Agendamentos.
+-   Os campos devem estar todos com valores inseridos.
+-   O aluno deve receber uma resposta confirmando o envio do pedido de agendamento para o professor após concluir o envio.
