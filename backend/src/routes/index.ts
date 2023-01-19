@@ -1,5 +1,6 @@
 import { Router } from 'express';
 import { adaptRoute } from '../main/adapters/express/express-route.adapter';
+import { makeAddCourseController } from '../main/factories/addCourse/add-course-controller-factory';
 import { makeClassesByTeacherController } from '../main/factories/class/get-class-by-teacher-factory';
 import { makeClassRequestController } from '../main/factories/classRequest/classRequest-controller-factory';
 import { makeDeleteAccountController } from '../main/factories/deleteAccount/delete-account-factory';
@@ -36,5 +37,7 @@ routes.get(
 );
 
 routes.post('/class', auth(), adaptRoute(makeClassRequestController()));
+
+routes.post('/create-course', adaptRoute(makeAddCourseController()));
 
 export default routes;
