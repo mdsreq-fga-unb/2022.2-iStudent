@@ -6,7 +6,7 @@ export interface AddCourseModel {
     price: number;
     contents: string[];
     courseRating: number;
-    teacherId: string;
+    teacherId: number;
     teacherName: string;
     teacherTotalStudents: number;
     teacherTotalHours: number;

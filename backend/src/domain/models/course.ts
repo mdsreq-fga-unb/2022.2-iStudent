@@ -1,11 +1,11 @@
 export interface CourseModel {
-    id: string;
+    id: number;
     name: string;
     description: string;
     price: number;
     contents: string[];
     courseRating: number;
-    teacherId: string;
+    teacherId: number;
     teacherName: string;
     teacherTotalStudents: number;
     teacherTotalHours: number;
