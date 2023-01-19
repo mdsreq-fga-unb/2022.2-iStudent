@@ -71,16 +71,12 @@
 -   Os novos dados inseridos devem ser válidos. 
 -   Os campos devem passar por validação para saber se são válidos e se não estão vazio.
 
-#### US05 - Eu, como usuário, quero visualizar os cursos e professores cadastrados para que eu possa decidir se o curso ou professor tem o que procuro.
--   O usuário que após cadastrado deve poder conseguir visualizar os cursos e professores presentes na plataforma.
--   O usuário pode visualizar quais professores estão dando o curso na plataforma. 
-
 #### US12 - Eu, como Professor quero aceitar ou recusar os pedidos de agendamento dos meus alunos para gerenciar os pedidos de agendamento.
 -   O professor deve conseguir aceitar ou recusar os pedidos de agendamento recebidos 
 -   O professor deve conseguir antes visualizar as informações do pedido de agendamento para decidir se aceita ou recusa
 -   O professor deve poder visualizar o nome do aluno que requisitou o pedido de agendamento
 
-#### US22 - Eu, como Aluno quero receber uma resposta do pedido de agendamento de aula por meio do Professor para saber se o meu pedido foi aceito ou não.
+#### US20 - Eu, como Aluno quero receber uma resposta do pedido de agendamento de aula por meio do Professor para saber se o meu pedido foi aceito ou não.
 -   O aluno deve inserir todos os dados no campo da tela de Requisitar Agendamentos.
 -   Os campos devem estar todos com valores inseridos.
 -   O aluno deve receber uma resposta confirmando o envio do pedido de agendamento para o professor após concluir o envio.

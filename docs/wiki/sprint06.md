@@ -8,7 +8,7 @@
 Os objetivos para essa sprint foram:
 
 - Concluir as User Story que foram deixadas como débito ténico da sprint passada: US02, US03, US04, US05 e US06
-- Concluir as User Story da sprint atual: US11, US12, US13, US21, US22
+- Concluir as User Story da sprint atual: US11, US12, US13, US19, US20
 
 ### 1.2 Tarefas
 
@@ -62,13 +62,13 @@ Os objetivos para essa sprint foram:
 - Criar função para que busque o ID e Nome do autor que requisitou o agendamento para o Professor
 - Realizar a integração Frontend e Backend
 
-**Implementar US21: Prioridade Alta**
+**Implementar US19: Prioridade Alta**
 
 - Criar tela para a requisição de aula/agendamento
 - Criar rota para a requisição de agendamento
 - Realizar a integração Frontend e Backend
 
-**Implementar US22: Prioridade Média**
+**Implementar US20: Prioridade Média**
 
 - Criar card de confirmação após o Aluno enviar o pedido de agendamento para o Professor
 
@@ -83,12 +83,12 @@ Os objetivos para essa sprint foram:
 - [US06] Eu, como usuário, quero filtrar cursos e professores de acordo com as minhas preferências para acessar os cursos da minha preferência.
 - [US11] Eu, como Professor, quero acessar os pedidos de agendamento dos meus alunos para visualizar o que cada aluno está pedindo.
 - [US13] Eu, como Professor, quero visualizar os pedidos de agendamentos para saber quem requisitou o agendamento de aula.
-- [US21] Eu, como Aluno, quero requisitar uma Aula Particular com o Professor do curso em que estou matriculado para reforçar o meu aprendizado dentro do curso.
+- [US19] Eu, como Aluno, quero requisitar uma Aula Particular com o Professor do curso em que estou matriculado para reforçar o meu aprendizado dentro do curso.
 
 **User Story que ficaram incompletos**:
 
 - [US13] Eu, como Professor, quero visualizar o(a) aluno(a) que requisitou o pedido de agendamento para saber quem requisitou o agendamento de aula.
-- [US22] Eu, como Aluno, quero receber uma resposta do pedido de agendamento de aula por meio do Professor dentro da plataforma para saber se o meu pedido foi aceito ou não.
+- [US20] Eu, como Aluno, quero receber uma resposta do pedido de agendamento de aula por meio do Professor dentro da plataforma para saber se o meu pedido foi aceito ou não.
 
 **Da parte do Cliente**:
 
@@ -103,7 +103,7 @@ No fim da nossa sprint o Cliente passou o feedback para a nossa equipe após nó
 - **US06** User Story
 - **US11** User Story
 - **US13** User Story
-- **US21** User Story
+- **US19** User Story
 
 ### 2.2 Melhorias
 
@@ -114,6 +114,6 @@ Idenficamos que a equipe sofreu para tentar entregar o MVP1 completo, que do qua
 Nessa Sprint não foi possível entregar o MVP1 completo por conta de ficou faltando as seguintes User Story da Funcionalidade 04 para serem entregues:
 
 - **US12** Eu, como Professor, quero aceitar ou recusar os pedidos de agendamento dos meus alunos para gerenciar os pedidos de agendamento.
-- **US22** Eu, como Aluno, quero receber uma resposta do pedido de agendamento de aula por meio do Professor para saber se o meu pedido foi aceito ou não.
+- **US20** Eu, como Aluno, quero receber uma resposta do pedido de agendamento de aula por meio do Professor para saber se o meu pedido foi aceito ou não.
 
 Por conta disso, essas duas User Story vão entrar como Débito Técnico na Sprint 07 quando for iniciada e entregue no MVP2.

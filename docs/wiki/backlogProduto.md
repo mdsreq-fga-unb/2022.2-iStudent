@@ -67,16 +67,14 @@ O escopo do projeto foi delimitado de acordo com a necessidade de criar uma plat
 | ID             | User Story                                                                                                                                                 | Prioridade |
 | -------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------- |
 | US17           | Eu, como Aluno, quero acessar a aba de Aprendizagem dentro do meu perfil para visualizar quais são os cursos que eu estou fazendo.                         | Baixa      |
-| US18 (Análise) | Eu, como Aluno, quero visualizar a porcentagem do andamento do curso em que estou matriculado para visualizar o meu desempenho dentro do curso.            | Baixa      |
-| US19           | Eu, como Aluno, quero visualizar as minhas conquistas ao decorrer do curso para visualizar os desafios que cumpri.                                         | Baixa      |
-| US20 (Análise) | Eu, como Aluno, quero visualizar os meus certificados ganhos após a finalização dos cursos para poder imprimir ou visualizar na minha aba de aprendizagem. | Baixa      |
+| US18           | Eu, como Aluno, quero visualizar as minhas conquistas ao decorrer do curso para visualizar os desafios que cumpri.                                         | Baixa      |
 
 #### Feature 07: Requisição de Aulas Particulares
 
 | ID   | User Story                                                                                                                                              | Prioridade |
 | ---- | ------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------- |
-| US21 | Eu, como Aluno, quero requisitar uma Aula Particular com o Professor do curso em que estou matriculado para reforçar o meu aprendizado dentro do curso. | Alta       |
-| US22 | Eu, como Aluno, quero receber uma resposta do pedido de agendamento de aula por meio do Professor para saber se o meu pedido foi aceito ou não.         | Média      |
+| US19 | Eu, como Aluno, quero requisitar uma Aula Particular com o Professor do curso em que estou matriculado para reforçar o meu aprendizado dentro do curso. | Alta       |
+| US20 | Eu, como Aluno, quero receber uma resposta do pedido de agendamento de aula por meio do Professor para saber se o meu pedido foi aceito ou não.         | Média      |
 
 ## Requisitos Não Funcionais
 
