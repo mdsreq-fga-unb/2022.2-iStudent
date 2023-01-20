@@ -1,11 +1,11 @@
-import { AddCourseRepository } from "../../../../database/repositories/addCourseRepository/add-course-repository";
+import { AddCourseRepository } from "../../../../database/repositories/CourseManagement/addCourseRepository/add-course-repository";
 import { CourseModel } from "../../../../domain/models/course";
 import { AddCourseModel } from "../../../../domain/useCases/courseManagement/addCourse";
 import prisma from "../../../../database";
-import { EditCourseRepository } from "../../../../database/repositories/editCourseRepository/edit-course-repository";
+import { EditCourseRepository } from "../../../../database/repositories/CourseManagement/editCourseRepository/edit-course-repository";
 import { EditCourseModel, NewCourseModel } from "../../../../domain/useCases/editCourse/editCourse";
-import { DeleteCourseRepository } from "../../../../database/repositories/deleteCourseRepository/delete-course-repository";
-import { GetCourseRepository } from "../../../../database/repositories/getCourseRepository/get-course.repository";
+import { DeleteCourseRepository } from "../../../../database/repositories/CourseManagement/deleteCourseRepository/delete-course-repository";
+import { GetCourseRepository } from "../../../../database/repositories/CourseManagement/getCourseRepository/get-course.repository";
 
 export class CoursePrismaRepository implements AddCourseRepository, EditCourseRepository, DeleteCourseRepository, GetCourseRepository {
     async get(name: string): Promise<CourseModel> {

@@ -1,5 +1,5 @@
 import { EditCourse, EditCourseModel, NewCourseModel } from "../../../../domain/useCases/editCourse/editCourse";
-import { EditCourseRepository } from "../../../repositories/editCourseRepository/edit-course-repository";
+import { EditCourseRepository } from "../../../repositories/CourseManagement/editCourseRepository/edit-course-repository";
 
 export class EditCourseUseCaseRepository implements EditCourse {
     constructor(

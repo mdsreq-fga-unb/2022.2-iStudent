@@ -1,4 +1,4 @@
-import { DeleteCourseRepository } from "../../../repositories/deleteCourseRepository/delete-course-repository";
+import { DeleteCourseRepository } from "../../../repositories/CourseManagement/deleteCourseRepository/delete-course-repository";
 import { DeleteCourse } from '../../../../domain/useCases/deleteCourse/deleteCourse'
 
 export class DeleteCourseUseCaseRepository implements DeleteCourse {

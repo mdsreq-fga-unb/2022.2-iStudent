@@ -1,6 +1,6 @@
 import { CourseModel } from "../../../../domain/models/course";
 import { AddCourse, AddCourseModel } from "../../../../domain/useCases/courseManagement/addCourse";
-import { AddCourseRepository } from "../../../repositories/addCourseRepository/add-course-repository";
+import { AddCourseRepository } from "../../../repositories/CourseManagement/addCourseRepository/add-course-repository";
 
 export class AddCourseUseCaseRepository implements AddCourse {
     constructor(
