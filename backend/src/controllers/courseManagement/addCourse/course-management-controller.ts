@@ -1,7 +1,7 @@
-import { AddCourse } from "../../domain/useCases/courseManagement/addCourse";
-import { badRequest, ok, serverError } from "../helpers/http/http-helper";
-import { Controller, HttpRequest, HttpResponse } from "../protocols";
-import { Validation } from "../protocols/validation";
+import { AddCourse } from "../../../domain/useCases/courseManagement/addCourse";
+import { badRequest, ok, serverError } from "../../helpers/http/http-helper";
+import { Controller, HttpRequest, HttpResponse } from "../../protocols";
+import { Validation } from "../../protocols/validation";
 
 export class CourseManagementController implements Controller {
     constructor(
