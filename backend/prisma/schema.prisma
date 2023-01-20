@@ -44,7 +44,7 @@ model Class {
 model Course {
   id                   Int      @id @default(autoincrement())
   createdAt            DateTime @default(now())
-  name                 String
+  name                 String   @unique
   description          String
   price                Int
   contents             String[]
