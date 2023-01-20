@@ -7,6 +7,7 @@ import { makeDeleteAccountController } from '../main/factories/deleteAccount/del
 import { makeDeleteCourseController } from '../main/factories/deleteCourse/delete-course-controller-factory';
 import { makeEditAccountController } from '../main/factories/editAccount/edit-account-factory';
 import { makeEditCourseController } from '../main/factories/editCourse/edit-course-controller-factory';
+import { makeGetCourseController } from '../main/factories/getCourse/get-course-controller-factory';
 import { makeLoginController } from '../main/factories/login-controller-factory';
 import { makeMeController } from '../main/factories/me/me-controller-factory';
 import { makeSignUpController } from '../main/factories/signup/signup-controller-factory';
@@ -41,6 +42,7 @@ routes.get(
 routes.post('/class', auth(), adaptRoute(makeClassRequestController()));
 
 routes.post('/teacher/create-course', adaptRoute(makeAddCourseController()));
+routes.get('/teacher/my-course', adaptRoute(makeGetCourseController()));
 routes.put('/teacher/edit-course', adaptRoute(makeEditCourseController()));
 routes.delete('/teacher/my-course', adaptRoute(makeDeleteCourseController()))
 
