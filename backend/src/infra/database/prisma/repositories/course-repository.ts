@@ -5,8 +5,19 @@ import prisma from "../../../../database";
 import { EditCourseRepository } from "../../../../database/repositories/editCourseRepository/edit-course-repository";
 import { EditCourseModel, NewCourseModel } from "../../../../domain/useCases/editCourse/editCourse";
 import { DeleteCourseRepository } from "../../../../database/repositories/deleteCourseRepository/delete-course-repository";
+import { GetCourseRepository } from "../../../../database/repositories/getCourseRepository/get-course.repository";
 
-export class CoursePrismaRepository implements AddCourseRepository, EditCourseRepository, DeleteCourseRepository {
+export class CoursePrismaRepository implements AddCourseRepository, EditCourseRepository, DeleteCourseRepository, GetCourseRepository {
+    async get(name: string): Promise<CourseModel> {
+        const getCourseRepository = await prisma.course.findFirst({
+            where: {
+                name: name
+            }
+        });
+        
+        return getCourseRepository;
+    }
+
     async addCourse(course: AddCourseModel): Promise<CourseModel> {        
         const addCourseRepository = await prisma.course.create({
             data: {
