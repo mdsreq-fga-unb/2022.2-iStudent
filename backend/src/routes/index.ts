@@ -38,6 +38,6 @@ routes.get(
 
 routes.post('/class', auth(), adaptRoute(makeClassRequestController()));
 
-routes.post('/create-course', adaptRoute(makeAddCourseController()));
+routes.post('/teacher/create-course', adaptRoute(makeAddCourseController()));
 
 export default routes;
