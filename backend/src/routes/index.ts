@@ -5,6 +5,7 @@ import { makeClassesByTeacherController } from '../main/factories/class/get-clas
 import { makeClassRequestController } from '../main/factories/classRequest/classRequest-controller-factory';
 import { makeDeleteAccountController } from '../main/factories/deleteAccount/delete-account-factory';
 import { makeEditAccountController } from '../main/factories/editAccount/edit-account-factory';
+import { makeEditCourseController } from '../main/factories/editCourse/edit-course-controller-factory';
 import { makeLoginController } from '../main/factories/login-controller-factory';
 import { makeMeController } from '../main/factories/me/me-controller-factory';
 import { makeSignUpController } from '../main/factories/signup/signup-controller-factory';
@@ -26,7 +27,7 @@ routes.post('/login', adaptRoute(makeLoginController()));
 routes.get('/me', auth(), adaptRoute(makeMeController()));
 routes.delete('/me', auth(), adaptRoute(makeDeleteAccountController()));
 
-routes.get('/uptade-account', adaptRoute(makeEditAccountController()));
+routes.put('/uptade-account', adaptRoute(makeEditAccountController()));
 
 routes.get('/teachers', adaptRoute(makeAllTeachersController()));
 routes.post('/teachers/subject', auth(), adaptRoute(makeAddSubjectontroller()));
@@ -39,5 +40,6 @@ routes.get(
 routes.post('/class', auth(), adaptRoute(makeClassRequestController()));
 
 routes.post('/teacher/create-course', adaptRoute(makeAddCourseController()));
+routes.put('/teacher/edit-course', adaptRoute(makeEditCourseController()))
 
 export default routes;
