@@ -43,4 +43,12 @@ export class CoursePrismaRepository implements AddCourseRepository, EditCourseRe
         
         return editCourseRepository;
     }
+
+    async deleteCourse(id: number): Promise<void> {
+        await prisma.course.delete({
+            where: {
+                id: id
+            }
+        });
+    }
 }
