@@ -23,7 +23,7 @@ export const Header = styled.div`
     display: flex;
     flex-direction: row;
     align-self: center;
-    position: fixed;
+    position: absolute;
     right: 30px;
   }
 
@@ -36,7 +36,7 @@ export const Header = styled.div`
     align-self: center;
     padding-left: 15px;
     border-style: none;
-    position: fixed;
+    position: absolute;
     left: 180px;
   }
 

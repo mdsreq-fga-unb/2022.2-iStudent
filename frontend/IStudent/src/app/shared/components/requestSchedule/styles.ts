@@ -10,7 +10,6 @@ export const Container = styled.div`
   .button-area {
     display: flex;
     flex-direction: row;
-    gap: 20px;
   }
 
   .accept {

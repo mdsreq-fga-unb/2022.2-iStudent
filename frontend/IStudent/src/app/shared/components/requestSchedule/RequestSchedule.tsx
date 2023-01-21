@@ -1,6 +1,7 @@
 import { Container } from './styles';
 import Tippy from '@tippyjs/react';
 import { DetailCard } from '../index';
+import { Button } from '../index'
 
 interface Props {
   name: string;
@@ -14,8 +15,8 @@ export const RequestSchedule = ({ name, time, type }: Props) => {
       <div className="content">
         <h5>{name}</h5>
         <div className="button-area">
-          <button className="accept">Aceitar</button>
-          <button className="refuse">Recusar</button>
+          <Button className="accept">Aceitar</Button>
+          <Button className="refuse">Recusar</Button>
           <Tippy
             content={<DetailCard time={time} type={type} />}
             interactive={true}

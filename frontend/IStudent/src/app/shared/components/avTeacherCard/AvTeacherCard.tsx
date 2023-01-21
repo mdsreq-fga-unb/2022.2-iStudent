@@ -4,6 +4,7 @@ import Modal from 'react-modal';
 import { SchedulingModal } from '../schedulingModal/SchedulingModal';
 import { useUser } from '../../../contexts/User';
 import { useNavigate } from 'react-router-dom';
+import { Button as ButtonP} from '../index'
 
 type CardProps = {
   name: string;
@@ -77,13 +78,13 @@ export const AvTeacherCard = (props: CardProps) => {
       </Body>
       <Button>
         {user ? (
-          <button id="modal" onClick={openModal}>
+          <ButtonP id="modal" onClick={openModal}>
             Solicitar Aula
-          </button>
+          </ButtonP>
         ) : (
-          <button id="modal" onClick={handleLoginPage}>
+          <ButtonP id="modal" onClick={handleLoginPage}>
             Solicitar Aula
-          </button>
+          </ButtonP>
         )}
         <Modal
           isOpen={modalIsOpen}
