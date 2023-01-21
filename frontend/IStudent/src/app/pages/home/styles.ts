@@ -4,17 +4,23 @@ export const Container = styled.div`
   height: 100%;
   width: 100%;
   background: #d9d9d9;
+  padding-bottom: 30px;
 
-  footer {
-    font-size: 18px;
+  footer p {
+    font-size: 20px;
     font-family: "Poppins";
     font-weight: 900;
-    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
     margin-top: 25vh;
-    padding-bottom: 20px;
     display: flex;
     flex-direction: column;
     cursor: pointer;
+    width: fit-content;
+  }
+
+  footer p:hover {
+    border-bottom: 2px solid #000;
   }
 `;
 

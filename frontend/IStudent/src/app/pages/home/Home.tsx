@@ -30,6 +30,10 @@ export const Home = () => {
     navigate("/professores-disponiveis");
   };
 
+  const handleAboutUsPage = () => {
+    navigate('/sobre');
+  }
+
   return (
     <Container>
       {user ? <HeaderUser /> : <HeaderHome />}
@@ -192,7 +196,7 @@ export const Home = () => {
           </li>
         </ul>
       </TeacherArea>
-      <footer>Sobre o iStudent</footer>
+      <footer onClick={handleAboutUsPage}><p>Sobre o iStudent</p></footer>
     </Container>
   );
 };
