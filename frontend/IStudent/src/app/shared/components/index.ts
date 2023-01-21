@@ -8,4 +8,5 @@ export * from "./schedulingModal/SchedulingModal";
 export * from "./requestSchedule/RequestSchedule";
 export * from "./notificationTooltip/NotificationTooltip";
 export * from "./detailCard/DetailCard";
-export * from "./Button"
+export * from "./Button";
+export * from './loading/Loading';
