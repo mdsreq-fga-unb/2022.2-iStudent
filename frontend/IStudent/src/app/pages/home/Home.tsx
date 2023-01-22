@@ -22,6 +22,9 @@ import homeImage from "../../shared/assets/homeImage/homeImage.svg";
 import mathImage from "../../shared/assets/mathImage/math.svg";
 import partImage from "../../shared/assets/partImage/part.svg";
 import chemicImage from "../../shared/assets/chemicImage/chemic.svg";
+import 'bootstrap/dist/css/bootstrap.css';
+import Carousel from 'react-bootstrap/Carousel';
+
 export const Home = () => {
   const { user } = useUser();
   const navigate = useNavigate();
@@ -119,82 +122,167 @@ export const Home = () => {
       </Category>
       <CourseArea>
         <h3>Cursos mais procurados</h3>
-        <ul>
-          <li>
-            <CoursesCard
-              name="Calculo 1"
-              teacher="Lucas Caldas"
-              raiting={4.6}
-              currentPrice={29.9}
-              originalPrice={289.0}
-            />
-          </li>
-          <li>
-            <CoursesCard
-              name="Calculo 1"
-              teacher="Lucas Caldas"
-              raiting={4.9}
-              currentPrice={29.9}
-              originalPrice={289.0}
-            />
-          </li>
-          <li>
-            <CoursesCard
-              name="Calculo 1"
-              teacher="Lucas Caldas"
-              raiting={4.4}
-              currentPrice={29.9}
-              originalPrice={289.0}
-            />
-          </li>
-          <li>
-            <CoursesCard
-              name="Calculo 1"
-              teacher="Lucas Caldas"
-              raiting={4.0}
-              currentPrice={29.9}
-              originalPrice={289.0}
-            />
-          </li>
-        </ul>
+        <Carousel>
+          <Carousel.Item>
+            <ul>
+              <li>
+                <CoursesCard
+                  name="Calculo 1"
+                  teacher="Lucas Caldas"
+                  raiting={4.6}
+                  currentPrice={29.9}
+                  originalPrice={289.0}
+                />
+              </li>
+              <li>
+                <CoursesCard
+                  name="Calculo 1"
+                  teacher="Lucas Caldas"
+                  raiting={4.9}
+                  currentPrice={29.9}
+                  originalPrice={289.0}
+                />
+              </li>
+              <li>
+                <CoursesCard
+                  name="Calculo 1"
+                  teacher="Lucas Caldas"
+                  raiting={4.4}
+                  currentPrice={29.9}
+                  originalPrice={289.0}
+                />
+              </li>
+              <li>
+                <CoursesCard
+                  name="Calculo 1"
+                  teacher="Lucas Caldas"
+                  raiting={4.0}
+                  currentPrice={29.9}
+                  originalPrice={289.0}
+                />
+              </li>
+            </ul>
+          </Carousel.Item>
+          <Carousel.Item>
+            <ul>
+              <li>
+                <CoursesCard
+                  name="Calculo 1"
+                  teacher="Lucas Caldas"
+                  raiting={4.6}
+                  currentPrice={29.9}
+                  originalPrice={289.0}
+                />
+              </li>
+              <li>
+                <CoursesCard
+                  name="Calculo 1"
+                  teacher="Lucas Caldas"
+                  raiting={4.9}
+                  currentPrice={29.9}
+                  originalPrice={289.0}
+                />
+              </li>
+              <li>
+                <CoursesCard
+                  name="Calculo 1"
+                  teacher="Lucas Caldas"
+                  raiting={4.4}
+                  currentPrice={29.9}
+                  originalPrice={289.0}
+                />
+              </li>
+              <li>
+                <CoursesCard
+                  name="Calculo 1"
+                  teacher="Lucas Caldas"
+                  raiting={4.0}
+                  currentPrice={29.9}
+                  originalPrice={289.0}
+                />
+              </li>
+            </ul>
+          </Carousel.Item>
+        </Carousel>
       </CourseArea>
       <TeacherArea>
         <h3>Professores mais procurados</h3>
-        <ul>
-          <li>
-            <TeacherCard
-              name="Lucas Caldas"
-              courseName="Matemática"
-              valueHour={50}
-              rating={5}
-            />
-          </li>
+        <Carousel>
+          <Carousel.Item>
+            <ul>
+              <li>
+                <TeacherCard
+                  name="Lucas Caldas"
+                  courseName="Matemática"
+                  valueHour={50}
+                  rating={5}
+                />
+              </li>
 
-          <li>
-            <TeacherCard
-              name="Lucas Caldas"
-              courseName="Matemática"
-              valueHour={50}
-              rating={5}
-            />
-          </li>
-          <li>
-            <TeacherCard
-              name="Lucas Caldas"
-              courseName="Matemática"
-              valueHour={50}
-              rating={5}
-            />
-          </li>
-          <li>
-            <TeacherCard
-              name="Lucas Caldas"
-              courseName="Matemática"
-              valueHour={50}
-              rating={5}
-            />
-          </li>
-        </ul>
+              <li>
+                <TeacherCard
+                  name="Lucas Caldas"
+                  courseName="Matemática"
+                  valueHour={50}
+                  rating={5}
+                />
+              </li>
+              <li>
+                <TeacherCard
+                  name="Lucas Caldas"
+                  courseName="Matemática"
+                  valueHour={50}
+                  rating={5}
+                />
+              </li>
+              <li>
+                <TeacherCard
+                  name="Lucas Caldas"
+                  courseName="Matemática"
+                  valueHour={50}
+                  rating={5}
+                />
+              </li>
+            </ul>
+          </Carousel.Item>
+          <Carousel.Item>
+            <ul>
+              <li>
+                <TeacherCard
+                  name="Lucas Caldas"
+                  courseName="Matemática"
+                  valueHour={50}
+                  rating={5}
+                />
+              </li>
+
+              <li>
+                <TeacherCard
+                  name="Lucas Caldas"
+                  courseName="Matemática"
+                  valueHour={50}
+                  rating={5}
+                />
+              </li>
+              <li>
+                <TeacherCard
+                  name="Lucas Caldas"
+                  courseName="Matemática"
+                  valueHour={50}
+                  rating={5}
+                />
+              </li>
+              <li>
+                <TeacherCard
+                  name="Lucas Caldas"
+                  courseName="Matemática"
+                  valueHour={50}
+                  rating={5}
+                />
+              </li>
+            </ul>
+          </Carousel.Item>
+        </Carousel>
       </TeacherArea>
       <footer onClick={handleAboutUsPage}><p>Sobre o iStudent</p></footer>
     </Container>

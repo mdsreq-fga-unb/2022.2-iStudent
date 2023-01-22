@@ -112,7 +112,7 @@ export const Category = styled.div`
 
 export const CourseArea = styled.div`
   h3 {
-    width: 300px;
+    width: fit-content;
     margin-left: auto;
     margin-right: auto;
     margin-top: 50px;
@@ -130,7 +130,7 @@ export const CourseArea = styled.div`
 
 export const TeacherArea = styled.div`
   h3 {
-    width: 300px;
+    width: fit-content;
     margin-left: auto;
     margin-right: auto;
     margin-top: 50px;
