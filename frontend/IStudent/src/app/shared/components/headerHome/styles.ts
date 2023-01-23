@@ -46,7 +46,8 @@ export const Header = styled.div`
     border-color: #ffffff;
     height: 40px;
     width: auto;
-    padding: 10px;
+    padding: 8px;
+    text-align: center;
     margin-left: 5px;
     font-family: "Poppins";
   }
