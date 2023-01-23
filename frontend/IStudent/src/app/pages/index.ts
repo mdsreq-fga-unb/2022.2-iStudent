@@ -6,3 +6,5 @@ export * from "./login/Login";
 export * from "./editProfile/EditProfile";
 export * from "./availableTeacher/AvailableTeacher";
 export * from "./teacherSchedule/TeacherSchedule";
+export * from "./signUpCourse/SignUpCourse";
+export * from './aboutUs/AboutUs';

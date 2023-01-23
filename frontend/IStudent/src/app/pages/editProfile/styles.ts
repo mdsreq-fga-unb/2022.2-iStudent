@@ -15,7 +15,8 @@ export const Body = styled.div`
   display: flex;
   flex-direction: column;
   padding-left: 20px;
-  margin-left: calc(100vw / 2.7);
+  margin-left: auto;
+  margin-right: auto;
   margin-top: 50px;
   padding-bottom: 20px;
   font-family: 'Poppins';

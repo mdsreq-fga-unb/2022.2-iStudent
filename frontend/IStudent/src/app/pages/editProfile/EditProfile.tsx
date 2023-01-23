@@ -2,7 +2,7 @@ import { Body, Container, DeleteAccount } from './styles';
 import { useNavigate } from 'react-router-dom';
 import { useUser } from '../../contexts/User';
 import deleteAccount from '../../shared/services/user/deleteAccount';
-import { HeaderUser } from '../../shared/components';
+import { HeaderUser, Button } from '../../shared/components';
 import { useState } from 'react';
 import saveSubject from '../../shared/services/teachers/saveSubject';
 
@@ -67,7 +67,7 @@ export const EditProfile = () => {
             <input type="email" placeholder={user?.email} />
           </div>
         </div>
-        <button>Salvar</button>
+        <Button>Salvar</Button>
 
         {user?.role === 'TEACHER' && (
           <>
@@ -84,12 +84,12 @@ export const EditProfile = () => {
                 />
               </div>
             </div>
-            <button onClick={handleSaveSubject}>Salvar</button>
+            <Button onClick={handleSaveSubject}>Salvar</Button>
           </>
         )}
       </Body>
       <DeleteAccount>
-        <button onClick={handleDeleteAccount}>Excluir minha conta</button>
+        <Button onClick={handleDeleteAccount}>Excluir minha conta</Button>
       </DeleteAccount>
     </Container>
   );

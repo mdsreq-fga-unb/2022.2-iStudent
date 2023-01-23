@@ -1,19 +1,32 @@
 import { useNavigate } from 'react-router-dom';
 import { Container, Header, Input, Cards } from './styles';
 import ArrowBackIcon from '@mui/icons-material/ArrowBack';
-import { AvTeacherCard } from '../../shared/components';
+import { AvTeacherCard, Loading } from '../../shared/components';
 import useTeachers from '../../shared/hooks/useTeachers';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 
 export const AvailableTeacher = () => {
   const navigate = useNavigate();
-  const { teachers, setTeachers } = useTeachers();
+  const { teachers } = useTeachers();
+  const [loading, setLoading] = useState(true);
 
   const [subjectFilter, setSubjectFilter] = useState('');
 
   const handleClickHome = () => {
     navigate('/pagina-inicial');
   };
+
+  const onChangeInput = (e: React.ChangeEvent<HTMLInputElement>) => {
+    setSubjectFilter(e.target.value);
+  }
+
+  useEffect(() => {
+    if(teachers.length === 0) {
+      loading
+    } else {
+      setLoading(false)
+    }
+  } , [teachers])
 
   return (
     <Container>
@@ -35,7 +48,7 @@ export const AvailableTeacher = () => {
       <Input>
         <div>
           <span>Matéria</span>
-          <input type="text" onChange={e => setSubjectFilter(e.target.value)} />
+          <input type="text" onChange={onChangeInput} />
         </div>
         {/* <div>
           <span>Dia da Semana</span>
@@ -58,11 +71,12 @@ export const AvailableTeacher = () => {
         {teachers
           .filter(teacher =>
             subjectFilter
-              ? teacher.subject?.name.includes(subjectFilter)
+              ? teacher.subject?.name.toLocaleLowerCase().includes(subjectFilter)
               : true,
           )
           .map(teacher => (
             <AvTeacherCard
+              key={teacher.id}
               name={teacher.name}
               course={
                 teacher.subject?.name ? teacher.subject.name : 'Sem materia'
@@ -71,6 +85,7 @@ export const AvailableTeacher = () => {
               id={parseInt(teacher.id, 10)}
             />
           ))}
+          {loading && <Loading />}
       </Cards>
     </Container>
   );

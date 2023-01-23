@@ -4,7 +4,7 @@ import ErrorOutlineIcon from "@mui/icons-material/ErrorOutline";
 import { useNavigate } from "react-router-dom";
 import React, { useState } from "react";
 import { signupTeacher } from "../../shared/services/auth/signUp";
-
+import { Button } from '../../shared/components/index'
 const initialValues = {
   name: "",
   email: "",
@@ -103,7 +103,7 @@ export const SignUpTeacher = () => {
               <p>Preencha todas as informações</p>
             </div>
           </div>
-          <button onClick={handleClickSignUp}>Salvar Cadastro</button>
+          <Button onClick={handleClickSignUp}>Salvar Cadastro</Button>
         </div>
       </Body>
     </Container>

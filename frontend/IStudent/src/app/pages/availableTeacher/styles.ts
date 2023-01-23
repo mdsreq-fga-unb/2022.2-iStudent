@@ -1,8 +1,10 @@
 import styled from 'styled-components';
 
 export const Container = styled.div`
-  height: 100vh;
+  height: 100%;
+  min-height: 100vh;
   background: #d9d9d9;
+  padding-bottom: 20px;
 `;
 
 export const Header = styled.div`
