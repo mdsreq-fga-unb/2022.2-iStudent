@@ -6,6 +6,7 @@ export interface IAula extends Aula {
   student: {
     name: string;
   };
+  accepted: boolean | null;
 }
 
 export default async function getAllClassseByTeacher() {
