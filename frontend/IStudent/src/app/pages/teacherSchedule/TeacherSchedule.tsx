@@ -13,11 +13,13 @@ export const TeacherSchedule = () => {
         <div className="request-list">
           <ul>
             {classes.map(aula => (
-              <li>
+              <li key={aula.id}>
                 <RequestSchedule
                   name={aula.student.name}
                   time={aula.days[0]}
                   type={aula.type}
+                  accepted={aula.accepted}
+                  id={aula.id}
                 />
               </li>
             ))}
