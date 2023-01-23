@@ -39,6 +39,7 @@ model Class {
   student   User      @relation(fields: [studentId], references: [id])
   studentId Int    
   teacherId Int   
+  accepted  Boolean?
 }
 
 enum Role {
