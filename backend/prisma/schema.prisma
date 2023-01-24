@@ -53,8 +53,7 @@ model Course {
   teacherId            Int
   teacherName          String
   totalStudents        Int
-  totalHours           Int
-  studentId            Int   
+  totalHours           Int  
 }
 
 enum Role {
