@@ -9,93 +9,89 @@ export const SignUpCourse = () => {
       <HeaderUser />
       <div className='columns-space'>
         <FirstBody>
-          <div className="my-data-title">
-            <h1>Seus Dados</h1>
+          <div className="course-title">
+            <h1>Cadastrar Curso</h1>
           </div>
-          <div className="my-data">
-            <div className="complete-name">
-              <p>Nome Completo</p>
+          <div className="course-basic-info">
+            <div className="course-name">
+              <p>Nome do curso</p>
               <input type="text" name="name" />
             </div>
-            <div className="email">
-              <p>E-mail</p>
-              <input type="email" name="email" />
-            </div>
-            <div className="bio">
-              <p>Biografia</p>
-              <textarea name="biography" />
+            <div className="course-description">
+              <p>Descrição</p>
+              <textarea />
             </div>
           </div>
-          <div className="my-material-title">
-            <h1>Escolha uma Senha</h1>
+          <div className="constructor-title">
+            <h1>Construtor do Curso</h1>
           </div>
-          <div className="my-material">
-            <div className="material">
-              <p>Sua nova senha</p>
-              <input type="password" name="password" />
-            </div>
-            <div className="value-hour">
-              <p>Confirme sua nova senha</p>
-              <input
-                type="password"
-                name="confirmationPassword"
-              />
-            </div>
-          </div>
-          <div className="final">
-            <div className="alert-area">
-              <ErrorOutlineIcon style={{ color: "#000080" }} />
-              <div className="alert-text">
-                <p>Importante!</p>
-                <p>Preencha todas as informações</p>
+          <div className="constructor-area">
+            <div className="add-module-area">
+              <span>Adicione um módulo para montar seu curso</span>
+              <button>Adicionar Módulo</button>
+              <div className='module-area'>
+                <span>Nome do Módulo</span>
+                <input type="text" />
+                <div className='add-module'>
+                  <button>Adicionar</button>
+                </div>
+              </div>
+              <div className='existing-modules'>
+                <div>
+                  <ul>
+                    <li>
+                      <div>
+                        <p>Modulo 1</p>
+                      </div>
+                    </li>
+                    <li>
+                      <div>
+                        <p>Modulo 2</p>
+                      </div>
+                    </li>
+                    <li>
+                      <div>
+                        <p>Modulo 3</p>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
               </div>
             </div>
-            <Button>Salvar Cadastro</Button>
+          </div>  
+          <div className="additional-data-title">
+            <h1>Dados Adicionais</h1>
+          </div>
+          <div className="course-duration-area">
+            <span>Duração total do curso</span>
+            <div>
+              <input type="number" placeholder='HH'/>
+              <input type="number" placeholder='MM'/>
+              <input type="number" placeholder='SS'/>
+            </div>
+          </div>
+          <div className='benefits-area'>
+            <span>Benefícios do Curso</span>
+            <textarea placeholder='Liste um por linha'/>
+          </div>
+          <div className='requests-area'>
+            <span>Requisitos/Instruções</span>
+            <textarea placeholder='Liste um por linha'/>
           </div>
         </FirstBody>
         <SecondBody>
-        <div className="my-data-title">
-            <h1>Seus Dados</h1>
+          <div className='publish'>
+            <button className='delete-button'>Excluir</button>
+            <button className='publish-button'>Publicar</button>
           </div>
-          <div className="my-data">
-            <div className="complete-name">
-              <p>Nome Completo</p>
-              <input type="text" name="name" />
-            </div>
-            <div className="email">
-              <p>E-mail</p>
-              <input type="email" name="email" />
-            </div>
-            <div className="bio">
-              <p>Biografia</p>
-              <textarea name="biography" />
-            </div>
+          <div className='categories'>
+            <input type="text" placeholder='Digite a categoria'/>
+            <button>Adicionar</button>
+            <div className='categories-add'>Lista com as categorias</div>
           </div>
-          <div className="my-material-title">
-            <h1>Escolha uma Senha</h1>
-          </div>
-          <div className="my-material">
-            <div className="material">
-              <p>Sua nova senha</p>
-              <input type="password" name="password" />
-            </div>
-            <div className="value-hour">
-              <p>Confirme sua nova senha</p>
-              <input
-                type="password"
-                name="confirmationPassword"
-              />
-            </div>
-          </div>
-          <div className="final">
-            <div className="alert-area">
-              <ErrorOutlineIcon style={{ color: "#000080" }} />
-              <div className="alert-text">
-                <p>Importante!</p>
-                <p>Preencha todas as informações</p>
-              </div>
-            </div>
-            <Button>Salvar Cadastro</Button>
+          <div className='course-image-area'>
+            <span>Imagem Destaque</span>
+            <input type="file" />
           </div>
         </SecondBody>
       </div>

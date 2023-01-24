@@ -1,12 +1,13 @@
 import styled from 'styled-components';
 
 export const Container = styled.div`
-  height: 100vh;
+  min-height: 100vh;
+  max-height: auto;
   background: #d9d9d9;
+  padding-bottom: 60px;
 `;
 
 export const Body = styled.div`
-  z-index: 999;
   background-color: #ffffff;
   width: 500px;
   height: auto;
@@ -23,9 +24,14 @@ export const Body = styled.div`
   font-size: 12px;
 
   .my-data-title {
-    padding: 20px;
+    padding: 30px 10px 5px 10px;
     border-bottom: 1px solid #000000;
     margin-right: 20px;
+  }
+
+  h1 {
+    font-size: 26px;
+    font-weight: 900;
   }
 
   .photo-input input {
@@ -77,8 +83,17 @@ export const Body = styled.div`
     background-color: #e6e6f0;
     border-radius: 8px;
     border-style: none;
-    margin-top: 5px;
+    padding-left: 15px;
+  }
+
+  .my-data textarea {
+    width: 95%;
+    height: 90px;
+    background-color: #e6e6f0;
+    border-radius: 8px;
+    border-style: none;
     padding-left: 5px;
+    overflow-y: auto;
   }
 
   .my-data input:hover {
@@ -92,10 +107,9 @@ export const Body = styled.div`
   }
 
   .my-password {
-    padding-top: 8px;
+    padding-top: 4px;
     display: flex;
     flex-direction: column;
-    gap: 8px;
   }
 
   .my-password input {
@@ -104,8 +118,11 @@ export const Body = styled.div`
     background-color: #e6e6f0;
     border-radius: 8px;
     border-style: none;
-    margin-top: 5px;
-    padding-left: 5px;
+    padding-left: 15px;
+  }
+
+  .my-password textarea {
+    padding: 15px
   }
 
   .my-password input:hover {

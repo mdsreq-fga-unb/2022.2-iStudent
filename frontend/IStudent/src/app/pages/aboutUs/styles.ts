@@ -23,8 +23,10 @@ const fromTop = keyframes`
     }
 `
 export const Container = styled.div`
-  height: 100vh;
+  min-height: 100vh;
+  max-height: auto;
   background: #c9c9c9;
+  padding-bottom: 60px;
 `;
 
 export const Body = styled.div`
@@ -38,6 +40,7 @@ export const Body = styled.div`
   margin-right: auto;
   padding: 20px;
   font-family: 'Poppins';
+  font-size: 20px;
   color: #000080;
 
   .text1 {

@@ -10,6 +10,7 @@ export const Container = styled.div`
   .button-area {
     display: flex;
     flex-direction: row;
+    gap: 20px;
   }
 
   .accept {
@@ -42,6 +43,7 @@ export const Container = styled.div`
     width: 90px;
     height: 30px;
     text-align: center;
+    padding: 2px;
   }
 
   .refused {
@@ -52,6 +54,7 @@ export const Container = styled.div`
     width: 90px;
     height: 30px;
     text-align: center;
+    padding: 2px;
   }
 
   .detail {

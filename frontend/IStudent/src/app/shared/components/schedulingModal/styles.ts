@@ -86,7 +86,6 @@ export const Container = styled.div`
 
 export const Button = styled.div`
   margin-top: 60px;
-  margin-right: 10px;
   display: flex;
   justify-content: flex-end;
 

@@ -56,17 +56,23 @@ export const EditProfile = () => {
               </label>
             )}
           </div>
-          <div className="email">
+          <div className="my-password">
             <p>Nome</p>
             <input type="text" placeholder={user?.name} />
           </div>
-        </div>
-        <div className="my-password">
-          <div className="password">
-            <p>E-mail</p>
-            <input type="email" placeholder={user?.email} />
+          <div className="my-password">
+            <div className="password">
+              <p>E-mail</p>
+              <input type="email" placeholder={user?.email} />
+            </div>
           </div>
-        </div>
+          <div className="my-password">
+            <div className="password">
+              <p>Biografia</p>
+              <textarea placeholder='Sua Bio'/>
+            </div>
+          </div>
+        </div>  
         <Button>Salvar</Button>
 
         {user?.role === 'TEACHER' && (
@@ -82,6 +88,10 @@ export const EditProfile = () => {
                   placeholder={user?.subject?.name}
                   onChange={e => setSubject(e.target.value)}
                 />
+              </div>
+              <div className="email">
+                <p>Sua Hora/Aula</p>
+                <input type="number" placeholder='Valor por hora (em Reais)'/>
               </div>
             </div>
             <Button onClick={handleSaveSubject}>Salvar</Button>
