@@ -1,9 +1,48 @@
-import { HeaderUser, Button } from '../../shared/components'
+import { useState } from 'react';
+import { HeaderUser, Button, ClassModal } from '../../shared/components'
 import {Container, FirstBody, SecondBody} from './styles'
 import ErrorOutlineIcon from "@mui/icons-material/ErrorOutline";
+import DeleteIcon from '@mui/icons-material/Delete';
+import Modal from 'react-modal';
 
+const customStyles: Object = {
+  overlay: {
+    position: 'fixed',
+    top: 0,
+    left: 0,
+    right: 0,
+    bottom: 0,
+    backgroundColor: 'rgba(255, 255, 255, 0.55)',
+  },
+  content: {
+    position: 'absolute',
+    inset: '40px',
+    border: '1px solid',
+    backgroundColor: '#fff',
+    overflow: 'auto',
+    borderRadius: '4px',
+    outline: 'none',
+    padding: '20px',
+    maxHeight: '500px',
+    maxWidth: '600px',
+    margin: 'auto',
+    fontFamily: 'Poppins',
+  },
+};
+
+Modal.setAppElement('#root');
 
 export const SignUpCourse = () => {
+  const [modalIsOpen, setIsOpen] = useState(false);
+
+  const openModal = () => {
+    setIsOpen(true);
+  };
+
+  const closeModal = () => {
+    setIsOpen(false);
+  };
+
   return (
     <Container>
       <HeaderUser />
@@ -40,18 +79,55 @@ export const SignUpCourse = () => {
                 <div>
                   <ul>
                     <li>
-                      <div>
-                        <p>Modulo 1</p>
+                      <div className='module-space'>
+                        <div className='module-name'>
+                          <p>Modulo 1</p>
+                          <DeleteIcon style={{cursor: 'pointer'}}/>
+                        </div>
+                        <div className='add-class'>
+                          <button onClick={openModal}>+ Aula</button>
+                          <Modal
+                            isOpen={modalIsOpen}
+                            onRequestClose={closeModal}
+                            style={customStyles}
+                          >
+                            <ClassModal event={closeModal}/>
+                          </Modal>
+                        </div>
+                        <div className='added-classes'>
+                          <ul>
+                            <li>
+                              <div className='class-item'>
+                                <p>Aula 1</p>
+                                <DeleteIcon style={{cursor: 'pointer'}}/>
+                              </div>
+                            </li>
+                            <li>
+                              <div className='class-item'>
+                                <p>Aula 2</p>
+                                <DeleteIcon style={{cursor: 'pointer'}}/>
+                              </div>
+                            </li>
+                            <li>
+                              <div className='class-item'>
+                                <p>Aula 3</p>
+                                <DeleteIcon style={{cursor: 'pointer'}}/>
+                              </div>
+                            </li>
+                          </ul>
+                        </div>
                       </div>
                     </li>
                     <li>
-                      <div>
+                      <div className='module-name'>
                         <p>Modulo 2</p>
+                        <DeleteIcon style={{cursor: 'pointer'}}/>
                       </div>
                     </li>
                     <li>
-                      <div>
+                      <div className='module-name'>
                         <p>Modulo 3</p>
+                        <DeleteIcon style={{cursor: 'pointer'}}/>
                       </div>
                     </li>
                   </ul>
@@ -74,24 +150,47 @@ export const SignUpCourse = () => {
             <span>Benefícios do Curso</span>
             <textarea placeholder='Liste um por linha'/>
           </div>
-          <div className='requests-area'>
+          <div className='benefits-area'>
             <span>Requisitos/Instruções</span>
             <textarea placeholder='Liste um por linha'/>
+          </div>
+          <div className='benefits-area'>
+            <span>Público Alvo</span>
+            <textarea placeholder='Liste um por linha'/>
+          </div>
+          <div className='benefits-area'>
+            <span>Materiais Inclusos</span>
+            <textarea placeholder='Liste um por linha'/>
+          </div>
+          <div className='video-area'>
+            <span>Vídeo de Introdução</span>
+            <input type='url' placeholder='URL do Vídeo'/>
           </div>
         </FirstBody>
         <SecondBody>
           <div className='publish'>
-            <button className='delete-button'>Excluir</button>
-            <button className='publish-button'>Publicar</button>
+            <Button className='delete-button'>Excluir</Button>
+            <Button className='publish-button'>Publicar</Button>
           </div>
           <div className='categories'>
+            <span>Categoria do Curso</span>
             <input type="text" placeholder='Digite a categoria'/>
             <button>Adicionar</button>
-            <div className='categories-add'>Lista com as categorias</div>
+            <div className='categories-add'>
+              <p>Nome da Categoria</p>
+              <DeleteIcon style={{cursor: 'pointer'}}/>
+            </div>
           </div>
           <div className='course-image-area'>
             <span>Imagem Destaque</span>
             <input type="file" />
+          </div>
+          <div className="alert-area">
+            <ErrorOutlineIcon style={{ color: '#000080' }} />
+            <div className="alert-text">
+              <p>Importante!</p>
+              <p>Preencha todas as informações</p>
+            </div>
           </div>
         </SecondBody>
       </div>
