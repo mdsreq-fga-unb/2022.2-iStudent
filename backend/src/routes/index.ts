@@ -1,6 +1,8 @@
 import { Router } from 'express';
 import { adaptRoute } from '../main/adapters/express/express-route.adapter';
 import { makeAddCourseController } from '../main/factories/addCourse/add-course-controller-factory';
+import { makeAcceptClassController } from '../main/factories/class/accept-classes.factory';
+import { makeClassNotificationController } from '../main/factories/class/classes-notification.factory';
 import { makeClassesByTeacherController } from '../main/factories/class/get-class-by-teacher-factory';
 import { makeClassRequestController } from '../main/factories/classRequest/classRequest-controller-factory';
 import { makeDeleteAccountController } from '../main/factories/deleteAccount/delete-account-factory';
@@ -40,10 +42,20 @@ routes.get(
 );
 
 routes.post('/class', auth(), adaptRoute(makeClassRequestController()));
+routes.put(
+  '/class/accept-or-deny',
+  auth(),
+  adaptRoute(makeAcceptClassController()),
+);
+routes.get(
+  '/class/notifications',
+  auth(),
+  adaptRoute(makeClassNotificationController()),
+);
 
 routes.post('/teacher/create-course', adaptRoute(makeAddCourseController()));
 routes.get('/teacher/my-course', adaptRoute(makeGetCourseController()));
 routes.put('/teacher/edit-course', adaptRoute(makeEditCourseController()));
-routes.delete('/teacher/my-course', adaptRoute(makeDeleteCourseController()))
+routes.delete('/teacher/my-course', adaptRoute(makeDeleteCourseController()));
 
 export default routes;

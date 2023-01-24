@@ -2,7 +2,7 @@ import { Body, Container, DeleteAccount } from './styles';
 import { useNavigate } from 'react-router-dom';
 import { useUser } from '../../contexts/User';
 import deleteAccount from '../../shared/services/user/deleteAccount';
-import { HeaderUser } from '../../shared/components';
+import { HeaderUser, Button } from '../../shared/components';
 import { useState } from 'react';
 import saveSubject from '../../shared/services/teachers/saveSubject';
 
@@ -56,18 +56,24 @@ export const EditProfile = () => {
               </label>
             )}
           </div>
-          <div className="email">
+          <div className="my-password">
             <p>Nome</p>
             <input type="text" placeholder={user?.name} />
           </div>
-        </div>
-        <div className="my-password">
-          <div className="password">
-            <p>E-mail</p>
-            <input type="email" placeholder={user?.email} />
+          <div className="my-password">
+            <div className="password">
+              <p>E-mail</p>
+              <input type="email" placeholder={user?.email} />
+            </div>
           </div>
-        </div>
-        <button>Salvar</button>
+          <div className="my-password">
+            <div className="password">
+              <p>Biografia</p>
+              <textarea placeholder='Sua Bio'/>
+            </div>
+          </div>
+        </div>  
+        <Button>Salvar</Button>
 
         {user?.role === 'TEACHER' && (
           <>
@@ -83,13 +89,17 @@ export const EditProfile = () => {
                   onChange={e => setSubject(e.target.value)}
                 />
               </div>
+              <div className="email">
+                <p>Sua Hora/Aula</p>
+                <input type="number" placeholder='Valor por hora (em Reais)'/>
+              </div>
             </div>
-            <button onClick={handleSaveSubject}>Salvar</button>
+            <Button onClick={handleSaveSubject}>Salvar</Button>
           </>
         )}
       </Body>
       <DeleteAccount>
-        <button onClick={handleDeleteAccount}>Excluir minha conta</button>
+        <Button onClick={handleDeleteAccount}>Excluir minha conta</Button>
       </DeleteAccount>
     </Container>
   );

@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import requestClass from '../../services/student/requestClass';
 import { Container, Button } from './styles';
+import {Button as ButtonLoad} from '../Button'
 
 type Event = {
   event: () => void;
@@ -68,6 +69,7 @@ export const SchedulingModal = (props: Event) => {
           <div className="week-day">
             <span>Dia da semana</span>
             <select
+              required
               onClick={e =>
                 setAula({
                   ...aula,
@@ -86,16 +88,16 @@ export const SchedulingModal = (props: Event) => {
           </div>
           <div className="initial-hour">
             <span>Das</span>
-            <input type="time" />
+            <input type="time" required/>
           </div>
           <div className="final-hour">
             <span>Até</span>
-            <input type="time" />
+            <input type="time" required/>
           </div>
         </div>
       </div>
-      <Button onClick={handleClassSubmit}>
-        <button>Solicitar aula</button>
+      <Button>
+        <ButtonLoad onClick={handleClassSubmit}>Solicitar aula</ButtonLoad>
       </Button>
     </Container>
   );

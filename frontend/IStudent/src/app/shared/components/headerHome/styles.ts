@@ -23,7 +23,7 @@ export const Header = styled.div`
     display: flex;
     flex-direction: row;
     align-self: center;
-    position: fixed;
+    position: absolute;
     right: 30px;
   }
 
@@ -36,7 +36,7 @@ export const Header = styled.div`
     align-self: center;
     padding-left: 15px;
     border-style: none;
-    position: fixed;
+    position: absolute;
     left: 180px;
   }
 
@@ -46,7 +46,8 @@ export const Header = styled.div`
     border-color: #ffffff;
     height: 40px;
     width: auto;
-    padding: 10px;
+    padding: 8px;
+    text-align: center;
     margin-left: 5px;
     font-family: "Poppins";
   }

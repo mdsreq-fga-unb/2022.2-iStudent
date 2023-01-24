@@ -5,7 +5,6 @@ const ButtonStyled = styled.button`
   border-radius: 8px;
   background-color: #000080;
   color: #ffffff;
-  padding: 10px;
   margin-right: 30px;
   font-family: 'Poppins';
   font-weight: 900;
