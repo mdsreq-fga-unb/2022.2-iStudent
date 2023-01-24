@@ -53,9 +53,9 @@ routes.get(
   adaptRoute(makeClassNotificationController()),
 );
 
-routes.post('/teacher/create-course', adaptRoute(makeAddCourseController()));
-routes.get('/teacher/my-course', adaptRoute(makeGetCourseController()));
-routes.put('/teacher/edit-course', adaptRoute(makeEditCourseController()));
-routes.delete('/teacher/my-course', adaptRoute(makeDeleteCourseController()));
+routes.post('/teacher/course', adaptRoute(makeAddCourseController()));
+routes.get('/teacher/course', adaptRoute(makeGetCourseController()));
+routes.put('/teacher/course', adaptRoute(makeEditCourseController()));
+routes.delete('/teacher/course', adaptRoute(makeDeleteCourseController()));
 
 export default routes;
