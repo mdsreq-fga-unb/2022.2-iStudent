@@ -34,6 +34,16 @@ Modal.setAppElement('#root');
 
 export const SignUpCourse = () => {
   const [modalIsOpen, setIsOpen] = useState(false);
+  const [showModule, setShowModule] = useState('none');
+  const [showAddModule, setShowAddModule] = useState('none');
+
+  const openModuleName = () => {
+    setShowModule('flex')
+  }
+
+  const openAddModule = () => {
+    setShowAddModule('flex')
+  }
 
   const openModal = () => {
     setIsOpen(true);
@@ -67,15 +77,15 @@ export const SignUpCourse = () => {
           <div className="constructor-area">
             <div className="add-module-area">
               <span>Adicione um módulo para montar seu curso</span>
-              <button>Adicionar Módulo</button>
-              <div className='module-area'>
+              <button onClick={openModuleName}>Adicionar Módulo</button>
+              <div className='module-area' style={{display: `${showModule}`}}>
                 <span>Nome do Módulo</span>
                 <input type="text" />
                 <div className='add-module'>
-                  <button>Adicionar</button>
+                  <button onClick={openAddModule}>Adicionar</button>
                 </div>
               </div>
-              <div className='existing-modules'>
+              <div className='existing-modules' style={{display: `${showAddModule}`}}>
                 <div>
                   <ul>
                     <li>
