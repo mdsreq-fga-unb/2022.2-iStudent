@@ -36,13 +36,34 @@ export const SignUpCourse = () => {
   const [modalIsOpen, setIsOpen] = useState(false);
   const [showModule, setShowModule] = useState('none');
   const [showAddModule, setShowAddModule] = useState('none');
+  const [moduleName, setModuleName] = useState('');
+  const [showCategorie, setShowCategorie] = useState('none');
+  const [categorieName, setCategorieName] = useState('');
 
   const openModuleName = () => {
     setShowModule('flex')
   }
 
+  const onChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    const inputValue = e.target.value
+    setModuleName(inputValue)
+    setCategorieName(inputValue)
+  }
+
   const openAddModule = () => {
     setShowAddModule('flex')
+  }
+
+  const closeAddModule = () => {
+    setShowAddModule('none')
+  }
+
+  const openAddCategorie = () => {
+    setShowCategorie('flex')
+  }
+
+  const closeAddCategorie = () => {
+    setShowCategorie('none')
   }
 
   const openModal = () => {
@@ -64,11 +85,11 @@ export const SignUpCourse = () => {
           <div className="course-basic-info">
             <div className="course-name">
               <p>Nome do curso</p>
-              <input type="text" name="name" />
+              <input type="text" name="name" placeholder='Nome que aparecerá no seu curso'/>
             </div>
             <div className="course-description">
               <p>Descrição</p>
-              <textarea />
+              <textarea placeholder='Resuma o que contém no seu curso'/>
             </div>
           </div>
           <div className="constructor-title">
@@ -80,7 +101,7 @@ export const SignUpCourse = () => {
               <button onClick={openModuleName}>Adicionar Módulo</button>
               <div className='module-area' style={{display: `${showModule}`}}>
                 <span>Nome do Módulo</span>
-                <input type="text" />
+                <input type="text" onChange={onChange} placeholder='(Ex: Módulo 1)'/>
                 <div className='add-module'>
                   <button onClick={openAddModule}>Adicionar</button>
                 </div>
@@ -92,7 +113,9 @@ export const SignUpCourse = () => {
                       <div className='module-space'>
                         <div className='module-name'>
                           <p>Modulo 1</p>
-                          <DeleteIcon style={{cursor: 'pointer'}}/>
+                          <div onClick={closeAddModule}>
+                            <DeleteIcon style={{cursor: 'pointer'}}/>
+                          </div>
                         </div>
                         <div className='add-class'>
                           <button onClick={openModal}>+ Aula</button>
@@ -184,16 +207,22 @@ export const SignUpCourse = () => {
           </div>
           <div className='categories'>
             <span>Categoria do Curso</span>
-            <input type="text" placeholder='Digite a categoria'/>
-            <button>Adicionar</button>
-            <div className='categories-add'>
-              <p>Nome da Categoria</p>
-              <DeleteIcon style={{cursor: 'pointer'}}/>
+            <input type="text" placeholder='Digite a categoria' onChange={onChange}/>
+            <button onClick={openAddCategorie}>Adicionar</button>
+            <div className='categories-add' style={{display: `${showCategorie}`}}>
+              <p>{categorieName}</p>
+              <div onClick={closeAddCategorie}>
+                <DeleteIcon style={{cursor: 'pointer'}}/>
+              </div>
             </div>
           </div>
           <div className='course-image-area'>
             <span>Imagem Destaque</span>
             <input type="file" />
+          </div>
+          <div className='value-area'>
+            <span>Valor do Curso</span>
+            <input type="text" placeholder='(Em Reais)'/>
           </div>
           <div className="alert-area">
             <ErrorOutlineIcon style={{ color: '#000080' }} />

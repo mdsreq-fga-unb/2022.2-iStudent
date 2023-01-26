@@ -11,6 +11,10 @@ export const HeaderUser = () => {
   const handleClickHome = () => {
     navigate("/pagina-inicial");
   };
+
+  const handleEditProfile = () => {
+    navigate('/editar-dados');
+  }
   return (
     <Header>
       <div className="product-name" onClick={handleClickHome}>
@@ -35,7 +39,7 @@ export const HeaderUser = () => {
           duration={1}
           placement="bottom-start"
         >
-          <div className="profile-space">
+          <div className="profile-space" onClick={handleEditProfile}>
             <img src="" alt="" />
           </div>
         </Tippy>

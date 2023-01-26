@@ -357,6 +357,12 @@ export const SecondBody = styled.div`
     border-radius: 8px;
   }
 
+  .categories input:hover,
+  .categories input:focus {
+    border-style: inset;
+    border-color: #000;
+  }
+
   .categories button {
     width: fit-content;
     padding: 10px;
@@ -391,6 +397,44 @@ export const SecondBody = styled.div`
     border: 1px solid #000;
     padding: 20px;
     margin-bottom: 20px;
+  }
+
+  .course-image-area input {
+    background-color: #000080;
+    border-style: none;
+    color: #fff;
+    border-radius: 8px;
+    padding: 5px;
+    cursor: pointer;
+  }
+
+  .course-image-area input:hover {
+    background-color: #ffa500;
+    color: #000;
+  }
+
+  .value-area {
+    font-size: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    border: 1px solid #000;
+    padding: 20px;
+    margin-bottom: 20px;
+  }
+
+  .value-area input {
+    height: 30px;
+    padding-left: 10px;
+    background-color: #e6e6f0;
+    border-style: none;
+    border-radius: 8px;
+  }
+
+  .value-area input:hover,
+  .value-area input:focus {
+    border-style: inset;
+    border-color: #000;
   }
 
   .alert-area {

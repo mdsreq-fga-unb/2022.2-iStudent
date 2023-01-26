@@ -2,13 +2,42 @@ import { Body, Container, DeleteAccount } from './styles';
 import { useNavigate } from 'react-router-dom';
 import { useUser } from '../../contexts/User';
 import deleteAccount from '../../shared/services/user/deleteAccount';
-import { HeaderUser, Button } from '../../shared/components';
+import { HeaderUser, Button, ConfirmationModal } from '../../shared/components';
 import { useState } from 'react';
 import saveSubject from '../../shared/services/teachers/saveSubject';
+import Modal from 'react-modal';
+
+const customStyles: Object = {
+  overlay: {
+    position: 'fixed',
+    top: 0,
+    left: 0,
+    right: 0,
+    bottom: 0,
+    backgroundColor: 'rgba(255, 255, 255, 0.55)',
+  },
+  content: {
+    position: 'absolute',
+    inset: '40px',
+    border: '1px solid',
+    backgroundColor: '#fff',
+    overflow: 'auto',
+    borderRadius: '4px',
+    outline: 'none',
+    padding: '20px',
+    maxHeight: '300px',
+    maxWidth: '400px',
+    margin: 'auto',
+    fontFamily: 'Poppins',
+  },
+};
+
+Modal.setAppElement('#root');
 
 export const EditProfile = () => {
   const navigate = useNavigate();
   const { user, setUser, changeToken } = useUser();
+  const [modalIsOpen, setIsOpen] = useState(false);
 
   const [subject, setSubject] = useState('');
   const [photo, setPhoto] = useState('');
@@ -29,6 +58,14 @@ export const EditProfile = () => {
   function handleChangePhoto(e: any) {
     setPhoto(URL.createObjectURL(e.target.files[0]));
   }
+
+  const openModal = () => {
+    setIsOpen(true);
+  };
+
+  const closeModal = () => {
+    setIsOpen(false);
+  };
 
   return (
     <Container>
@@ -99,8 +136,15 @@ export const EditProfile = () => {
         )}
       </Body>
       <DeleteAccount>
-        <Button onClick={handleDeleteAccount}>Excluir minha conta</Button>
+        <Button onClick={openModal}>Excluir minha conta</Button>
       </DeleteAccount>
+      <Modal
+        isOpen={modalIsOpen}
+        onRequestClose={closeModal}
+        style={customStyles}
+      >
+        <ConfirmationModal eventClose={closeModal} eventConfirm={handleDeleteAccount}/>
+      </Modal>
     </Container>
   );
 };

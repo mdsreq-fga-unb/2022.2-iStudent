@@ -1,9 +1,19 @@
-import { HeaderUser, RequestSchedule } from '../../shared/components';
+import { useEffect, useState } from 'react';
+import { HeaderUser, Loading, RequestSchedule } from '../../shared/components';
 import useClasses from '../../shared/hooks/useClasses';
 import { Container, Body } from './styles';
 
 export const TeacherSchedule = () => {
   const { classes } = useClasses();
+  const [loading, setLoading] = useState(true)
+
+  useEffect(() => {
+    if(classes && classes.length > 0){
+      setLoading(false)
+    } else {
+      loading
+    }
+  } ,[classes])
   return (
     <Container>
       <HeaderUser />
@@ -11,6 +21,7 @@ export const TeacherSchedule = () => {
         <h3>Seus pedidos de agendamento</h3>
         <hr />
         <div className="request-list">
+        {loading && <Loading />}
           <ul>
             {classes.map(aula => (
               <li key={aula.id}>
