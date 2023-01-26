@@ -53,7 +53,7 @@ routes.get(
   adaptRoute(makeClassNotificationController()),
 );
 
-routes.post('/teacher/course', adaptRoute(makeAddCourseController()));
+routes.post('/teacher/course', auth(), adaptRoute(makeAddCourseController()));
 routes.get('/teacher/course', adaptRoute(makeGetCourseController()));
 routes.put('/teacher/course', adaptRoute(makeEditCourseController()));
 routes.delete('/teacher/course', adaptRoute(makeDeleteCourseController()));

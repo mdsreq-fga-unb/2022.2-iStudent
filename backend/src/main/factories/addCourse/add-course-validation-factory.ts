@@ -11,9 +11,6 @@ export const makeAddCourseValidation = (): ValidationComposite => {
     'description',
     'price',
     'contents',
-    'courseRating',
-    'teacherName',
-    'totalStudents',
     'totalHours',
   ]) {
     validations.push(new RequiredFieldValidation(field));
