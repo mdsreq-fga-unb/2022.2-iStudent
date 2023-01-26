@@ -11,3 +11,4 @@ export * from "./detailCard/DetailCard";
 export * from "./Button";
 export * from './loading/Loading';
 export * from './classModal/ClassModal'
+export * from './confirmationModal/ConfirmationModal'

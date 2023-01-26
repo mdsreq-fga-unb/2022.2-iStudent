@@ -12,9 +12,6 @@ export const Container = styled.div`
   }
 
   .text-area {
-    font-family: "Poppins";
-    font-size: 70px;
-    color: #ffffff;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -22,9 +19,16 @@ export const Container = styled.div`
     margin-right: 100px;
   }
 
-  span {
+  h1 {
+    color: #ffffff;
     font-family: "Poppins";
-    font-size: 35px;
+    font-size: 150px;
+  }
+
+  span {
+    color: #ffffff;
+    font-family: "Poppins";
+    font-size: 40px;
     opacity: 50%;
   }
 

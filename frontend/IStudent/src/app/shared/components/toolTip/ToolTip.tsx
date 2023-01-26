@@ -25,7 +25,7 @@ export const ToolTip = () => {
   return (
     <Container>
       <div id="my-element">
-        <div className="header">
+        <div className="header" onClick={handleEditPage}>
           <div className="photo">
             <img src="" alt="" />
           </div>
@@ -36,7 +36,7 @@ export const ToolTip = () => {
             <button className="button" onClick={handleRequestPage}>
               Solicitações de Aula
             </button>
-            <button className="button" onClick={handleSignUpCoursePage}>Meus Cursos</button>
+            <button className="button" onClick={handleSignUpCoursePage}>Cadastrar Cursos</button>
           </div>
         ) : (
           <div className="perfil">
@@ -50,9 +50,9 @@ export const ToolTip = () => {
             Editar Meus Dados
           </button>
         </div>
-        <div className="chat">
+        {/* <div className="chat">
           <button className="button">Chat</button>
-        </div>
+        </div> */}
         <div className="logout">
           <button className="button" onClick={handleLogOut}>
             Sair

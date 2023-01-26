@@ -7,7 +7,7 @@ export const Container = styled.div`
   border: 1px solid #000;
   padding-left: 10px;
   padding-right: 10px;
-  padding-bottom: 10px
+  padding-bottom: 10px;
   overflow-y: auto;
 
   .button {
@@ -29,6 +29,7 @@ export const Container = styled.div`
     padding-bottom: 10px;
     margin-bottom: 10px;
     border-bottom: 1px solid #000;
+    cursor: pointer;
   }
 
   .photo {
