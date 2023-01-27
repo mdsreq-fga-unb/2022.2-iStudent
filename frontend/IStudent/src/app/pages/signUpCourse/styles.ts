@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
 export const Container = styled.div`
   min-height: 100vh;
@@ -13,7 +13,7 @@ export const Container = styled.div`
     flex-direction: row;
     justify-content: space-between;
   }
-`
+`;
 
 export const FirstBody = styled.div`
   background-color: #ffffff;
@@ -23,8 +23,9 @@ export const FirstBody = styled.div`
   display: flex;
   flex-direction: column;
   padding: 10px 20px 40px 20px;
-  margin: 50px 100px 50px 200px;
-  font-family: "Poppins";
+  margin: auto;
+  margin-top: 40px;
+  font-family: 'Poppins';
   font-size: 12px;
   border: 1px solid #000;
 
@@ -62,15 +63,13 @@ export const FirstBody = styled.div`
   }
 
   .course-basic-info textarea:hover,
-  .course-basic-info textarea:focus
-  {
+  .course-basic-info textarea:focus {
     border-style: outset;
     border-color: #000000;
   }
 
   .course-basic-info input:hover,
-  .course-basic-info input:focus
-  {
+  .course-basic-info input:focus {
     border-style: outset;
     border-color: #000000;
   }
@@ -83,8 +82,7 @@ export const FirstBody = styled.div`
     padding: 20px;
   }
 
-  .constructor-area p
-  {
+  .constructor-area p {
     font-size: 16px;
   }
 
@@ -136,8 +134,7 @@ export const FirstBody = styled.div`
   }
 
   .module-area input:hover,
-  .module-area input:focus
-  {
+  .module-area input:focus {
     border-style: inset;
     border-color: #000000;
   }
@@ -164,7 +161,7 @@ export const FirstBody = styled.div`
   }
 
   .existing-modules p {
-    font-weight: 600
+    font-weight: 600;
   }
 
   .module-name {
@@ -218,7 +215,7 @@ export const FirstBody = styled.div`
   }
 
   .course-duration-area input {
-    width: 50px;
+    width: 200px;
     height: 30px;
     margin-right: 10px;
     padding-left: 10px;
@@ -287,22 +284,6 @@ export const FirstBody = styled.div`
     border-color: #000;
   }
 
-`
-
-export const SecondBody = styled.div`
-  background-color: #ffffff;
-  width: 400px;
-  height: 100%;
-  border-radius: 8px;
-  display: flex;
-  flex-direction: column;
-  padding: 10px 20px 30px 20px;
-  margin: 50px;
-  font-family: "Poppins";
-  font-size: 12px;
-  border: 1px solid #000;
-
-  
   .publish {
     display: flex;
     flex-direction: row;
@@ -321,7 +302,7 @@ export const SecondBody = styled.div`
     margin-top: 10px;
   }
 
-  .delete-button  {
+  .delete-button {
     background-color: #ff4747;
     color: #ffffff;
   }
@@ -442,4 +423,158 @@ export const SecondBody = styled.div`
     flex-direction: row;
     gap: 5px;
   }
-`
+`;
+
+export const SecondBody = styled.div`
+  background-color: #ffffff;
+  width: 400px;
+  height: 100%;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  padding: 10px 20px 30px 20px;
+  margin: 50px;
+  font-family: 'Poppins';
+  font-size: 12px;
+  border: 1px solid #000;
+
+  .publish {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 30px;
+    margin-right: -30px;
+  }
+
+  .publish button {
+    width: fit-content;
+    padding: 10px;
+    border-style: none;
+    font-weight: 900;
+    border-radius: 8px;
+    margin-top: 10px;
+  }
+
+  .delete-button {
+    background-color: #ff4747;
+    color: #ffffff;
+  }
+
+  .delete-button:hover {
+    background-color: red;
+  }
+
+  .publish-button {
+    background-color: #000080;
+    color: #ffffff;
+  }
+
+  .publish-button:hover {
+    background-color: #ffa500;
+  }
+
+  .categories {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    font-size: 16px;
+    border: 1px solid #000;
+    padding: 20px;
+    margin-bottom: 20px;
+  }
+
+  .categories input {
+    height: 30px;
+    padding-left: 10px;
+    background-color: #e6e6f0;
+    border-style: none;
+    border-radius: 8px;
+  }
+
+  .categories input:hover,
+  .categories input:focus {
+    border-style: inset;
+    border-color: #000;
+  }
+
+  .categories button {
+    width: fit-content;
+    padding: 10px;
+    border-style: none;
+    font-size: 12px;
+    font-weight: 900;
+    border-radius: 8px;
+    background-color: #000080;
+    color: #ffffff;
+    align-self: flex-end;
+  }
+
+  .categories button:hover {
+    background-color: #ffa500;
+  }
+
+  .categories-add {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    height: 50px;
+    border: 1px solid #000;
+    padding: 10px;
+  }
+
+  .course-image-area {
+    font-size: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    border: 1px solid #000;
+    padding: 20px;
+    margin-bottom: 20px;
+  }
+
+  .course-image-area input {
+    background-color: #000080;
+    border-style: none;
+    color: #fff;
+    border-radius: 8px;
+    padding: 5px;
+    cursor: pointer;
+  }
+
+  .course-image-area input:hover {
+    background-color: #ffa500;
+    color: #000;
+  }
+
+  .value-area {
+    font-size: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    border: 1px solid #000;
+    padding: 20px;
+    margin-bottom: 20px;
+  }
+
+  .value-area input {
+    height: 30px;
+    padding-left: 10px;
+    background-color: #e6e6f0;
+    border-style: none;
+    border-radius: 8px;
+  }
+
+  .value-area input:hover,
+  .value-area input:focus {
+    border-style: inset;
+    border-color: #000;
+  }
+
+  .alert-area {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+  }
+`;
