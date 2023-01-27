@@ -1,11 +1,15 @@
 import { Router } from 'express';
 import { adaptRoute } from '../main/adapters/express/express-route.adapter';
+import { makeAddCourseController } from '../main/factories/addCourse/add-course-controller-factory';
 import { makeAcceptClassController } from '../main/factories/class/accept-classes.factory';
 import { makeClassNotificationController } from '../main/factories/class/classes-notification.factory';
 import { makeClassesByTeacherController } from '../main/factories/class/get-class-by-teacher-factory';
 import { makeClassRequestController } from '../main/factories/classRequest/classRequest-controller-factory';
 import { makeDeleteAccountController } from '../main/factories/deleteAccount/delete-account-factory';
+import { makeDeleteCourseController } from '../main/factories/deleteCourse/delete-course-controller-factory';
 import { makeEditAccountController } from '../main/factories/editAccount/edit-account-factory';
+import { makeEditCourseController } from '../main/factories/editCourse/edit-course-controller-factory';
+import { makeGetCourseController } from '../main/factories/getCourse/get-course-controller-factory';
 import { makeLoginController } from '../main/factories/login-controller-factory';
 import { makeMeController } from '../main/factories/me/me-controller-factory';
 import { makeSignUpController } from '../main/factories/signup/signup-controller-factory';
@@ -27,7 +31,7 @@ routes.post('/login', adaptRoute(makeLoginController()));
 routes.get('/me', auth(), adaptRoute(makeMeController()));
 routes.delete('/me', auth(), adaptRoute(makeDeleteAccountController()));
 
-routes.get('/uptade-account', adaptRoute(makeEditAccountController()));
+routes.put('/uptade-account', adaptRoute(makeEditAccountController()));
 
 routes.get('/teachers', adaptRoute(makeAllTeachersController()));
 routes.post('/teachers/subject', auth(), adaptRoute(makeAddSubjectontroller()));
@@ -48,5 +52,10 @@ routes.get(
   auth(),
   adaptRoute(makeClassNotificationController()),
 );
+
+routes.post('/teacher/course', auth(), adaptRoute(makeAddCourseController()));
+routes.get('/teacher/course', adaptRoute(makeGetCourseController()));
+routes.put('/teacher/course', adaptRoute(makeEditCourseController()));
+routes.delete('/teacher/course', adaptRoute(makeDeleteCourseController()));
 
 export default routes;

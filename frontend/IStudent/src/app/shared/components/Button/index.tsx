@@ -7,9 +7,16 @@ interface IButton {
   onClick?: Function;
   className?: string;
   id?: string;
+  style?: React.CSSProperties | undefined;
 }
 
-export const Button = ({ children, onClick, className, id }: IButton) => {
+export const Button = ({
+  children,
+  onClick,
+  className,
+  id,
+  style = {},
+}: IButton) => {
   const [isLoading, setIsLoading] = useState(false);
 
   async function handleClick() {
@@ -20,7 +27,12 @@ export const Button = ({ children, onClick, className, id }: IButton) => {
     setIsLoading(false);
   }
   return (
-    <ButtonStyled id={id} onClick={handleClick} className={className}>
+    <ButtonStyled
+      id={id}
+      onClick={handleClick}
+      className={className}
+      style={style}
+    >
       {isLoading ? <CircularProgress color="inherit" size={30} /> : children}
     </ButtonStyled>
   );

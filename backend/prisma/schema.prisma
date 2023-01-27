@@ -20,6 +20,7 @@ model User {
   role      Role     @default(STUDENT)
   subject   Subject?
   Class     Class[]
+  courses   Course[]
 }
 
 model Subject {
@@ -37,9 +38,23 @@ model Class {
   days      String[]
   time      String
   student   User      @relation(fields: [studentId], references: [id])
-  studentId Int    
-  teacherId Int   
+  studentId Int
+  teacherId Int
   accepted  Boolean?
+}
+
+model Course {
+  id            Int      @id @default(autoincrement())
+  createdAt     DateTime @default(now())
+  name          String   @unique
+  description   String
+  price         Int
+  contents      String[]
+  courseRating  Int
+  teacher       User     @relation(fields: [teacherId], references: [id])
+  teacherId     Int
+  totalStudents Int
+  totalHours    Int
 }
 
 enum Role {
