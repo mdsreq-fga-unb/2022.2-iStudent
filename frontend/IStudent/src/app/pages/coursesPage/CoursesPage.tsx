@@ -4,7 +4,7 @@ import { useNavigate } from 'react-router-dom';
 import { Container, Header, CourseCardArea } from './styles';
 import { CoursesCard } from '../../shared/components';
 
-export const CoursesPage = () => {
+export const CoursesPage = ({type}:any) => {
   const navigate = useNavigate();
 
   const handleClickHome = () => {
@@ -24,9 +24,17 @@ export const CoursesPage = () => {
             iStudent
           </div>
         </div>
-        <div className="title">
-          Estes são os <br /> cursos disponíveis:
-        </div>
+        {type === 'all-courses' ?
+          (
+            <div className="title">
+              Estes são os <br /> cursos disponíveis:
+            </div>
+          ) : (
+            <div className="title">
+              Estes são os <br /> seus cursos:
+            </div>
+          )
+        }
       </Header>
       <CourseCardArea>
         <ul>

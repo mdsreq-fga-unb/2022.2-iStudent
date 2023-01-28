@@ -1,5 +1,6 @@
 import { Courses } from "./styles";
 import { Rating } from "@material-ui/lab";
+import { useNavigate } from "react-router-dom";
 
 type CourseCardProps = {
   name: string;
@@ -10,8 +11,14 @@ type CourseCardProps = {
 };
 
 export const CoursesCard = (props: CourseCardProps) => {
+  const navigate = useNavigate();
+
+  const handleCourseDetailPage = () => {
+    navigate('/detalhes-curso');
+  }
+
   return (
-    <Courses>
+    <Courses onClick={handleCourseDetailPage}>
       <div className="course-card">
         <div className="course-img">
           <img src="" alt="" />

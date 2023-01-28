@@ -22,6 +22,15 @@ export const ToolTip = () => {
   const handleSignUpCoursePage = () => {
     navigate("/cadastrar-curso");
   };
+
+  const handleAppointmentPage = () => {
+    navigate('/meus-agendamentos')
+  }
+
+  const handleMyCourses = () => {
+    navigate('/meus-cursos');
+  }
+
   return (
     <Container>
       <div id="my-element">
@@ -40,8 +49,8 @@ export const ToolTip = () => {
           </div>
         ) : (
           <div className="perfil">
-            <button className="button">Meus cursos</button>
-            <button className="button">Meus Professores</button>
+            <button className="button" onClick={handleMyCourses}>Meus cursos</button>
+            <button className="button" onClick={handleAppointmentPage}>Meus Agendamentos</button>
           </div>
         )}
 

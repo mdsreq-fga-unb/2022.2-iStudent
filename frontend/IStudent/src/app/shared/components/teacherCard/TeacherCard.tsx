@@ -1,5 +1,6 @@
 import { Teachers } from "./styles";
 import { Rating } from "@material-ui/lab";
+import { useNavigate } from "react-router-dom";
 
 type TeacherCardType = {
   name: string;
@@ -9,8 +10,14 @@ type TeacherCardType = {
 };
 
 export const TeacherCard = (props: TeacherCardType) => {
+  const navigate = useNavigate();
+
+  const handleTeacherDetailPage = () => {
+    navigate('/detalhes-professor');
+  }
+
   return (
-    <Teachers>
+    <Teachers onClick={handleTeacherDetailPage}>
       <div className="teacher-image">
         <img src="" alt="" />
       </div>

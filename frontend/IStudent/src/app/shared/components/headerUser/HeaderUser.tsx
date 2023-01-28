@@ -15,6 +15,11 @@ export const HeaderUser = () => {
   const handleEditProfile = () => {
     navigate('/editar-dados');
   }
+
+  const handleCoursesPage = () => {
+    navigate('/cursos-disponíveis')
+  }
+
   return (
     <Header>
       <div className="product-name" onClick={handleClickHome}>
@@ -22,7 +27,7 @@ export const HeaderUser = () => {
       </div>
       <input type="text" placeholder="Pesquise por qualquer coisa" />
       <div className="button-space">
-        <ShoppingCartIcon className="shoppingCart-item" />
+        <ShoppingCartIcon className="shoppingCart-item" onClick={handleCoursesPage}/>
         <Tippy
           content={<NotificationTooltip></NotificationTooltip>}
           interactive={true}

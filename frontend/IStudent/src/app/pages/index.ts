@@ -10,3 +10,5 @@ export * from "./signUpCourse/SignUpCourse";
 export * from './aboutUs/AboutUs';
 export * from './courseDetail/CourseDetail';
 export * from './coursesPage/CoursesPage';
+export * from './teacherDetail/TeacherDetail';
+export * from './appointments/Appointments';
