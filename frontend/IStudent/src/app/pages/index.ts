@@ -8,3 +8,5 @@ export * from "./availableTeacher/AvailableTeacher";
 export * from "./teacherSchedule/TeacherSchedule";
 export * from "./signUpCourse/SignUpCourse";
 export * from './aboutUs/AboutUs';
+export * from './courseDetail/CourseDetail';
+export * from './coursesPage/CoursesPage';

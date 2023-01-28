@@ -9,7 +9,9 @@ import {
   AvailableTeacher,
   TeacherSchedule,
   SignUpCourse,
-  AboutUs
+  AboutUs,
+  CourseDetail,
+  CoursesPage
 } from "../pages/index";
 
 export const Router = () => {
@@ -26,6 +28,8 @@ export const Router = () => {
         <Route path="/solicitacoes-agendamento" element={<TeacherSchedule />} />
         <Route path="/cadastrar-curso" element={<SignUpCourse />} />
         <Route path="/sobre" element={<AboutUs />} />
+        <Route path="/detalhes-curso" element={<CourseDetail />} />
+        <Route path="/cursos-disponíveis" element={<CoursesPage />} />
 
         <Route path="*" element={<Navigate to="/pagina-inicial" />} />
       </Routes>

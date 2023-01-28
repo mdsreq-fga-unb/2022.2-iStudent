@@ -26,10 +26,12 @@ export const SignUpCourse = () => {
   };
 
   const handleAddCategory = () => {
-    setCourse({
-      ...course,
-      contents: [...course.contents, categorieName],
-    });
+    if(categorieName){
+      setCourse({
+        ...course,
+        contents: [...course.contents, categorieName],
+      });
+    }
     setCategorieName('');
   };
 
@@ -142,8 +144,8 @@ export const SignUpCourse = () => {
             ))}
           </div>
           <Button
+            className='save-button'
             onClick={handleAddCourse}
-            style={{ width: '80%', height: 40, margin: 'auto' }}
           >
             Salvar
           </Button>
