@@ -25,6 +25,9 @@
 
   - [USM](./wiki/usm.md)
 
+- Caso de Uso
+
+  - [UC](./wiki/uc.md)
 - Entregáveis
   - [Unidade 1](./wiki/unidade1.md)
   - [Unidade 2](./wiki/unidade2.md)
