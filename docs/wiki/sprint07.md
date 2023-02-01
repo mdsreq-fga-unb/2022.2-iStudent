@@ -65,12 +65,42 @@ Os objetivos para essa sprint são:
 
 # 2 Review
 
-...
+**Durante a sprint as User Story que foram concluídas com êxito**:
+
+- [US12] Eu, como Professor quero aceitar ou recusar os pedidos de agendamento dos meus alunos para gerenciar os pedidos de agendamento.
+- [US20] Eu, como Aluno quero receber uma resposta do pedido de agendamento de aula por meio do Professor para saber se o meu pedido foi aceito ou não.
+- [US07] Eu, como Professor quero cadastrar um ou mais cursos para para que os alunos possam ver e se matricular em meu curso.
+- [US08] Eu, como Professor quero visualizar os dados do meu curso para verificar se correspondem com os dados que cadastrei
+- [US09] Eu, como Professor quero editar os dados do meu curso para manter meu curso atualizado.
+- [US10] Eu, como Professor quero excluir o meu curso após ter sido adicionado para manter meus cursos atualizados.
+
+**User Story que ficaram incompletas**:
+
+- [US14] Eu, como Aluno quero visualizar o que o curso propõe para saber se satisfaz com o que procuro.
+- [US15] Eu, como Aluno quero me matricular nos cursos para acessar as aulas que o curso disponibiliza
+
+**Da parte do Cliente**:
+
+Após mostrarmos o que foi entregue durante essa sprint, o Cliente entregou o seu feedback. O mesmo testou as funcionalidades que ficaram no débito técnico e a mais nova funcionalidade do Gerenciamento de Curso, e entregou comentários positivos.
 
 ### 2.1 Entregas
 
-...
+- **US12** User Story
+- **US20** User Story
+- **US07** User Story
+- **US08** User Story
+- **US09** User Story
+- **US10** User Story
 
 ### Melhorias
 
-...
+Na sprint passada (Sprint 06) foi identificada um ponto que mais afetou a nossa entrega: dificuldades técnicas na implementação. Ao longo da Sprint 07, focamos em melhorar levando em consideração o seguinte item do nosso Critérios de Replanejamento, do qual deve ocorrer caso:
+
+- Dificuldades sejam encontradas pela Equipe por conta da metodologia abordada.
+
+Nessa sprint tivemos um foco em aprender a integrar o Backend e Frontend, do qual estava sendo algo complicado por conta de só um membro do grupo saber fazer essa atividade. Assim, com o aprendizado do restante da equipe, ficou mais fácil dividir essa tarefa de integração e entregando mais rápido as nossas user story.
+
+Identificamos no fim dessa sprint que por conta de estarmos no fim de semestre e do acúmulo de atividades, não foi possível entregar as duas últimas User Story do backlog da sprint. Assim sendo, ficou como débito técnico para a sprint 07 as seguintes user story:
+
+- **US14** Eu, como Aluno quero visualizar o que o curso propõe para saber se satisfaz com o que procuro.
+- **US15** Eu, como Aluno quero me matricular nos cursos para acessar as aulas que o curso disponibiliza
