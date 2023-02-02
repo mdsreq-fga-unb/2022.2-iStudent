@@ -1,6 +1,6 @@
 export type CourseRegistrationModel = {
-    id: string;
-    courseId: string;
-    userId: string;
+    id: number;
+    courseId: number;
+    userId: number;
     status: "MATRICULADO" | "NAO_MATRICULADO"
 }
