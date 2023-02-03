@@ -5,6 +5,7 @@ import { makeAcceptClassController } from '../main/factories/class/accept-classe
 import { makeClassNotificationController } from '../main/factories/class/classes-notification.factory';
 import { makeClassesByTeacherController } from '../main/factories/class/get-class-by-teacher-factory';
 import { makeClassRequestController } from '../main/factories/classRequest/classRequest-controller-factory';
+import { makeCourseRegistrationController } from '../main/factories/courseRegistration/course-registration-factory';
 import { makeDeleteAccountController } from '../main/factories/deleteAccount/delete-account-factory';
 import { makeDeleteCourseController } from '../main/factories/deleteCourse/delete-course-controller-factory';
 import { makeEditAccountController } from '../main/factories/editAccount/edit-account-factory';
@@ -57,5 +58,7 @@ routes.post('/teacher/course', auth(), adaptRoute(makeAddCourseController()));
 routes.get('/teacher/course', adaptRoute(makeGetCourseController()));
 routes.put('/teacher/course', adaptRoute(makeEditCourseController()));
 routes.delete('/teacher/course', adaptRoute(makeDeleteCourseController()));
+
+routes.post('/course', adaptRoute(makeCourseRegistrationController()))
 
 export default routes;
