@@ -62,7 +62,7 @@ model Register {
   createdAt DateTime   @default(now())
   courseId  Int
   userId    Int
-  status    Registered
+  status    Registered @default(NAO_MATRICULADO)
 }
 
 enum Role {
