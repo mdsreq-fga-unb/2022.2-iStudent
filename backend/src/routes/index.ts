@@ -59,6 +59,7 @@ routes.get('/teacher/course', adaptRoute(makeGetCourseController()));
 routes.put('/teacher/course', adaptRoute(makeEditCourseController()));
 routes.delete('/teacher/course', adaptRoute(makeDeleteCourseController()));
 
-routes.post('/course', adaptRoute(makeCourseRegistrationController()))
+routes.post('/course', adaptRoute(makeCourseRegistrationController()));
+routes.delete('/course', adaptRoute(makeCourseRegistrationController()));
 
 export default routes;
