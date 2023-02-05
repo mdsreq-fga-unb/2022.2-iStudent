@@ -11,16 +11,17 @@ datasource db {
 }
 
 model User {
-  id        Int      @id @default(autoincrement())
-  createdAt DateTime @default(now())
-  email     String   @unique
+  id        Int        @id @default(autoincrement())
+  createdAt DateTime   @default(now())
+  email     String     @unique
   password  String
   name      String
   biography String
-  role      Role     @default(STUDENT)
+  role      Role       @default(STUDENT)
   subject   Subject?
   Class     Class[]
   courses   Course[]
+  Register  Register[]
 }
 
 model Subject {
@@ -44,25 +45,27 @@ model Class {
 }
 
 model Course {
-  id            Int      @id @default(autoincrement())
-  createdAt     DateTime @default(now())
-  name          String   @unique
+  id            Int        @id @default(autoincrement())
+  createdAt     DateTime   @default(now())
+  name          String     @unique
   description   String
   price         Int
   contents      String[]
   courseRating  Int
-  teacher       User     @relation(fields: [teacherId], references: [id])
+  teacher       User       @relation(fields: [teacherId], references: [id])
   teacherId     Int
   totalStudents Int
   totalHours    Int
+  Register      Register[]
 }
 
 model Register {
-  id        Int        @id @default(autoincrement())
-  createdAt DateTime   @default(now())
+  id        Int      @id @default(autoincrement())
+  createdAt DateTime @default(now())
   courseId  Int
+  course    Course   @relation(fields: [courseId], references: [id])
+  user      User     @relation(fields: [userId], references: [id])
   userId    Int
-  status    Registered @default(NAO_MATRICULADO)
 }
 
 enum Role {
@@ -73,9 +76,4 @@ enum Role {
 enum ClassType {
   REMOTA
   PRESENCIAL
-}
-
-enum Registered {
-  MATRICULADO
-  NAO_MATRICULADO
 }
