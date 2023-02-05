@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
 export const Container = styled.div`
   min-height: 100vh;
@@ -27,7 +27,7 @@ export const Divisor = styled.div`
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-`
+`;
 
 export const FirstBody = styled.div`
   background-color: #ffffff;
@@ -49,7 +49,7 @@ export const FirstBody = styled.div`
     border-bottom: 1px solid #000080;
   }
 
-  .teacher-name-container p{
+  .teacher-name-container p {
     font-size: 20px;
     opacity: 90%;
   }
@@ -88,7 +88,7 @@ export const FirstBody = styled.div`
     flex-direction: column;
     gap: 5px;
   }
-  
+
   .description-container span {
     font-size: 18px;
     font-weight: 900;
@@ -137,6 +137,7 @@ export const SecondBody = styled.div`
 
   .button-container button {
     padding: 10px;
+    margin: 0 10px;
     font-size: 20px;
     font-weight: 600;
     border-style: none;
@@ -165,4 +166,4 @@ export const OtherCourses = styled.div`
     list-style: none;
     justify-content: center;
   }
-`
+`;
