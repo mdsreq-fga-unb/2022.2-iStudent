@@ -28,8 +28,11 @@
 - Caso de Uso
 
   - [UC](./wiki/uc.md)
+
 - Entregáveis
   - [Unidade 1](./wiki/unidade1.md)
   - [Unidade 2](./wiki/unidade2.md)
   - [Unidade 3](./wiki/unidade3.md)
   - [Unidade 4](./wiki/unidade4.md)
+    - [Lista MVP2](./wiki/pagesUnidade4/listaMVP2.md)
+    - [Especificação de Caso de Uso 1](./wiki/pagesUnidade4/especificacaoDeCasoDeUso1.md)
