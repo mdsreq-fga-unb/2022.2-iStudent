@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
+import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
 import {
   Home,
   SignUp,
@@ -13,8 +13,8 @@ import {
   CourseDetail,
   CoursesPage,
   TeacherDetail,
-  Appointments
-} from "../pages/index";
+  Appointments,
+} from '../pages/index';
 
 export const Router = () => {
   return (
@@ -28,13 +28,19 @@ export const Router = () => {
         <Route path="/editar-dados" element={<EditProfile />} />
         <Route path="/professores-disponiveis" element={<AvailableTeacher />} />
         <Route path="/solicitacoes-agendamento" element={<TeacherSchedule />} />
-        <Route path="/cadastrar-curso" element={<SignUpCourse />} />
+        <Route
+          path="/cadastrar-curso"
+          element={<SignUpCourse editMode={false} />}
+        />
         <Route path="/sobre" element={<AboutUs />} />
-        <Route path="/detalhes-curso" element={<CourseDetail />} />
+        <Route path="/detalhes-curso/:name" element={<CourseDetail />} />
         <Route path="/detalhes-professor" element={<TeacherDetail />} />
         <Route path="/meus-agendamentos" element={<Appointments />} />
-        <Route path="/cursos-disponíveis" element={<CoursesPage type="all-courses"/>} />
-        <Route path="/meus-cursos" element={<CoursesPage type="my-courses"/>} />
+        <Route
+          path="/cursos-disponíveis"
+          element={<CoursesPage isTeacher={false} />}
+        />
+        <Route path="/meus-cursos" element={<CoursesPage isTeacher={true} />} />
 
         <Route path="*" element={<Navigate to="/pagina-inicial" />} />
       </Routes>
