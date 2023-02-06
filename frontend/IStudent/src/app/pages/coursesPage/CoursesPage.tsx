@@ -3,9 +3,12 @@ import ArrowBackIcon from '@mui/icons-material/ArrowBack';
 import { useNavigate } from 'react-router-dom';
 import { Container, Header, CourseCardArea } from './styles';
 import { CoursesCard } from '../../shared/components';
+import useCourses from '../../shared/hooks/useCourses';
+import { SignUpCourse } from '../signUpCourse/SignUpCourse';
 
-export const CoursesPage = ({type}:any) => {
+export const CoursesPage = ({ isTeacher }: { isTeacher: boolean }) => {
   const navigate = useNavigate();
+  const { courses } = useCourses(isTeacher);
 
   const handleClickHome = () => {
     navigate('/pagina-inicial');
@@ -24,67 +27,29 @@ export const CoursesPage = ({type}:any) => {
             iStudent
           </div>
         </div>
-        {type === 'all-courses' ?
-          (
-            <div className="title">
-              Estes são os <br /> cursos disponíveis:
-            </div>
-          ) : (
-            <div className="title">
-              Estes são os <br /> seus cursos:
-            </div>
-          )
-        }
+        {!isTeacher ? (
+          <div className="title">
+            Estes são os <br /> cursos disponíveis:
+          </div>
+        ) : (
+          <div className="title">
+            Estes são os <br /> seus cursos:
+          </div>
+        )}
       </Header>
       <CourseCardArea>
         <ul>
-          <li>
-            <CoursesCard
-              name="Calculo 1"
-              teacher="Lucas Caldas"
-              raiting={4.6}
-              currentPrice={29.9}
-              originalPrice={289.0}
-            />
-          </li>
-          <li>
-            <CoursesCard
-              name="Calculo 1"
-              teacher="Lucas Caldas"
-              raiting={4.6}
-              currentPrice={29.9}
-              originalPrice={289.0}
-            />
-          </li>
-          <li>
-            <CoursesCard
-              name="Calculo 1"
-              teacher="Lucas Caldas"
-              raiting={4.9}
-              currentPrice={29.9}
-              originalPrice={289.0}
-            />
-          </li>
-          <li>
-            <CoursesCard
-              name="Calculo 1"
-              teacher="Lucas Caldas"
-              raiting={4.4}
-              currentPrice={29.9}
-              originalPrice={289.0}
-            />
-          </li>
-          <li>
-            <CoursesCard
-              name="Calculo 1"
-              teacher="Lucas Caldas"
-              raiting={4.0}
-              currentPrice={29.9}
-              originalPrice={289.0}
-            />
-          </li>
+          {courses.map(course => (
+            <li>
+              <CoursesCard
+                name={course.name}
+                teacher={course.teacher.name}
+                currentPrice={course.price}
+              />
+            </li>
+          ))}
         </ul>
       </CourseCardArea>
-    </Container>  
-  )
-}
+    </Container>
+  );
+};

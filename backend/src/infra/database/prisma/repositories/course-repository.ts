@@ -22,6 +22,13 @@ export class CoursePrismaRepository
       where: {
         name: name,
       },
+      include: {
+        teacher: {
+          select: {
+            name: true,
+          },
+        },
+      },
     });
 
     return getCourseRepository;

@@ -3,22 +3,33 @@ import { HeaderUser, Button } from '../../shared/components';
 import { Container, FirstBody } from './styles';
 import DeleteIcon from '@mui/icons-material/Delete';
 import Modal from 'react-modal';
-import { AddCourse } from '../../types/course';
+import { AddCourse, Course } from '../../types/course';
 import createCourse from '../../shared/services/teachers/createCourse';
+import editCourse from '../../shared/services/teachers/editCourse';
+import { useNavigate } from 'react-router-dom';
 
 Modal.setAppElement('#root');
 
 const defaultValues = {
-  contents: [],
+  contents: [] as string[],
   description: '',
   name: '',
   price: 0,
   totalHours: 0,
 };
 
-export const SignUpCourse = () => {
+export const SignUpCourse = ({
+  editMode,
+  courseToEdit = {} as Course,
+}: {
+  editMode: boolean;
+  courseToEdit?: Course;
+}) => {
+  const navigate = useNavigate();
   const [categorieName, setCategorieName] = useState('');
-  const [course, setCourse] = useState(defaultValues as AddCourse);
+  const [course, setCourse] = useState(
+    editMode ? courseToEdit : (defaultValues as AddCourse),
+  );
 
   const onChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const inputValue = e.target.value;
@@ -26,7 +37,7 @@ export const SignUpCourse = () => {
   };
 
   const handleAddCategory = () => {
-    if(categorieName){
+    if (categorieName) {
       setCourse({
         ...course,
         contents: [...course.contents, categorieName],
@@ -46,9 +57,15 @@ export const SignUpCourse = () => {
 
   const handleAddCourse = async () => {
     try {
-      await createCourse(course);
-      setCourse(defaultValues);
-      alert(`Curso ${course.name} criado com sucesso!`);
+      if (editMode) {
+        await editCourse(course as Course);
+        navigate('/meus-cursos');
+        alert(`Curso ${course.name} editado com sucesso!`);
+      } else {
+        await createCourse(course);
+        alert(`Curso ${course.name} criado com sucesso!`);
+      }
+      setCourse(defaultValues as any);
     } catch (error: any) {
       alert(error.message);
     }
@@ -60,13 +77,14 @@ export const SignUpCourse = () => {
       <div className="columns-space">
         <FirstBody>
           <div className="course-title">
-            <h1>Cadastrar Curso</h1>
+            <h1>{editMode ? 'Editar' : 'Cadastrar'} Curso</h1>
           </div>
           <div className="course-basic-info">
             <div className="course-name">
               <p>Nome do curso</p>
               <input
                 type="text"
+                value={course.name}
                 name="name"
                 placeholder="Nome que aparecerá no seu curso"
                 onChange={e =>
@@ -80,6 +98,7 @@ export const SignUpCourse = () => {
             <div className="course-description">
               <p>Descrição</p>
               <textarea
+                value={course.description}
                 placeholder="Resuma o que contém no seu curso"
                 onChange={e =>
                   setCourse({
@@ -97,6 +116,7 @@ export const SignUpCourse = () => {
             <span>Duração total do curso</span>
             <div>
               <input
+                value={course.totalHours}
                 type="number"
                 placeholder="Carga Horária"
                 onChange={e =>
@@ -111,6 +131,7 @@ export const SignUpCourse = () => {
             <span>Valor do Curso</span>
             <div>
               <input
+                value={course.price}
                 type="number"
                 placeholder="Preço"
                 onChange={e =>
@@ -143,10 +164,7 @@ export const SignUpCourse = () => {
               </div>
             ))}
           </div>
-          <Button
-            className='save-button'
-            onClick={handleAddCourse}
-          >
+          <Button className="save-button" onClick={handleAddCourse}>
             Salvar
           </Button>
         </FirstBody>

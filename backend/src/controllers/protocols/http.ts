@@ -13,4 +13,5 @@ export interface HttpRequest {
     role: UserRole;
     id: number;
   };
+  query?: any;
 }

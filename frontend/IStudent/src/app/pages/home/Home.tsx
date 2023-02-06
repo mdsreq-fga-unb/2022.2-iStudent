@@ -4,24 +4,24 @@ import {
   Category,
   CourseArea,
   TeacherArea,
-} from "./styles";
+} from './styles';
 import {
   CoursesCard,
   HeaderHome,
   HeaderUser,
   TeacherCard,
-} from "../../shared/components";
-import { useUser } from "../../contexts/User";
-import { useNavigate } from "react-router-dom";
-import geoImage from "../../shared/assets/geoImage/geo.svg";
-import hisImage from "../../shared/assets/hisImage/his.svg";
-import portImage from "../../shared/assets/portImage/port.svg";
-import physicImage from "../../shared/assets/physicImage/physic.svg";
-import lengImage from "../../shared/assets/lengImage/leng.svg";
-import homeImage from "../../shared/assets/homeImage/homeImage.svg";
-import mathImage from "../../shared/assets/mathImage/math.svg";
-import partImage from "../../shared/assets/partImage/part.svg";
-import chemicImage from "../../shared/assets/chemicImage/chemic.svg";
+} from '../../shared/components';
+import { useUser } from '../../contexts/User';
+import { useNavigate } from 'react-router-dom';
+import geoImage from '../../shared/assets/geoImage/geo.svg';
+import hisImage from '../../shared/assets/hisImage/his.svg';
+import portImage from '../../shared/assets/portImage/port.svg';
+import physicImage from '../../shared/assets/physicImage/physic.svg';
+import lengImage from '../../shared/assets/lengImage/leng.svg';
+import homeImage from '../../shared/assets/homeImage/homeImage.svg';
+import mathImage from '../../shared/assets/mathImage/math.svg';
+import partImage from '../../shared/assets/partImage/part.svg';
+import chemicImage from '../../shared/assets/chemicImage/chemic.svg';
 import 'bootstrap/dist/css/bootstrap.css';
 import Carousel from 'react-bootstrap/Carousel';
 
@@ -30,12 +30,12 @@ export const Home = () => {
   const navigate = useNavigate();
 
   const handleAvblTeacherPage = () => {
-    navigate("/professores-disponiveis");
+    navigate('/professores-disponiveis');
   };
 
   const handleAboutUsPage = () => {
     navigate('/sobre');
-  }
+  };
 
   return (
     <Container>
@@ -284,7 +284,9 @@ export const Home = () => {
           </Carousel.Item>
         </Carousel>
       </TeacherArea>
-      <footer onClick={handleAboutUsPage}><p>Sobre o iStudent</p></footer>
+      <footer onClick={handleAboutUsPage}>
+        <p>Sobre o iStudent</p>
+      </footer>
     </Container>
   );
 };

@@ -6,15 +6,7 @@ import {
 
 export const makeEditCourseValidation = (): ValidationComposite => {
   const validations: Validation[] = [];
-  for (const field of [
-    'description',
-    'price',
-    'contents',
-    'courseRating',
-    'teacherName',
-    'totalStudents',
-    'totalHours',
-  ]) {
+  for (const field of ['description', 'price', 'contents', 'totalHours']) {
     validations.push(new RequiredFieldValidation(field));
   }
   return new ValidationComposite(validations);

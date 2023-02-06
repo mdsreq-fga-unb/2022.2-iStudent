@@ -4,9 +4,13 @@ export interface AddCourse {
   contents: string[];
   price: number;
   totalHours: number;
+  teacher: {
+    name: string;
+  };
 }
 
 export interface Course extends AddCourse {
   id: string;
   courseRating: number;
+  teacherId: number;
 }

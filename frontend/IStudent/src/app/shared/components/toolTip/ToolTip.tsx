@@ -1,35 +1,35 @@
-import { Container } from "./styles";
-import { useNavigate } from "react-router-dom";
-import { useUser } from "../../../contexts/User";
+import { Container } from './styles';
+import { useNavigate } from 'react-router-dom';
+import { useUser } from '../../../contexts/User';
 
 export const ToolTip = () => {
   const navigate = useNavigate();
   const { user, logout } = useUser();
 
   const handleLogOut = () => {
-    logout()
-    navigate("/pagina-inicial");
+    logout();
+    navigate('/pagina-inicial');
   };
 
   const handleEditPage = () => {
-    navigate("/editar-dados");
+    navigate('/editar-dados');
   };
 
   const handleRequestPage = () => {
-    navigate("/solicitacoes-agendamento");
+    navigate('/solicitacoes-agendamento');
   };
 
   const handleSignUpCoursePage = () => {
-    navigate("/cadastrar-curso");
+    navigate('/cadastrar-curso');
   };
 
   const handleAppointmentPage = () => {
-    navigate('/meus-agendamentos')
-  }
+    navigate('/meus-agendamentos');
+  };
 
   const handleMyCourses = () => {
     navigate('/meus-cursos');
-  }
+  };
 
   return (
     <Container>
@@ -40,17 +40,26 @@ export const ToolTip = () => {
           </div>
           <div className="name">{user?.name}</div>
         </div>
-        {user?.role === "TEACHER" ? (
+        {user?.role === 'TEACHER' ? (
           <div className="perfil">
             <button className="button" onClick={handleRequestPage}>
               Solicitações de Aula
             </button>
-            <button className="button" onClick={handleSignUpCoursePage}>Cadastrar Cursos</button>
+            <button className="button" onClick={handleMyCourses}>
+              Meus cursos
+            </button>
+            <button className="button" onClick={handleSignUpCoursePage}>
+              Cadastrar Cursos
+            </button>
           </div>
         ) : (
           <div className="perfil">
-            <button className="button" onClick={handleMyCourses}>Meus cursos</button>
-            <button className="button" onClick={handleAppointmentPage}>Meus Agendamentos</button>
+            <button className="button" onClick={handleMyCourses}>
+              Meus cursos
+            </button>
+            <button className="button" onClick={handleAppointmentPage}>
+              Meus Agendamentos
+            </button>
           </div>
         )}
 
