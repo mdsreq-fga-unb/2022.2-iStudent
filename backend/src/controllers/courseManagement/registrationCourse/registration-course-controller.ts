@@ -7,10 +7,11 @@ export class RegistrationCourseController implements Controller {
 
   async handle(httpRequest: HttpRequest): Promise<HttpResponse> {
     try {
-      const { courseId, userId } = httpRequest.body;
+      const { id } = httpRequest.user;
+      const { courseId } = httpRequest.body;
       const registeredCourse = await this._courseRegistration.registerInCourse({
         courseId,
-        userId,
+        userId: id,
       });
       return ok(registeredCourse);
     } catch (error) {

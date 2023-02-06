@@ -9,7 +9,7 @@ export class UnenrollRegistrationController implements Controller {
 
   async handle(httpRequest: HttpRequest): Promise<HttpResponse> {
     try {
-      const { id } = httpRequest.body;
+      const { id } = httpRequest.user;
 
       await this._unenrollRegistration.unenroll(id);
       return ok({ message: 'Matrícula cancelada com sucesso' });

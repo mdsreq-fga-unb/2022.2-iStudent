@@ -1,8 +1,37 @@
-import { CoursesCard, HeaderUser } from '../../shared/components'
+import { Button, CoursesCard, HeaderUser } from '../../shared/components'
 import {Container, Divisor, FirstBody, OtherCourses, SecondBody} from './styles'
 import Carousel from 'react-bootstrap/Carousel';
+import enrollCourse from '../../shared/services/student/enrollCourse';
+import { useState } from 'react';
+import unrollCourse from '../../shared/services/student/unrollCourse';
 
-export const CourseDetail = () => {
+export function CourseDetail() {
+  const [enrollmentStatus, setEnrollmentStatus] = useState("AGUARDO");
+
+  async function handleEnrollCourse(data: {userId: number; courseId: number}){
+    setEnrollmentStatus("CARREGANDO");
+    try {
+      await enrollCourse(data);
+      alert('Matriculado com sucesso!');
+    } catch (error: any) {
+      alert(error.message);
+    }
+
+    setTimeout(() => {
+      setEnrollmentStatus("SUCESSO");
+    }, 2000)
+  }
+
+  async function handleUnrollCourse(id: number) {
+    setEnrollmentStatus("CARREGANDO");
+    try {
+      await unrollCourse(id);
+      alert('Desmatriculado com sucesso!');
+    } catch (error: any) {
+      alert(error.message);
+    }
+  }
+
   return (
     <Container>
       <HeaderUser />
@@ -37,8 +66,10 @@ export const CourseDetail = () => {
         <SecondBody>
           <div className='image-container'></div>
           <div className='price-container'><p>R$90,00</p></div>
-          <div className='button-container'>
-            <button>Matricular-se Agora!</button>
+          <div className="button-container">
+            <Button onClick={handleUnrollCourse}>
+              Matricular-se Agora!
+            </Button>
           </div>
         </SecondBody>
       </Divisor>
