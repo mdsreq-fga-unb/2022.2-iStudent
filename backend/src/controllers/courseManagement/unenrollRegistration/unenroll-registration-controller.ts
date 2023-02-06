@@ -9,20 +9,10 @@ export class UnenrollRegistrationController implements Controller {
 
   async handle(httpRequest: HttpRequest): Promise<HttpResponse> {
     try {
-      const { userId, courseId } = httpRequest.body;
+      const { id } = httpRequest.body;
 
-      const isEnrolled = await this._unenrollRegistration.isEnrolled(
-        userId,
-        courseId,
-      );
-
-      if (!isEnrolled) {
-        return badRequest(new Error('User is not enrolled in this course'));
-      } else {
-        await this._unenrollRegistration.unenroll(userId, courseId);
-
-        return ok({ message: 'User unenrolled in this course' });
-      }
+      await this._unenrollRegistration.unenroll(id);
+      return ok({ message: 'Matrícula cancelada com sucesso' });
     } catch (error) {
       serverError(error);
     }
