@@ -7,6 +7,14 @@ interface Props {
 
 export default async function allCourses({ myCourses }: Props) {
   try {
+    if (typeof myCourses === 'boolean' && myCourses === false) {
+      const { data } = await api.get('student/courses');
+      const courses = data.courses.map(
+        (course: any) => course.course,
+      ) as Course[];
+      console.log('CURSOS: ', courses);
+      return courses;
+    }
     const { data } = await api.get('teacher/courses', {
       params: {
         myCourses,

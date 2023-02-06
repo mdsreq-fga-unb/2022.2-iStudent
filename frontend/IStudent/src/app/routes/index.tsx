@@ -38,9 +38,9 @@ export const Router = () => {
         <Route path="/meus-agendamentos" element={<Appointments />} />
         <Route
           path="/cursos-disponíveis"
-          element={<CoursesPage isTeacher={false} />}
+          element={<CoursesPage allCourses={true} />}
         />
-        <Route path="/meus-cursos" element={<CoursesPage isTeacher={true} />} />
+        <Route path="/meus-cursos" element={<CoursesPage />} />
 
         <Route path="*" element={<Navigate to="/pagina-inicial" />} />
       </Routes>

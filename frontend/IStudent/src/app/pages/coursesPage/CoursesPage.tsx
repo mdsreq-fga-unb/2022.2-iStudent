@@ -1,14 +1,21 @@
-import {} from './styles';
 import ArrowBackIcon from '@mui/icons-material/ArrowBack';
 import { useNavigate } from 'react-router-dom';
 import { Container, Header, CourseCardArea } from './styles';
 import { CoursesCard } from '../../shared/components';
 import useCourses from '../../shared/hooks/useCourses';
-import { SignUpCourse } from '../signUpCourse/SignUpCourse';
+import { useUser } from '../../contexts/User';
 
-export const CoursesPage = ({ isTeacher }: { isTeacher: boolean }) => {
+export const CoursesPage = ({ allCourses }: { allCourses?: boolean }) => {
   const navigate = useNavigate();
-  const { courses } = useCourses(isTeacher);
+  const { user } = useUser();
+  let isTeacherOrStudent = user
+    ? user.role === 'TEACHER'
+      ? true
+      : false
+    : undefined;
+
+  if (allCourses) isTeacherOrStudent = undefined;
+  const { courses } = useCourses(isTeacherOrStudent);
 
   const handleClickHome = () => {
     navigate('/pagina-inicial');
@@ -27,7 +34,7 @@ export const CoursesPage = ({ isTeacher }: { isTeacher: boolean }) => {
             iStudent
           </div>
         </div>
-        {!isTeacher ? (
+        {!isTeacherOrStudent ? (
           <div className="title">
             Estes são os <br /> cursos disponíveis:
           </div>
@@ -43,7 +50,7 @@ export const CoursesPage = ({ isTeacher }: { isTeacher: boolean }) => {
             <li>
               <CoursesCard
                 name={course.name}
-                teacher={course.teacher.name}
+                teacher={course.teacher?.name}
                 currentPrice={course.price}
               />
             </li>

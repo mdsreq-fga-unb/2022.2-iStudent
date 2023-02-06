@@ -27,7 +27,7 @@ export const CoursesCard = (props: CourseCardProps) => {
 
         <div className="course-price">
           <span className="current-price">
-            {props.currentPrice.toLocaleString('pt-br', {
+            {props.currentPrice?.toLocaleString('pt-br', {
               style: 'currency',
               currency: 'BRL',
             })}
