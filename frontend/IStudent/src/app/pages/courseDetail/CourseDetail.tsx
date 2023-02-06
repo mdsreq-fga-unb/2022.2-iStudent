@@ -2,11 +2,17 @@ import { Button, CoursesCard, HeaderUser } from '../../shared/components'
 import {Container, Divisor, FirstBody, OtherCourses, SecondBody} from './styles'
 import Carousel from 'react-bootstrap/Carousel';
 import enrollCourse from '../../shared/services/student/enrollCourse';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import unrollCourse from '../../shared/services/student/unrollCourse';
 
-export function CourseDetail() {
+export function CourseDetail({ status } : any ) {
   const [enrollmentStatus, setEnrollmentStatus] = useState("AGUARDO");
+  const [currentStatus, setCurrentStatus] = useState(status)
+
+
+  useEffect(() => {
+    setCurrentStatus(status);
+  }, [status]);
 
   async function handleEnrollCourse(data: {userId: number; courseId: number}){
     setEnrollmentStatus("CARREGANDO");
@@ -19,6 +25,7 @@ export function CourseDetail() {
 
     setTimeout(() => {
       setEnrollmentStatus("SUCESSO");
+      setCurrentStatus("MATRICULADO");
     }, 2000)
   }
 
@@ -30,6 +37,11 @@ export function CourseDetail() {
     } catch (error: any) {
       alert(error.message);
     }
+
+    setTimeout(() => {
+      setEnrollmentStatus("SUCESSO");
+      setCurrentStatus("NAO_MATRICULADO");
+    })
   }
 
   return (
@@ -67,9 +79,20 @@ export function CourseDetail() {
           <div className='image-container'></div>
           <div className='price-container'><p>R$90,00</p></div>
           <div className="button-container">
-            <Button onClick={handleUnrollCourse}>
-              Matricular-se Agora!
-            </Button>
+            { currentStatus === "MATRICULADO" ? (
+              <div>
+                <Button onClick={handleUnrollCourse}>
+                  Cancelar Matrícula
+                </Button>
+
+              </div>
+            ) : (
+              <div>
+                <Button onClick={handleEnrollCourse}>
+                  Matricular
+                </Button>
+              </div>
+            )}
           </div>
         </SecondBody>
       </Divisor>

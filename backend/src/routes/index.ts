@@ -62,6 +62,6 @@ routes.put('/teacher/course', adaptRoute(makeEditCourseController()));
 routes.delete('/teacher/course', adaptRoute(makeDeleteCourseController()));
 
 routes.post('/course', auth(), adaptRoute(makeCourseRegistrationController()));
-routes.delete('/course', adaptRoute(makeUnenrollRegistration()));
+routes.delete('/course', auth(), adaptRoute(makeUnenrollRegistration()));
 
 export default routes;
