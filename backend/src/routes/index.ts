@@ -6,6 +6,7 @@ import { makeClassNotificationController } from '../main/factories/class/classes
 import { makeClassesByTeacherController } from '../main/factories/class/get-class-by-teacher-factory';
 import { makeClassRequestController } from '../main/factories/classRequest/classRequest-controller-factory';
 import { makeCourseRegistrationController } from '../main/factories/courseRegistration/course-registration-factory';
+import { makeUnenrollRegistration } from '../main/factories/courseRegistration/uneroll-registration-factory';
 import { makeDeleteAccountController } from '../main/factories/deleteAccount/delete-account-factory';
 import { makeDeleteCourseController } from '../main/factories/deleteCourse/delete-course-controller-factory';
 import { makeEditAccountController } from '../main/factories/editAccount/edit-account-factory';
@@ -16,6 +17,7 @@ import { makeMeController } from '../main/factories/me/me-controller-factory';
 import { makeSignUpController } from '../main/factories/signup/signup-controller-factory';
 import { makeAddSubjectontroller } from '../main/factories/subjects/add-subject-factory';
 import { makeAllTeachersController } from '../main/factories/teachers/all-teachers-factory';
+import { makePrismaUnenrollRegistration } from '../main/factories/useCases/unenroll-registratio-factory';
 import auth from '../main/middlewares/auth';
 
 const routes = Router();
@@ -60,6 +62,6 @@ routes.put('/teacher/course', adaptRoute(makeEditCourseController()));
 routes.delete('/teacher/course', adaptRoute(makeDeleteCourseController()));
 
 routes.post('/course', adaptRoute(makeCourseRegistrationController()));
-routes.delete('/course', adaptRoute(makeCourseRegistrationController()));
+routes.delete('/course', adaptRoute(makeUnenrollRegistration()));
 
 export default routes;

@@ -2,7 +2,7 @@ import { UnenrollRegistrationController } from '../../../controllers/courseManag
 import { Controller } from '../../../controllers/protocols';
 import { makePrismaUnenrollRegistration } from '../useCases/unenroll-registratio-factory';
 
-const makeUnenrollRegistration = (): Controller => {
+export const makeUnenrollRegistration = (): Controller => {
   const controller = new UnenrollRegistrationController(
     makePrismaUnenrollRegistration(),
   );
