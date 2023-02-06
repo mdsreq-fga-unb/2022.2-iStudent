@@ -3,6 +3,8 @@ import { useEffect, useState } from 'react';
 import { useNavigate, useParams } from 'react-router-dom';
 import { useUser } from '../../contexts/User';
 import { Button, HeaderUser } from '../../shared/components';
+import enrollCourse from '../../shared/services/student/enrollCourse';
+import unrollCourse from '../../shared/services/student/unrollCourse';
 import deleteCourse from '../../shared/services/teachers/deleteCourse';
 import getCourse from '../../shared/services/teachers/getCourse';
 import { Course } from '../../types/course';
@@ -13,6 +15,8 @@ export const CourseDetail = () => {
   const navigate = useNavigate();
   const { name } = useParams();
   const { user } = useUser();
+
+  const [isEnrolled, setIsEnrolled] = useState(false);
   const [course, setCourse] = useState({} as Course);
   const [isEditing, setIsEditing] = useState(false);
 
@@ -31,6 +35,30 @@ export const CourseDetail = () => {
       alert(error.message);
     }
   };
+
+  async function handleEnrollCourse() {
+    try {
+      if (!user) {
+        alert('Logue para efetuar matricula');
+        return;
+      }
+      await enrollCourse({ courseId: parseInt(course.id), userId: user.id });
+      setIsEnrolled(true);
+      alert('Matriculado com sucesso!');
+    } catch (error: any) {
+      alert(error.message);
+    }
+  }
+
+  async function handleUnrollCourse() {
+    try {
+      await unrollCourse(parseInt(course.id));
+      setIsEnrolled(false);
+      alert('Desmatriculado com sucesso!');
+    } catch (error: any) {
+      alert(error.message);
+    }
+  }
 
   const isOwnerTeacher = user?.id === course.teacherId;
 
@@ -82,7 +110,11 @@ export const CourseDetail = () => {
             {isOwnerTeacher ? (
               <button onClick={() => setIsEditing(true)}>Editar</button>
             ) : (
-              <button>Matricular-se Agora!</button>
+              <Button
+                onClick={isEnrolled ? handleUnrollCourse : handleEnrollCourse}
+              >
+                {isEnrolled ? 'Cancelar Matrícula' : 'Matricular-se Agora!'}
+              </Button>
             )}
             {isOwnerTeacher && (
               <Button onClick={handleDeleteCourse}>Excluir</Button>

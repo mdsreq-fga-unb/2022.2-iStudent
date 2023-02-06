@@ -1,7 +1,7 @@
-import { CourseModel } from "../../domain/models/course"
-import { AddCourse, AddCourseModel } from "../../domain/useCases/courseManagement/addCourse"
-import { HttpRequest } from "../protocols"
-import { Validation } from "../protocols/validation"
+import { CourseModel } from "../../../domain/models/course"
+import { AddCourse, AddCourseModel } from "../../../domain/useCases/courseManagement/addCourse"
+import { HttpRequest } from "../../protocols"
+import { Validation } from "../../protocols/validation"
 import { CourseManagementController } from "./course-management-controller"
 
 interface SutTypes {
@@ -16,11 +16,9 @@ const makeFakeCourse = (): CourseModel => ({
     description: "valid_description",
     price: 10,
     contents: ["valid_content"],
-    courseRating: 4,
     teacherId: 1,
-    teacherName: 'valid_teacher_name',
-    teacherTotalStudents: 300,
-    teacherTotalHours: 30
+    totalStudents: 10,
+    totalHours: 30
 })
 
 const makeFakeRequest = (): HttpRequest => ({
@@ -29,10 +27,8 @@ const makeFakeRequest = (): HttpRequest => ({
         description: "valid_description",
         price: 10,
         contents: ["valid_content"],
-        courseRating: 4,
-        teacherName: 'valid_teacher_name',
-        teacherTotalStudents: 300,
-        teacherTotalHours: 30
+        totalStudents: 300,
+        totalHours: 30
     }
 })
 
@@ -70,5 +66,13 @@ describe("CourseManagementController Test", () => {
         const { sut } = makeSut()
         const httpResponse = await sut.handle(makeFakeRequest())
         expect(httpResponse.statusCode).toBe(200);
+    })
+
+    test('should call Validation with correct values', async () => {
+        const { sut, validationStub } = makeSut()
+        const addCourseSpy = jest.spyOn(validationStub, 'validate');
+        const httpRequest = makeFakeRequest()
+        await sut.handle(httpRequest)
+        expect(addCourseSpy).toHaveBeenCalledWith(httpRequest.body);
     })
 })
