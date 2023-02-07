@@ -38,3 +38,4 @@
     - [Lista MVP2](./wiki/pagesUnidade4/listaMVP2.md)
     - [Especificação de Caso de Uso 1](./wiki/pagesUnidade4/especificacaoDeCasoDeUso1.md)
     - [Especificação de Caso de Uso 2](./wiki/pagesUnidade4/especificacaoDeCasoDeUso2.md)
+    - [Especificação de Caso de Uso 3](./wiki/pagesUnidade4/especificacaoDeCasoDeUso3.md)
