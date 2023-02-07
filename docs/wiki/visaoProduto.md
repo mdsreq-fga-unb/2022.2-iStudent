@@ -155,6 +155,12 @@ Devido aos pontos levantados, ficou claro que a equipe decidiu adotar como metod
     Nessa Unidade, o nosso grupo conseguiu aprender a melhorar a nossa Visão de Produto junto com o Backlog. Entedemos como funciona os critérios de aceitação e as User Story definindo o seu Persona, Ação e Valor de Negócio. Além disso, tivemos a chance de poder aprender sobre o PBB e USM além de aplicar em uma ativadade. Os ensinamentos dessa unidade serviu como aprendizado para a nossa carreira por conta de experimentar como é registrar cada Sprint: Kanbam, Planinng, Review e Retro e entregar um MVP1 para um cliente real.
 </p>
 
+### 4.4 Unidade 4
+
+<p>
+    Nessa Unidade, tivemos a oportunidade de aprender o que é Casos de Uso e como realizar um diagrama do mesmo sobre o projeto do qual estamos construindo com as relações dos Atores e casos de uso. Além disso, podemos colocar em prática a criação do documento de especificação de cada caso de uso mostrando qual o seu fluxo base, fluxo alternativos, fluxo de exceções, suas regras de negócios e por fim se necessita ter pré-condição ou pós-condição de algum outro caso de uso.
+</p>
+
 ## 5 Referências Bibliográficas
 
 - Engenharia de Software, Marco Tulio Valente.
