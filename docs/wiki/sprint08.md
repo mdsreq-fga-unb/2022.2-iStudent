@@ -54,7 +54,7 @@ Os objetivos para essa sprint são:
 
 **Da parte do Cliente**:
 
-Reunião marcada para amanhã.
+O Cliente ficou satisfeito com a entrega do MVP2 mesmo com a US16 não podendo ter sido completa. O mesmo Cliente deu o feedback positivo após testar a plataforma com as User Story do MVP2 entregue e gostou do que foi entregue.
 
 ### 2.1 Entregas
 
