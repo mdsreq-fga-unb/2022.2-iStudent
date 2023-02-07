@@ -16,4 +16,4 @@ A entrega da Unidade 4 é composta pelos seguintes itens:
 
 # Vídeo de Apresentação
 
-<iframe width="701" height="507" src="" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<iframe width="701" height="507" src="https://www.youtube.com/embed/lBZq-mYaNCo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
