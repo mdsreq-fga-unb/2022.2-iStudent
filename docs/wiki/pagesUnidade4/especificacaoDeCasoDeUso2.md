@@ -35,7 +35,7 @@ O Gerenciamento de Curso é iniciado quando um Professor decide criar ou gerenci
 
 ##### 2.4 O Professor preenche as informações necessárias e solicita a criação do curso.
 
-##### 2.5 O Sistema faz a validação das informações preenchidas.
+##### 2.5 O Sistema faz a validação das informações preenchidas. [RN01]
 
 ##### 2.6 O Sistema apresenta a mensagem de Curso criado com sucesso.
 
@@ -55,7 +55,7 @@ O Gerenciamento de Curso é iniciado quando um Professor decide criar ou gerenci
 
 ###### 3.1.5 O Professor confirma os novos dados preenchidos.
 
-###### 3.1.6 O Sistema faz a validação para as informações preenchidas.
+###### 3.1.6 O Sistema faz a validação para as informações preenchidas. [RN01]
 
 ###### 3.1.7 O Sistema exibe a mensagem que a edição foi realizada com sucesso.
 
@@ -81,7 +81,7 @@ O Gerenciamento de Curso é iniciado quando um Professor decide criar ou gerenci
 
 ###### 3.3.3 O Professor escreve ou envia o arquivo extra classe.
 
-###### 3.3.4 O Sistema processa o arquivo para saber se o tipo é válido. (MP4, RAR, PDF, DOCX).
+###### 3.3.4 O Sistema processa o arquivo para saber se o tipo é válido. (MP4, RAR, PDF, DOCX). [RN02]
 
 ###### 3.3.5 O Sistema exibe o texto escrito ou o arquivo recebido.
 
@@ -99,7 +99,7 @@ O Gerenciamento de Curso é iniciado quando um Professor decide criar ou gerenci
 
 ###### 3.4.3 O Professor escreve ou envia o novo texto ou arquivo extra classe.
 
-###### 3.4.4 O Sistema processa o arquivo para saber se o tipo é válido. (MP4, RAR, PDF, DOCX).
+###### 3.4.4 O Sistema processa o arquivo para saber se o tipo é válido. (MP4, RAR, PDF, DOCX). [RN02]
 
 ###### 3.4.5 O Sistema exibe o texto escrito ou o arquivo recebido.
 
@@ -137,24 +137,38 @@ Nos passos 3.1.5, 3.4.6 o Professor não confirma a edição dos dados. O sistem
 
 Nos passos 3.2.3, 3.5.4 o Professor não confirma as exclusões. O sistema retorna para 3.2.2 e 3.5.3 respectivamente conforme o local que foi chamado.
 
-#### **5. Pré-Condições**
+#### 5. Regras de Negócio
+
+##### 5.1 [RN01] - Validação de Informações
+
+| Nome          | Formato                      | Obrigatoriedade | Valores |
+| ------------- | ---------------------------- | --------------- | ------- |
+| Nome          | Texto com até 255 caracteres | Sim             | -       |
+| Descrição     | Texto com até 500 caracteres | Sim             | -       |
+| Categoria     | Texto com até 80 palavras    | Sim             | -       |
+
+##### 5.2 [RN02] - Validação de Arquivos
+
+Nos campos 3.3.4 e 3.4.4 para que os Arquivos sejam válidos, eles devem ser dos tipos MP4, RAR, PDF, DOCX, e com 2GB de tamanho máximo permitido.
+
+#### **6. Pré-Condições**
 
 Ter uma conta do tipo Professor.
 
-#### **6. Pós-Condições**
+#### **7. Pós-Condições**
 
 O curso estará disponível.
 
-#### **7. Pontos de Extensão**
+#### **8. Pontos de Extensão**
 
 Não se aplica.
 
-#### **8. Requisitos Especiais**
+#### **9. Requisitos Especiais**
 
-##### 8.1 Acesso Web
+##### 9.1 Acesso Web
 
 Deve ser acessível via web em dispositivos móveis ou desktops.
 
-#### **9. Informações Adicionais**
+#### **10. Informações Adicionais**
 
 Caso o Professor já tenha um curso, ele não necessariamente precisa criar outro curso para gerenciar.
