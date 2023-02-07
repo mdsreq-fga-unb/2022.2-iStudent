@@ -57,14 +57,6 @@
 
 ## MVP2 - Débitos Técnicos
 
-#### US01 - Eu, como usuário, quero cadastrar os meus dados para poder usar a plataforma.
-
-- Todos os campos, de acordo com o protótipo no Figma, devem ser obrigatórios.
-- O usuário antes de inserir os dados para o cadastro, pode especificar se quer se cadastrar como Aluno ou Professor.
-- O usuário deve adicionar um email válido, caso contrário deve sinalizar que o email é inválido.
-- A senha deve conter no mínimo 8 caracteres.
-- Ao concluir o cadastro, deve-se gerar um Token de autorização para o usuário.
-
 #### US03 - Eu como Usuário, gostaria de poder editar os dados já cadastrados do meu perfil dentro da plataforma.
 
 - Os dados do usuário devem ser atualizados depois de clicar no botão “Salvar”.
