@@ -1,4 +1,4 @@
-## Especificação de Caso de Uso: Gerenciamento de Usuário
+## Especificação de Caso de Uso: Gerenciamento de Agendamento
 
 #### Histórico de Revisão
 
