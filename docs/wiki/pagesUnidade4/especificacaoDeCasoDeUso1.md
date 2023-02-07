@@ -33,7 +33,7 @@ Este caso de uso é iniciado quando o Professr/Aluno escolha e opção entre Alu
 
 ##### 2.1.4 O Aluno/Professor preenche as informações e solicita para criar uma nova conta.
 
-##### 2.1.5 O sistema faz a validação para as informações preenchidas.
+##### 2.1.5 O sistema faz a validação para as informações preenchidas. [RN01]
 
 ##### 2.1.6 O sistema apresenta a mensagem de conta criada com sucesso.
 
@@ -57,7 +57,7 @@ Este caso de uso é iniciado quando o Professr/Aluno escolha e opção entre Alu
 
 ###### 3.2.3 O Professor/Aluno realiza as atualizações necessárias.
 
-###### 3.2.4 O sistema valida os novos dados preenchidos.
+###### 3.2.4 O sistema valida os novos dados preenchidos. [RN01]
 
 ###### 3.2.5 O Professor/Aluno seleciona a opção de confirmar a edição de dados.
 
@@ -93,26 +93,41 @@ No passo 3.2.5 o Professor/Aluno não confirma a edição dos dados. O sistema r
 
 No passo 3.3.2 o Professor/Aluno não confirma a exclusão da conta. O sistema retorna para 3.3.1 conforme o local que foi chamado.
 
-#### **5. Pré-Condições**
+#### 5. Regras de Negócio
+
+##### 5.1 [RN01] - Validação de Informações
+
+| Nome          | Formato                      | Obrigatoriedade | Valores |
+| ------------- | ---------------------------- | --------------- | ------- |
+| Nome Completo | Texto com até 255 caracteres | Sim             | -       |
+| Email         | Texto com até 256 caracteres | Sim             | -       |
+| Biografia     | Texto com até 500 palavras   | Sim             | -       |
+| Senha         | Texto com até 20 caracteres  | Sim             | -       |
+
+##### 5.2 [RN02] - Comparação de Senha
+
+No passo 3.2.4 do fluxo alternativo, para que o sistema possa validar e confirmar a edição de dados, o campo "Senha" deve ser igual ao campo "Nova Senha".
+
+#### **6. Pré-Condições**
 
 Não é necessário.
 
-#### **6. Pós-Condições**
+#### **7. Pós-Condições**
 
-##### 6.1 Login
+##### 7.1 Login
 
 Para utilizar este caso de uso das funcionalidades 3.1, 3.2 e 3.3 é necessário que o Professor/Aluno esteja “logado” na aplicação.
 
-#### **7. Pontos de Extensão**
+#### **8. Pontos de Extensão**
 
 Não se aplica.
 
-#### **8. Requisitos Especiais**
+#### **9. Requisitos Especiais**
 
-##### 8.1 Acesso Web
+##### 9.1 Acesso Web
 
 Para esse caso de uso deve ser acessível tanto via web..
 
-#### **9. Informações Adicionais**
+#### **10. Informações Adicionais**
 
 Não é necessário.
