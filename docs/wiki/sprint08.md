@@ -8,7 +8,7 @@
 Os objetivos para essa sprint são:
 
 - Concluir as User Story que foram deixadas como débito técnico da sprint passada: US14 e US15
-- Concluir as User Story da sprint atual: US16, US17 e US18
+- Concluir as User Story da sprint atual: US16 e US17
 
 ### 1.2 Tarefas
 
@@ -29,18 +29,46 @@ Os objetivos para essa sprint são:
 
 **Implementar US16: Prioridade Média**
 
-...
+- Acessar ao curso em que o Aluno/Professor se matriculou, trazer os documentos e vídeos presentes na plataforma.
+- Criar controlador responsável para upload de arquivos e vídeos
+- Criar endpoint para essa funcionalidade
+- Realizar a integração Frontend e Backend
 
 **Implementar US17: Prioridade Baixa**
 
-...
-
-**Implementar US18: Prioridade Baixa**
-
-...
+- Aluno/Professor que clicar em desmatricular, remover a matrícula do usuário do banco de dados e do "Meus Cursos"
+- Criar endpoint para essa funcionalidade
+- Realizar a integração Frontend e Backend
 
 # 2 Review
 
+**Durante a sprint as User Story qye foram concluídas com êxito**:
+
+- [US14] Eu, como Aluno quero visualizar o que o curso propõe para saber se satisfaz com o que procuro.
+- [US15] Eu, como Aluno quero me matricular nos cursos para acessar as aulas que o curso disponibiliza
+- [US17] Eu, como Aluno, quero me desmatricular do curso em que já estou matriculado para não fazer mais o curso.
+
+**User Story que ficaram incompletas**:
+
+- [US16] Eu, como Aluno, quero visualizar os conteúdos do curso que me matriculei para que eu possa iniciar a minha aprendizagem.
+
+**Da parte do Cliente**:
+
+Reunião marcada para amanhã.
+
 ### 2.1 Entregas
 
+- **US14** User Story
+- **US15** User Story
+- **US17** User Story
+
 ### Melhorias
+
+Durante essa sprint, a nossa equipe identificou problemas que foram cruciais para que a nossa entrega do MVP2 não fosse completa 100%. Esses problemas foram:
+
+- Deslize nos refinamentos das User Story: esse deslize levou a gente a colocar no backlog as user story da **Funcionalidade 06 - Gerenciamento de Aprendizagem** sendo que a **US17** era critério de aceitação dentro da **US15**. Por conta disso a Funcionalidade 06 acabou tendo só uma user story, que no fim concordamos em adicioná-la na **Funcionalide 05 - Acesso ao Curso** como **US16: Eu, como Aluno, quero visualizar os conteúdos do curso que me matriculei para que eu possa iniciar a minha aprendizagem.**.
+- Deslize no conhecimento técnico da equipe: esse problema é parecido com o mesmo da Sprint 06, entretanto esse foi por conta que não levamos em conta se os membros da equipe tinham algum conhecimento ou experiência em criar controladores e funções dentro do Backend para que possa fazer upload de arquivos e vídeos dentro da plataforma.
+
+Por conta do segundo problema citado acima, não foi possível entregar todas as user story planejadas para a Sprint 08. A User Story que não possível ser completada foi:
+
+- **US16**: Eu, como Aluno, quero visualizar os conteúdos do curso que me matriculei para que eu possa iniciar a minha aprendizagem.

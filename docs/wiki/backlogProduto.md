@@ -56,25 +56,19 @@ O escopo do projeto foi delimitado de acordo com a necessidade de criar uma plat
 
 #### Feature 05: Acesso ao Curso
 
-| ID   | User Story                                                                                               | Prioridade |
-| ---- | -------------------------------------------------------------------------------------------------------- | ---------- |
-| US14 | Eu, como Aluno, quero visualizar o que o curso propõe para saber se satisfaz com o que procuro.          | Alta       |
-| US15 | Eu, como Aluno, quero me matricular nos cursos para acessar as aulas que o curso disponibiliza.          | Alta       |
-| US16 | Eu, como Aluno, quero me desmatricular do curso em que já estou matriculado para não fazer mais o curso. | Média      |
+| ID   | User Story                                                                                                               | Prioridade |
+| ---- | ------------------------------------------------------------------------------------------------------------------------ | ---------- |
+| US14 | Eu, como Aluno, quero visualizar o que o curso propõe para saber se satisfaz com o que procuro.                          | Alta       |
+| US15 | Eu, como Aluno, quero me matricular nos cursos para acessar as aulas que o curso disponibiliza.                          | Alta       |
+| US16 | Eu, como Aluno, quero visualizar os conteúdos do curso que me matriculei para que eu possa iniciar a minha aprendizagem. | Baixa      |
+| US17 | Eu, como Aluno, quero me desmatricular do curso em que já estou matriculado para não fazer mais o curso.                 | Média      |
 
-#### Feature 06: Gerenciamento de Aprendizagem
-
-| ID             | User Story                                                                                                                                                 | Prioridade |
-| -------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------- |
-| US17           | Eu, como Aluno, quero acessar a aba de Aprendizagem dentro do meu perfil para visualizar quais são os cursos que eu estou fazendo.                         | Baixa      |
-| US18           | Eu, como Aluno, quero visualizar as minhas conquistas ao decorrer do curso para visualizar os desafios que cumpri.                                         | Baixa      |
-
-#### Feature 07: Requisição de Aulas Particulares
+#### Feature 06: Requisição de Aulas Particulares
 
 | ID   | User Story                                                                                                                                              | Prioridade |
 | ---- | ------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------- |
-| US19 | Eu, como Aluno, quero requisitar uma Aula Particular com o Professor do curso em que estou matriculado para reforçar o meu aprendizado dentro do curso. | Alta       |
-| US20 | Eu, como Aluno, quero receber uma resposta do pedido de agendamento de aula por meio do Professor para saber se o meu pedido foi aceito ou não.         | Média      |
+| US18 | Eu, como Aluno, quero requisitar uma Aula Particular com o Professor do curso em que estou matriculado para reforçar o meu aprendizado dentro do curso. | Alta       |
+| US19 | Eu, como Aluno, quero receber uma resposta do pedido de agendamento de aula por meio do Professor para saber se o meu pedido foi aceito ou não.         | Média      |
 
 ## Requisitos Não Funcionais
 
@@ -101,7 +95,7 @@ O escopo do projeto foi delimitado de acordo com a necessidade de criar uma plat
   - [F01] - Gerenciamento de Usuário
   - [F02] - Pareamento de Usuários
   - [F04] - Gerenciamento de Agendamento
-  - [F07] - Requisição de Aulas Particulares
+  - [F06] - Requisição de Aulas Particulares
 
 #### MVP2:
 
@@ -110,4 +104,3 @@ O escopo do projeto foi delimitado de acordo com a necessidade de criar uma plat
 - Features:
   - [F03] - Gerenciamento de Curso
   - [F05] - Acesso ao Curso
-  - [F06] - Gerenciamento de Aprendizagem

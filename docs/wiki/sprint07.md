@@ -7,7 +7,7 @@
 
 Os objetivos para essa sprint são:
 
-- Concluir as User Story que foram deixadas como débito técnico da sprint passada: US12 e US20
+- Concluir as User Story que foram deixadas como débito técnico da sprint passada: US12 e US19
 - Concluir as User Story da sprint atual: US07, US08, US09, US10, US14 e US15
 
 ### 1.2 Tarefas
@@ -20,7 +20,7 @@ Os objetivos para essa sprint são:
 - Criar função para que aceite ou recuse os pedidos de agendamentos recebidos
 - Realizar a integração Frontend e Backend
 
-**Implementar US20: Prioridade Média**
+**Implementar US19: Prioridade Média**
 
 - Criar card de confirmação após o Aluno enviar o pedido de agendamento para o Professor
 
@@ -68,7 +68,7 @@ Os objetivos para essa sprint são:
 **Durante a sprint as User Story que foram concluídas com êxito**:
 
 - [US12] Eu, como Professor quero aceitar ou recusar os pedidos de agendamento dos meus alunos para gerenciar os pedidos de agendamento.
-- [US20] Eu, como Aluno quero receber uma resposta do pedido de agendamento de aula por meio do Professor para saber se o meu pedido foi aceito ou não.
+- [US19] Eu, como Aluno quero receber uma resposta do pedido de agendamento de aula por meio do Professor para saber se o meu pedido foi aceito ou não.
 - [US07] Eu, como Professor quero cadastrar um ou mais cursos para para que os alunos possam ver e se matricular em meu curso.
 - [US08] Eu, como Professor quero visualizar os dados do meu curso para verificar se correspondem com os dados que cadastrei
 - [US09] Eu, como Professor quero editar os dados do meu curso para manter meu curso atualizado.
@@ -86,7 +86,7 @@ Após mostrarmos o que foi entregue durante essa sprint, o Cliente entregou o se
 ### 2.1 Entregas
 
 - **US12** User Story
-- **US20** User Story
+- **US19** User Story
 - **US07** User Story
 - **US08** User Story
 - **US09** User Story

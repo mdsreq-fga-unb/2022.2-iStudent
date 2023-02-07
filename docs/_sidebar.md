@@ -12,6 +12,7 @@
   - [Sprint 5](./wiki/sprint05.md)
   - [Sprint 6](./wiki/sprint06.md)
   - [Sprint 7](./wiki/sprint07.md)
+  - [Sprint 8](./wiki/sprint08.md)
 
 - Backlog
 
